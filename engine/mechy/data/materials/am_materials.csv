@@ -1,0 +1,71 @@
+id,brand,product,process,base_polymer,density_kg_m3,tensile_strength_XY_MPa,tensile_strength_Z_MPa,tensile_modulus_XY_GPa,tensile_modulus_Z_GPa,elongation_XY_pct,elongation_Z_pct,flexural_strength_MPa,flexural_modulus_GPa,impact_XY_kJ_m2,impact_Z_kJ_m2,hardness_value,hardness_scale,hdt_0_45MPa_C,hdt_1_8MPa_C,tg_C,nozzle_temp_min_C,nozzle_temp_max_C,bed_temp_C,cost_tier,printability_notes,source_url,value_type
+gen_pla,generic,PLA,FDM,PLA,1240,50,30,3.0,2.6,4,1.5,80,2.8,,,80,ShoreD,55,52,57,190,220,55,3,Easiest to print; brittle; creeps and softens above ~50C (not for hot cars or motor mounts); Z typ 50-70% of XY,https://en.wikipedia.org/wiki/Polylactic_acid,estimate
+gen_petg,generic,PETG,FDM,PETG,1270,45,28,2.0,1.8,6,3,70,2.0,,,75,ShoreD,70,65,80,230,250,80,3,Tougher than PLA; good layer adhesion; strings; sticks too well to PEI (use release agent),https://en.wikipedia.org/wiki/Polyethylene_terephthalate,estimate
+gen_abs,generic,ABS,FDM,ABS,1040,38,22,2.1,1.9,5,2,65,2.0,,,75,ShoreD,95,85,105,240,260,100,3,Needs enclosure; warps; acetone smoothing; fumes (ventilate),https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene,estimate
+gen_asa,generic,ASA,FDM,ASA,1070,40,25,2.0,1.8,5,2,65,1.9,,,75,ShoreD,95,88,105,240,260,100,3,UV-stable ABS alternative for outdoor parts; needs enclosure,https://en.wikipedia.org/wiki/Acrylonitrile_styrene_acrylate,estimate
+gen_pc,generic,Polycarbonate,FDM,PC,1200,60,35,2.2,2.0,6,2,90,2.1,,,80,ShoreD,135,120,147,260,310,110,4,Strong and heat resistant; needs hot enclosure and dry filament,https://en.wikipedia.org/wiki/Polycarbonate,estimate
+gen_pa6,generic,Nylon PA6/PA66 copolymer,FDM,PA6,1130,50,30,1.5,1.3,20,5,60,1.4,,,70,ShoreD,90,60,50,250,270,80,4,Very hygroscopic: dry before and during printing; tough wear parts; properties drop when moist,https://en.wikipedia.org/wiki/Nylon_6,estimate
+gen_pa_cf,generic,Nylon carbon fibre (PA-CF),FDM,PA6 or PA12 + chopped CF,1180,80,40,6.0,2.5,4,2,110,5.0,,,80,ShoreD,180,120,60,260,290,80,4,Hardened nozzle required; dry filament; stiff dimensionally stable parts; Z much weaker than XY,https://en.wikipedia.org/wiki/Carbon-fiber-reinforced_polymers,estimate
+gen_tpu95a,generic,TPU 95A,FDM,TPU,1210,35,20,0.03,,500,300,,,,,95,ShoreA,,,-30,220,240,50,3,Flexible; print slow; direct drive preferred,https://en.wikipedia.org/wiki/Thermoplastic_polyurethane,estimate
+gen_peek,generic,PEEK,FDM,PEEK,1300,90,50,3.5,3.0,15,3,130,3.4,,,85,ShoreD,,152,143,380,420,130,5,Needs 400C+ hotend and heated chamber (~90-140C); anneal for crystallinity,https://en.wikipedia.org/wiki/Polyether_ether_ketone,estimate
+prusa_pla,Prusament,PLA,FDM,PLA,1240,57,,2.2,,3.2,,,,13,,,,55,,57,200,220,60,3,Vendor cites 55C temperature resistance; melts ~175C,https://prusament.com/,estimate
+prusa_petg,Prusament,PETG,FDM,PETG,1270,47,,1.5,,5,,,,,,,,68,,80,230,250,85,3,TDS v1.1: tensile yield 47 +/-2 horizontal and 50 +/-1 vertical-XZ (on-edge not Z); filament 46; Z not published in that sheet,https://www.3dprintergear.com.au/assets/files/technical-data-sheet%20(1).pdf,datasheet
+prusa_asa,Prusament,ASA,FDM,ASA,1070,39,,1.8,,4,,,,,,,,93,,105,250,260,105,3,Low warp ASA; enclosure recommended,https://prusament.com/,estimate
+prusa_pc_blend,Prusament,PC Blend,FDM,PC blend,1220,63,,1.9,,7,,,,,,,,113,,,265,285,110,4,Easier PC; enclosure; dry,https://prusament.com/,estimate
+prusa_pa11cf,Prusament,PA11 Carbon Fiber,FDM,PA11 + CF,1130,64,,4.0,,6,,,,,,,,191,,,275,295,105,4,Hardened nozzle; dry before use,https://prusament.com/,estimate
+poly_polylite_pla,Polymaker,PolyLite PLA,FDM,PLA,1170,46.6,,2.6,,1.9,,,,,,,,,,61,190,230,55,3,Values recalled from Polymaker TDS; verify at app.polymaker.com,https://app.polymaker.com/,estimate
+poly_polymax_pla,Polymaker,PolyMax PLA (Tough PLA),FDM,PLA toughened,1170,42,,2.1,,13,,,,,,,,,,60,190,230,55,3,Impact modified PLA,https://app.polymaker.com/,estimate
+poly_polylite_petg,Polymaker,PolyLite PETG,FDM,PETG,1250,32,,1.5,,9,,,,,,,,69,,78,230,240,70,3,,https://app.polymaker.com/,estimate
+poly_polylite_asa,Polymaker,PolyLite ASA,FDM,ASA,1070,38,,1.4,,8,,,,,,,,95,,100,240,260,90,3,,https://app.polymaker.com/,estimate
+poly_polymax_pc,Polymaker,PolyMax PC,FDM,PC,1200,60,,2.0,,10,,,,,,,,113,,113,250,270,100,4,Easier-print PC,https://app.polymaker.com/,estimate
+poly_polymide_pa6cf,Polymaker,PolyMide PA6-CF,FDM,PA6 + CF,1170,105,,7.5,,4,,,,,,,,215,,,280,300,40,4,Anneal 80C 6h after printing per vendor; hardened nozzle,https://app.polymaker.com/,estimate
+poly_polyflex_tpu95,Polymaker,PolyFlex TPU95,FDM,TPU,1220,29,,0.01,,330,,,,,,95,ShoreA,,,,210,230,50,3,,https://app.polymaker.com/,estimate
+poly_fiberon_pa12cf,Polymaker,Fiberon PA12-CF10,FDM,PA12 + CF,1060,70,,4.5,,5,,,,,,,,160,,,260,300,50,4,Low moisture nylon CF,https://app.polymaker.com/,estimate
+bambu_pla_basic,Bambu Lab,PLA Basic,FDM,PLA,1260,35,,2.75,,7,,76,2.3,26.6,,76,ShoreD,57,,,190,230,55,3,Vendor test method gives lower UTS than ISO; Z weaker,https://bambulab.com/en/filament/pla-basic,estimate
+bambu_pla_cf,Bambu Lab,PLA-CF,FDM,PLA + CF,1220,40,,3.6,,4,,90,3.5,,,,,55,,,210,240,55,3,Hardened nozzle,https://bambulab.com/en/filament,estimate
+bambu_petg_hf,Bambu Lab,PETG HF,FDM,PETG,1250,30,,1.6,,10,,60,1.6,,,,,69,,,230,260,70,3,High flow,https://bambulab.com/en/filament,estimate
+bambu_petg_cf,Bambu Lab,PETG-CF,FDM,PETG + CF,1250,46,,3.0,,6,,70,2.8,,,,,74,,,240,270,70,3,,https://bambulab.com/en/filament,estimate
+bambu_abs,Bambu Lab,ABS,FDM,ABS,1050,33,,2.1,,10,,62,1.9,,,,,87,,,240,280,90,3,Enclosure needed,https://bambulab.com/en/filament,estimate
+bambu_asa,Bambu Lab,ASA,FDM,ASA,1050,37,,2.0,,8,,65,1.9,,,,,100,,,240,280,90,3,,https://bambulab.com/en/filament,estimate
+bambu_pc,Bambu Lab,PC,FDM,PC,1200,40,,2.0,,8,,80,2.0,,,,,117,,,260,280,110,4,,https://bambulab.com/en/filament,estimate
+bambu_paht_cf,Bambu Lab,PAHT-CF,FDM,PA12-based high temp nylon + CF,1060,92,,,,8.4,,125,4.23,57.5,13.3,,,194,,,260,290,80,4,Z flexural strength 61 MPa and Z flexural modulus 1.82 GPa; Vicat 220C; dry 80C 8-12h; hardened nozzle,https://shop3duniverse.com/products/bambu-lab-paht-cf-high-temperature-nylon-carbon-fiber-1-75mm-black,datasheet
+bambu_pa6_cf,Bambu Lab,PA6-CF,FDM,PA6 + CF,1170,103,,,,4,,150,6.0,,,,,186,,,260,290,80,4,Dry thoroughly,https://bambulab.com/en/filament,estimate
+bambu_pet_cf,Bambu Lab,PET-CF,FDM,PET + CF,1290,61,,,,3,,100,4.0,,,,,205,,,260,290,80,4,Low moisture; anneal for full HDT,https://bambulab.com/en/filament,estimate
+bambu_tpu95a_hf,Bambu Lab,TPU 95A HF,FDM,TPU,1220,29,,,,600,,,,,,95,ShoreA,,,,220,240,35,3,,https://bambulab.com/en/filament,estimate
+esun_pla_plus,eSun,PLA+,FDM,PLA modified,1230,63,,1.97,,20,,74,1.97,,,,,53,,,205,225,60,2,Tougher PLA; values recalled from eSun TDS,https://www.esun3d.com/,estimate
+esun_petg,eSun,PETG,FDM,PETG,1270,50,,1.5,,8,,65,1.6,,,,,64,,,230,250,75,2,,https://www.esun3d.com/,estimate
+esun_abs_plus,eSun,ABS+,FDM,ABS,1040,43,,2.0,,20,,66,1.9,,,,,85,,,230,270,95,2,,https://www.esun3d.com/,estimate
+esun_easa,eSun,eASA,FDM,ASA,1070,40,,1.8,,15,,60,1.8,,,,,90,,,240,260,90,2,,https://www.esun3d.com/,estimate
+esun_etpu95a,eSun,eTPU-95A,FDM,TPU,1210,32,,,,800,,,,,,95,ShoreA,,,,210,230,50,3,,https://www.esun3d.com/,estimate
+esun_epa_cf,eSun,ePA-CF,FDM,PA + CF,1150,90,,5.0,,4,,120,4.5,,,,,180,,,250,280,60,4,,https://www.esun3d.com/,estimate
+fl_tough2000_v2,Formlabs,Tough 2000 Resin V2,SLA,methacrylate resin,1150,40.4,,,,79,,67,1.701,,,,,70,,,,,,4,SLA near-isotropic so Z ~ XY; post-cure required; density est,https://formlabs.com/materials/engineering/,datasheet
+fl_tough1500_v2,Formlabs,Tough 1500 Resin V2,SLA,methacrylate resin,1150,34,,,,155,,41,1.37,,,,,,,,,,,4,PP-like,https://formlabs.com/materials/engineering/,datasheet
+fl_tough1000,Formlabs,Tough 1000 Resin,SLA,methacrylate resin,1150,26.3,,,,180,,29,0.761,,,,,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_durable,Formlabs,Durable Resin,SLA,methacrylate resin,1150,28,,,,55,,24,0.66,,,,,,,,,,,4,Low friction PE-like,https://formlabs.com/materials/engineering/,datasheet
+fl_rigid10k,Formlabs,Rigid 10K Resin,SLA,glass filled resin,1650,88,,,,0.7,,158,9.9,,,,,,,,,,,5,Very stiff and brittle; jigs and molds,https://formlabs.com/materials/engineering/,datasheet
+fl_rigid4000,Formlabs,Rigid 4000 Resin,SLA,glass filled resin,1400,69,,,,5.3,,105,3.4,,,,,,,,,,,5,,https://formlabs.com/materials/engineering/,datasheet
+fl_hightemp,Formlabs,High Temp Resin,SLA,methacrylate resin,1150,49,,,,2.3,,97,2.8,,,,,238,,,,,,5,HDT 238C at 0.45 MPa; brittle,https://formlabs.com/materials/engineering/,datasheet
+fl_grey_v5,Formlabs,Grey Resin V5,SLA,methacrylate resin,1150,62,,,,13,,103,2.75,,,,,,,,,,,4,Standard prototyping resin,https://formlabs.com/materials/engineering/,datasheet
+fl_clear_v5,Formlabs,Clear Resin V5,SLA,methacrylate resin,1150,60,,,,8,,105,2.7,,,,,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_white_v5,Formlabs,White Resin V5,SLA,methacrylate resin,1150,61,,,,11,,103,2.75,,,,,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_black_v5,Formlabs,Black Resin V5,SLA,methacrylate resin,1150,61,,,,10,,103,2.75,,,,,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_grey_pro,Formlabs,Grey Pro Resin,SLA,methacrylate resin,1150,61,,,,13,,86,2.2,,,,,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_fast_model,Formlabs,Fast Model Resin,SLA,methacrylate resin,1150,62,,,,11,,106,2.74,,,,,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_flame_retardant,Formlabs,Flame Retardant Resin,SLA,methacrylate resin,1300,41,,,,7.1,,75,2.7,,,,,,,,,,,5,,https://formlabs.com/materials/engineering/,datasheet
+fl_esd,Formlabs,ESD Resin,SLA,methacrylate resin,1150,44.2,,,,12,,61,1.841,,,,,,,,,,,5,Static dissipative,https://formlabs.com/materials/engineering/,datasheet
+fl_alpha_grey,Formlabs,Alpha Grey Resin,SLA,methacrylate resin,1150,43,,,,34,,75,2.08,,,,,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_flex80a_v2,Formlabs,Flexible 80A Resin V2,SLA,elastomeric resin,1100,10,,,,230,,,,,,80,ShoreA,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_flex50a_v2,Formlabs,Flexible 50A Resin V2,SLA,elastomeric resin,1100,3.4,,,,160,,,,,,50,ShoreA,,,,,,,4,,https://formlabs.com/materials/engineering/,datasheet
+fl_silicone40a,Formlabs,Silicone 40A Resin,SLA,silicone resin,1100,5,,,,230,,,,,,40,ShoreA,,,,,,,5,,https://formlabs.com/materials/engineering/,datasheet
+fl_nylon11_pro,Formlabs,Nylon 11 Pro Powder,SLS,PA11,1030,46,45,,,49,26,50,1.12,,,,,,,,,,,4,Flexural modulus Z 1.20 GPa,https://formlabs.com/materials/engineering/,datasheet
+hp_mjf_pa12,HP,3D HR PA12,MJF,PA12,1010,48,48,1.7,1.8,20,15,,,,,80,ShoreD,175,95,,,,,4,Near isotropic; values recalled from HP datasheet,https://www.hp.com/us-en/printers/3d-printers/materials.html,estimate
+eos_pa2200,EOS,PA 2200,SLS,PA12,930,48,42,1.65,1.65,18,4,,,,,75,ShoreD,154,86,,,,,4,Z elongation much lower,https://www.eos.info/,estimate
+mf_onyx,Markforged,Onyx,FDM,PA6 + micro CF,1200,40,,2.4,,25,,71,3.0,,,,,145,,,,,,5,Base for continuous fibre,https://markforged.com/materials,estimate
+mf_ccf,Markforged,Continuous Carbon Fiber (in Onyx),CFF,PA6 + continuous CF,1400,800,,60,,1.5,,540,51,,,,,105,,,,,,5,Fibre direction only; Z governed by Onyx matrix,https://markforged.com/materials,estimate
+mf_kevlar,Markforged,Continuous Kevlar,CFF,PA6 + continuous aramid,1200,610,,27,,2.7,,240,26,,,,,105,,,,,,5,Fibre direction only,https://markforged.com/materials,estimate
+mf_fiberglass,Markforged,Continuous Fiberglass,CFF,PA6 + continuous glass,1500,590,,21,,3.8,,200,22,,,,,105,,,,,,5,Fibre direction only,https://markforged.com/materials,estimate
+ss_ultem9085,Stratasys,ULTEM 9085,FDM,PEI/PC blend,1340,69,42,2.2,2.1,5.8,2.2,112,2.4,,,,,,153,186,,,,5,Industrial chamber printers only; flame retardant,https://www.stratasys.com/en/materials/,estimate
+ss_absm30,Stratasys,ABS-M30,FDM,ABS,1040,32,26,2.2,2.0,7,2,60,2.1,,,,,96,82,108,,,,4,,https://www.stratasys.com/en/materials/,estimate
+igus_i180,igus,iglidur i180 tribofilament,FDM,tribo-modified polymer,1270,26,,1.0,,30,,30,0.95,,,,,,,,230,250,90,5,Printed bushings and gears with low wear; see igus for PV data,https://www.igus.com/,estimate
+gen_msla_standard,generic,Standard MSLA resin,MSLA,acrylate resin,1150,40,,1.5,,8,,60,1.6,,,,,50,,,,,,3,Brittle; Z ~ XY; post cure,https://en.wikipedia.org/wiki/Stereolithography,estimate
+gen_msla_abslike,generic,ABS-like MSLA resin,MSLA,acrylate resin,1150,45,,1.8,,15,,65,1.8,,,,,60,,,,,,3,Tougher hobby resin,https://en.wikipedia.org/wiki/Stereolithography,estimate

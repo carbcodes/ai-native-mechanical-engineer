@@ -1,0 +1,8 @@
+material,astm,A_MPa_mm_m,m_exponent,E_GPa,G_GPa,wire_dia_range_mm,max_temp_C,notes,source_url,value_type
+music wire,A228,2211,0.145,203.4,82.7,0.10-6.5,120,Sut = A / d^m (d in mm); torsional yield ~0.45 Sut (set removed),"Shigley's Mechanical Engineering Design, Tables 10-4/10-5 (spring wire A, m, E, G)",handbook_typical
+oil-tempered,A229,1855,0.187,196.5,77.2,0.5-12,180,Sut = A / d^m (d in mm); torsional yield ~0.45 Sut (set removed),"Shigley's Mechanical Engineering Design, Tables 10-4/10-5 (spring wire A, m, E, G)",handbook_typical
+hard-drawn,A227,1783,0.19,196.5,80.0,0.7-12,120,Sut = A / d^m (d in mm); torsional yield ~0.45 Sut (set removed),"Shigley's Mechanical Engineering Design, Tables 10-4/10-5 (spring wire A, m, E, G)",handbook_typical
+chrome-vanadium,A231,2005,0.168,203.4,77.2,0.8-11,220,Sut = A / d^m (d in mm); torsional yield ~0.45 Sut (set removed),"Shigley's Mechanical Engineering Design, Tables 10-4/10-5 (spring wire A, m, E, G)",handbook_typical
+chrome-silicon,A401,1974,0.108,203.4,77.2,1.6-9.5,245,Sut = A / d^m (d in mm); torsional yield ~0.45 Sut (set removed),"Shigley's Mechanical Engineering Design, Tables 10-4/10-5 (spring wire A, m, E, G)",handbook_typical
+stainless 302,A313,1867,0.146,193.0,69.0,0.3-2.5,260,Sut = A / d^m (d in mm); torsional yield ~0.45 Sut (set removed),"Shigley's Mechanical Engineering Design, Tables 10-4/10-5 (spring wire A, m, E, G)",handbook_typical
+phosphor bronze,B159,1000,0.0,103.4,41.4,0.1-0.6,90,Sut = A / d^m (d in mm); torsional yield ~0.45 Sut (set removed),"Shigley's Mechanical Engineering Design, Tables 10-4/10-5 (spring wire A, m, E, G)",handbook_typical

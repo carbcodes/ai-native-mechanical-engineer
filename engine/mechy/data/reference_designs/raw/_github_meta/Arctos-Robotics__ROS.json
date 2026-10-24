@@ -1,0 +1,62 @@
+{
+ "repo": "Arctos-Robotics/ROS",
+ "stars": 103,
+ "forks": 28,
+ "pushed": "2024-05-20T19:24:59Z",
+ "spdx": "MIT",
+ "branch": "main",
+ "desc": "ROS files for Arctos 3D printed robotic arm ",
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2018 Toshinori Kitamura\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of t",
+ "truncated": false,
+ "ext": {
+  ".launch": 15,
+  ".xml": 13,
+  ".stl": 10,
+  ".yaml": 9,
+  ".txt": 3,
+  ".py": 3,
+  "": 2,
+  ".md": 2,
+  ".rviz": 2,
+  ".cpp": 2,
+  ".xacro": 2,
+  ".srdf": 1,
+  ".ino": 1,
+  ".msg": 1,
+  ".urdf": 1,
+  ".gazebo": 1,
+  ".trans": 1,
+  ".jpg": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1075
+  ],
+  [
+   "README.md",
+   5940
+  ],
+  [
+   "arctos_moveit/scripts/README.md",
+   2676
+  ],
+  [
+   "arctos_urdf_description/LICENSE",
+   1075
+  ],
+  [
+   "arctos_urdf_description/urdf/arctos.urdf",
+   85764
+  ],
+  [
+   "arctos_urdf_description/urdf/arctos_urdf.xacro",
+   10223
+  ],
+  [
+   "arctos_urdf_description/urdf/materials.xacro",
+   335
+  ]
+ ]
+}

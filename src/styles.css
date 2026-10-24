@@ -1,0 +1,845 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("@fontsource-variable/inter/files/inter-latin-wght-normal.woff2")
+    format("woff2-variations");
+}
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #282c27;
+  background: #f5f4ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --paper: #f5f4ef;
+  --white: #fcfcf8;
+  --ink: #282c27;
+  --muted: #656960;
+  --line: #d8dad2;
+  --blue: #20a4f3;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button,
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 5px;
+}
+button:disabled {
+  cursor: default;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+svg {
+  flex-shrink: 0;
+}
+::selection {
+  background: var(--blue);
+  color: var(--ink);
+}
+.skip-link {
+  position: fixed;
+  left: 20px;
+  top: -100px;
+  padding: 12px 20px;
+  background: var(--ink);
+  color: white;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 12px;
+}
+.skip-link:not(:focus) {
+  clip-path: inset(50%);
+}
+.site-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 20;
+  height: 88px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f4ef66;
+  backdrop-filter: blur(12px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 28px;
+  font-weight: 740;
+  letter-spacing: -1.7px;
+}
+.brand svg {
+  width: 29px;
+  height: 29px;
+  color: var(--blue);
+}
+.site-header nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 12px;
+}
+.site-header nav a {
+  padding: 14px 0;
+}
+.site-header nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  min-height: 52px;
+  padding: 17px 23px;
+  background: var(--blue);
+  color: var(--ink);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 560;
+  line-height: 1.4;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px #282c2718;
+}
+.button-small {
+  min-height: 40px;
+  padding: 12px 17px;
+  font-size: 11px;
+}
+.button-full {
+  width: 100%;
+}
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+}
+.icon-button:hover {
+  background: #282c2709;
+}
+.menu-toggle {
+  display: none;
+}
+.eyebrow {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 520;
+  line-height: 1.5;
+}
+/* The camera and the objects carry the story; each station gets one sentence. */
+.journey {
+  position: relative;
+  height: 700svh;
+  background: #d7d8ce;
+}
+.journey-sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+}
+.makerspace-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.makerspace-scene > div:not(.scene-fallback) {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.makerspace-scene.is-ready > div:not(.scene-fallback) {
+  opacity: 1;
+}
+.makerspace-scene canvas {
+  display: block;
+  touch-action: pan-y !important;
+}
+.scene-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d7d8ce;
+}
+.scene-fallback img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scene-fallback span {
+  position: absolute;
+  right: 6%;
+  bottom: 15%;
+  font-size: 11px;
+  background: var(--paper);
+  padding: 10px 15px;
+}
+.is-ready .scene-fallback {
+  visibility: hidden;
+}
+.journey-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      #f5f4eff0 0%,
+      #f5f4efcc 15%,
+      #f5f4ef80 31%,
+      #f5f4ef20 48%,
+      #f5f4ef00 62%
+    ),
+    linear-gradient(0deg, #f5f4efbb 0%, #f5f4ef00 13%);
+}
+.journey-copy {
+  position: absolute;
+  left: 7%;
+  z-index: 3;
+  pointer-events: none;
+}
+.journey-copy button {
+  pointer-events: auto;
+}
+.journey-hero {
+  top: 27%;
+  width: 44%;
+}
+.journey-hero h1 {
+  font-size: clamp(110px, 11.4vw, 166px);
+  font-weight: 730;
+  letter-spacing: -0.085em;
+  line-height: 1;
+  margin-left: -8px;
+}
+.journey-hero h1 span {
+  color: var(--blue);
+}
+.journey-hero p {
+  font-size: clamp(19px, 1.8vw, 26px);
+  line-height: 1.45;
+  letter-spacing: -0.045em;
+  margin-top: 30px;
+}
+.enter-workshop {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  background: transparent;
+  padding: 0 0 9px;
+  margin-top: 35px;
+  font-size: 12px;
+}
+.journey-topline {
+  position: absolute;
+  top: 31px;
+  left: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+}
+.journey-topline > a:first-child {
+  font-size: 29px;
+  font-weight: 730;
+  letter-spacing: -1.8px;
+}
+.journey-topline > a:last-child {
+  font-size: 11px;
+  border-bottom: 1px solid #282c2750;
+  padding-bottom: 5px;
+}
+.journey-chapter {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 27%;
+  max-width: 380px;
+}
+.journey-chapter h2 {
+  font-size: clamp(28px, 2.8vw, 42px);
+  font-weight: 450;
+  letter-spacing: -0.045em;
+  line-height: 1.16;
+}
+.journey-bottom {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 28px;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8%;
+}
+.journey-nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+  flex: 1;
+  max-width: 780px;
+}
+.journey-nav button {
+  position: relative;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 21px 0 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.journey-nav button i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #858d7e55;
+}
+.journey-nav button[aria-current="step"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+.journey-nav button[aria-current="step"] i {
+  background: var(--blue);
+}
+.motion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #f5f4ef88;
+  border: 0;
+  border-radius: 50%;
+}
+.journey-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--blue);
+  transform-origin: left;
+  z-index: 5;
+}
+.demo-section {
+  padding: 120px 10% 70px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 70px 14%;
+}
+.demo-intro h2 {
+  font-size: clamp(48px, 5.5vw, 80px);
+  font-weight: 450;
+  letter-spacing: -0.06em;
+  line-height: 1.05;
+}
+.demo-intro p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 350px;
+  margin-top: 30px;
+}
+.offer-label {
+  font-size: 9px;
+  letter-spacing: 1.2px;
+}
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-top: 22px;
+}
+.price strong {
+  font-size: clamp(48px, 4.7vw, 68px);
+  font-weight: 450;
+  letter-spacing: -0.065em;
+}
+.price span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.demo-offer > p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.demo-offer .button {
+  margin-top: 28px;
+}
+.demo-offer > small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 15px;
+}
+.faq-list {
+  grid-column: 1/-1;
+}
+.faq-list details {
+  border-bottom: 1px solid var(--line);
+}
+.faq-list details:first-child {
+  border-top: 1px solid var(--line);
+}
+.faq-list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+  font-size: 13px;
+  cursor: pointer;
+  list-style: none;
+  line-height: 1.6;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary svg {
+  color: var(--muted);
+  transition: transform 0.2s;
+}
+.faq-list details[open] summary svg {
+  transform: rotate(180deg);
+}
+.faq-list details > p {
+  padding: 0 30px 24px 0;
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 680px;
+}
+footer {
+  padding: 30px 5%;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+footer > span {
+  font-size: 11px;
+  color: var(--muted);
+}
+footer > div {
+  display: flex;
+  gap: 25px;
+}
+footer > div a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+.purchase-dialog {
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  width: min(510px, calc(100vw - 32px));
+  max-height: calc(100svh - 32px);
+  background: var(--white);
+  box-shadow: 0 30px 120px #282c2740;
+  color: var(--ink);
+}
+.purchase-dialog::backdrop {
+  background: #282c276b;
+  backdrop-filter: blur(8px);
+}
+.dialog-content {
+  padding: 36px;
+  position: relative;
+}
+.dialog-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.dialog-mark {
+  width: 30px;
+  height: 30px;
+  color: var(--blue);
+  margin-bottom: 25px;
+}
+.dialog-content h2 {
+  font-size: 42px;
+  line-height: 1.04;
+  letter-spacing: -2px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.dialog-content > p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.dialog-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 0;
+  margin-top: 13px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.dialog-price > strong {
+  font-size: 39px;
+  letter-spacing: -2px;
+  font-weight: 500;
+}
+.dialog-price > span {
+  font-size: 9px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.checkout-steps {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 24px 0;
+}
+.checkout-steps li {
+  display: flex;
+  gap: 15px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.checkout-steps li > span {
+  font-size: 11px;
+  padding-top: 2px;
+}
+.checkout-steps strong {
+  font-weight: 550;
+}
+.checkout-steps p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.checkout-steps a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.checkout-steps a svg {
+  vertical-align: middle;
+}
+.dialog-content > .checkout-disclosure {
+  font-size: 9px;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+
+@media (max-width: 1100px) {
+  .journey-nav {
+    gap: 18px;
+  }
+  .journey-copy {
+    left: 6%;
+  }
+  .journey-hero h1 {
+    font-size: 12.5vw;
+  }
+  .demo-section {
+    padding: 90px 7% 60px;
+    gap: 65px 8%;
+  }
+}
+@media (max-width: 760px) {
+  .site-header {
+    height: 72px;
+    padding: 0 6%;
+    background: #f5f4efaa;
+  }
+  .brand {
+    font-size: 25px;
+  }
+  .brand svg {
+    width: 26px;
+    height: 26px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .header-actions {
+    gap: 5px;
+  }
+  .button-small {
+    font-size: 10px;
+    min-height: 37px;
+    padding: 10px 13px;
+    gap: 13px;
+  }
+  .site-header nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    padding: 10px 6%;
+    border-bottom: 1px solid var(--line);
+  }
+  .site-header nav.nav-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .site-header nav a {
+    font-size: 13px;
+    padding: 16px 0;
+  }
+  .journey {
+    height: 640svh;
+  }
+  .journey-veil {
+    background: linear-gradient(
+      180deg,
+      #f5f4eff5 0%,
+      #f5f4efe8 19%,
+      #f5f4efaa 30%,
+      #f5f4ef33 43%,
+      #f5f4ef00 57%,
+      #f5f4ef00 82%,
+      #f5f4efda 100%
+    );
+  }
+  .journey-copy {
+    left: 7%;
+    width: 86%;
+    max-width: none;
+  }
+  .journey-hero {
+    top: 16%;
+  }
+  .is-intro .journey-veil {
+    background: linear-gradient(
+      180deg,
+      #f5f4eff5 0%,
+      #f5f4efef 32%,
+      #f5f4ef00 55%,
+      #f5f4ef00 82%,
+      #f5f4efda 100%
+    );
+  }
+  .journey-hero h1 {
+    font-size: 26vw;
+    margin-left: -5px;
+  }
+  .journey-hero p {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-top: 20px;
+  }
+  .enter-workshop {
+    margin-top: 25px;
+    font-size: 11px;
+  }
+  .journey-chapter {
+    top: 17%;
+    transform: none;
+  }
+  .journey-chapter h2 {
+    font-size: 32px;
+    max-width: 340px;
+  }
+  .journey-topline {
+    top: 23px;
+    left: 7%;
+    right: 7%;
+  }
+  .journey-topline > a:first-child {
+    font-size: 26px;
+  }
+  .journey-topline > a:last-child {
+    font-size: 10px;
+  }
+  .journey-bottom {
+    left: 7%;
+    right: 7%;
+    bottom: 24px;
+    display: block;
+  }
+  .journey-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .journey-nav button {
+    font-size: 10px;
+    padding-top: 17px;
+    line-height: 1.3;
+  }
+  .motion-toggle {
+    position: absolute;
+    bottom: 61px;
+    right: 0;
+    width: 36px;
+    height: 36px;
+  }
+  .journey-progress {
+    height: 2px;
+  }
+  .demo-section {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 70px 7% 50px;
+  }
+  .demo-intro h2 {
+    font-size: 58px;
+  }
+  .demo-intro p {
+    font-size: 13px;
+    margin-top: 24px;
+    max-width: 330px;
+  }
+  .price strong {
+    font-size: 64px;
+  }
+  .demo-offer .button {
+    width: 100%;
+    max-width: 340px;
+  }
+  .faq-list summary {
+    font-size: 12px;
+  }
+  .faq-list details > p {
+    font-size: 11px;
+  }
+  footer {
+    padding: 27px 7%;
+  }
+  footer > span {
+    display: none;
+  }
+  footer > div {
+    gap: 17px;
+  }
+  .dialog-content {
+    padding: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .journey-nav {
+    gap: 8px;
+  }
+  .journey-nav button {
+    font-size: 8.5px;
+  }
+  .journey-chapter h2 {
+    font-size: 29px;
+    max-width: 290px;
+  }
+  .journey-hero p {
+    font-size: 19px;
+  }
+  .dialog-content {
+    padding: 28px 24px;
+  }
+  .dialog-content h2 {
+    font-size: 37px;
+  }
+  .dialog-price {
+    gap: 14px;
+  }
+  .dialog-price > span {
+    font-size: 8px;
+  }
+  .dialog-content > .checkout-disclosure {
+    font-size: 8px;
+  }
+}
+@media (max-height: 650px) {
+  .journey-hero {
+    top: 22%;
+  }
+  .journey-hero h1 {
+    font-size: clamp(70px, 14vw, 110px);
+  }
+  .journey-hero p {
+    margin-top: 18px;
+    font-size: 19px;
+  }
+  .enter-workshop {
+    margin-top: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .button:hover {
+    transform: none;
+  }
+}

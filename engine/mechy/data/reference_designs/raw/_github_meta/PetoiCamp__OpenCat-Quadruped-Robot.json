@@ -1,0 +1,97 @@
+{
+ "repo": "PetoiCamp/OpenCat-Quadruped-Robot",
+ "stars": 5493,
+ "forks": 647,
+ "pushed": "2026-09-08T04:50:11Z",
+ "spdx": "MIT",
+ "branch": "main",
+ "desc": "An open source quadruped robot pet framework for developing Boston Dynamics-style four-legged robots that are perfect for STEM, coding & robotics education, IoT robotics applications, AI-enhanced robotics application services, research, and DIY robotics kit development. ",
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2022 Rongzhong Li\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Sof",
+ "truncated": false,
+ "ext": {
+  ".h": 64,
+  ".ino": 38,
+  ".jpeg": 38,
+  ".bin": 36,
+  ".hex": 34,
+  ".cpp": 28,
+  ".md": 27,
+  ".py": 27,
+  ".txt": 7,
+  "": 5,
+  ".yml": 3,
+  ".json": 2,
+  ".bmp": 2,
+  ".png": 2,
+  ".stl": 2,
+  ".conf": 2,
+  ".exe": 2,
+  ".csv": 1,
+  ".bz2": 1,
+  ".urdf": 1,
+  ".xml": 1,
+  ".ico": 1,
+  ".dll": 1,
+  ".icns": 1,
+  ".log": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1069
+  ],
+  [
+   "ModuleTests/WebCoding8266/README.md",
+   15745
+  ],
+  [
+   "ModuleTests/testServo/ReadMe.txt",
+   187
+  ],
+  [
+   "OpenCatPythonAPI/ReadMe.txt",
+   638
+  ],
+  [
+   "OpenCatPythonAPI/demos/Readme.md",
+   224
+  ],
+  [
+   "README.md",
+   14881
+  ],
+  [
+   "Resources/NyBoard/boardManager/README.md",
+   2996
+  ],
+  [
+   "Resources/SimulationModels/bittle_simple.urdf",
+   11414
+  ],
+  [
+   "SkillLibrary/Readme.md",
+   1462
+  ],
+  [
+   "pyUI/README.md",
+   2282
+  ],
+  [
+   "serialMaster/README.md",
+   7839
+  ],
+  [
+   "src/Adafruit-PWM-Servo-Driver-Library/README.md",
+   948
+  ],
+  [
+   "src/Adafruit-PWM-Servo-Driver-Library/license.txt",
+   1499
+  ],
+  [
+   "src/MemoryFree/README.md",
+   272
+  ]
+ ]
+}

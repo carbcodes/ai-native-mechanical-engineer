@@ -1,0 +1,8 @@
+model,manufacturer,axes,accel_range_max_g,gyro_range_max_dps,gyro_noise_mdps_per_rtHz,accel_noise_ug_per_rtHz,max_odr_Hz,supply_min_V,supply_max_V,interface,sensor_fusion_onboard,notes,source_url,value_type,verification
+MPU-6050,TDK InvenSense,6,16,2000,5,400,8000,2.375,3.46,I2C 400 kHz,DMP (basic),not recommended for new designs; breakout boards add 5 V LDO,https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/,datasheet,recalled
+ICM-20948,TDK InvenSense,9,16,2000,15,230,9000,1.71,3.6,I2C 400 kHz; SPI 7 MHz,DMP,includes AK09916 magnetometer,https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/,datasheet,recalled
+ICM-42688-P,TDK InvenSense,6,16,2000,2.8,70,32000,1.71,3.6,I2C 1 MHz; SPI 24 MHz,none,low noise; common in flight controllers,https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/,datasheet,recalled
+BMI088,Bosch Sensortec,6,24,2000,14,175,2000,2.4,3.6,I2C; SPI,none,vibration robust; drone use,https://www.bosch-sensortec.com/products/motion-sensors/imus/bmi088/,datasheet,recalled
+LSM6DSOX,STMicroelectronics,6,16,2000,3.8,70,6667,1.71,3.6,I2C; SPI; I3C,machine-learning core (not full fusion),,https://www.st.com/en/mems-and-sensors/lsm6dsox.html,datasheet,recalled
+BNO055,Bosch Sensortec,9,16,2000,14,150,100,2.4,3.6,I2C; UART,full fusion (quaternion) at 100 Hz,I2C clock stretching issues on some MCUs,https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/,datasheet,recalled
+BNO085,CEVA / Hillcrest,9,8,2000,,,400,2.4,3.6,I2C; SPI; UART (SHTP),full fusion (rotation vector),preferred over BNO055 for heading stability,https://www.ceva-ip.com/product/bno-9-axis-imu/,datasheet,recalled

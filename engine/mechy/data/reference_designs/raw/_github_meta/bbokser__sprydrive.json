@@ -1,0 +1,33 @@
+{
+ "repo": "bbokser/sprydrive",
+ "stars": 40,
+ "forks": 3,
+ "pushed": "2021-04-21T18:21:11Z",
+ "spdx": "MIT",
+ "branch": "master",
+ "desc": "SpryDrive is an affordable actuator based on the quasi-direct drive (QDD) scheme. It is composed of a brushless outrunner motor, a low-cost metal gearbox, and a 3D-printed housing. Inspired by Gabrael Levine's OpenTorque actuator, but takes up less volume. The lower cost of the smaller bearing makes up for the added cost of the steel gears. Output Backlash: ~0.13 degree  Gear Ratio: 7:1  Motor: Herlea X8318S or Turnigy 9235",
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2020 Benjamin Bokser\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the ",
+ "truncated": false,
+ "ext": {
+  ".step": 2,
+  "": 1,
+  ".dxf": 1,
+  ".md": 1,
+  ".xlsx": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1072
+  ],
+  [
+   "README.md",
+   3839
+  ],
+  [
+   "SpryDrive BoM.xlsx",
+   32922
+  ]
+ ]
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["scikit-build-core>=0.8", "pybind11>=2.11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "mechy-core"
+version = "0.1.0"
+description = "Mechy core math: ball flight, 4-DOF arm IK, stepper-limited motion planning"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.scikit-build]
+minimum-version = "0.8"
+cmake.version = ">=3.18"
+wheel.packages = ["python/mechy_core"]
+build-dir = "build/{wheel_tag}"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

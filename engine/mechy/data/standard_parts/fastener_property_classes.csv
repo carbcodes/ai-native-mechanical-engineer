@@ -1,0 +1,13 @@
+property_class,tensile_strength_min_MPa,yield_strength_min_MPa,proof_stress_MPa,notes,source_url,value_type
+4.6,400,240,225,,https://www.iso.org/standard/60374.html,standard
+4.8,420,340,310,,https://www.iso.org/standard/60374.html,standard
+5.6,500,300,280,,https://www.iso.org/standard/60374.html,standard
+5.8,520,420,380,,https://www.iso.org/standard/60374.html,standard
+6.8,600,480,440,,https://www.iso.org/standard/60374.html,standard
+8.8,800,640,580,d<=16,https://www.iso.org/standard/60374.html,standard
+8.8,830,660,600,d>16,https://www.iso.org/standard/60374.html,standard
+9.8,900,720,650,d<=16,https://www.iso.org/standard/60374.html,standard
+10.9,1040,940,830,,https://www.iso.org/standard/60374.html,standard
+12.9,1220,1100,970,,https://www.iso.org/standard/60374.html,standard
+A2-70,700,450,,ISO 3506 stainless; proof ~ Rp0.2,https://www.iso.org/standard/72427.html,standard
+A4-80,800,600,,ISO 3506 stainless; proof ~ Rp0.2,https://www.iso.org/standard/72427.html,standard

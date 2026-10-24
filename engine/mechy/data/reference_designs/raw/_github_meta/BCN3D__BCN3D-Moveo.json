@@ -1,0 +1,38 @@
+{
+ "repo": "BCN3D/BCN3D-Moveo",
+ "stars": 2009,
+ "forks": 575,
+ "pushed": "2022-03-01T11:37:05Z",
+ "spdx": "MIT",
+ "branch": "master",
+ "desc": "Open Source 3D Printed Robotic Arm for educational purposes",
+ "license_path": "LICENSE",
+ "license_head": "The MIT License (MIT)\n\nCopyright (c) 2016 BCN3D Technologies\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial por",
+ "truncated": false,
+ "ext": {
+  ".sldprt": 87,
+  ".h": 50,
+  ".stl": 32,
+  ".sldasm": 23,
+  ".cpp": 21,
+  ".ini": 9,
+  "": 2,
+  ".pdf": 2,
+  ".ino": 2,
+  ".md": 1
+ },
+ "key_files": [
+  [
+   "BOM/BCN3D Moveo BOM.pdf",
+   75439
+  ],
+  [
+   "LICENSE",
+   1085
+  ],
+  [
+   "README.md",
+   3556
+  ]
+ ]
+}

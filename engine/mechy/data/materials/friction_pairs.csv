@@ -1,0 +1,58 @@
+id,material_a,material_b,condition,mu_static,mu_kinetic,notes,source_url,value_type
+steel_steel_dry,Mild steel,Mild steel,dry clean,0.74,0.57,Clean degreased surfaces; real assemblies usually lower,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+steel_steel_lub,Steel,Steel,lubricated (oil/grease),0.16,0.10,Boundary lubrication,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+hardsteel_hardsteel_dry,Hardened steel,Hardened steel,dry clean,0.78,0.42,,https://en.wikipedia.org/wiki/Friction,handbook_typical
+hardsteel_hardsteel_lub,Hardened steel,Hardened steel,lubricated,0.11,0.05,,https://en.wikipedia.org/wiki/Friction,handbook_typical
+thread_steel_lub,Steel bolt thread,Steel nut thread,lightly oiled,0.15,0.15,Use nut factor K~0.2 for torque T=K*F*d,https://en.wikipedia.org/wiki/Torque_wrench,handbook_typical
+thread_steel_dry,Steel bolt thread (zinc plated),Steel nut thread,dry,0.20,0.20,Nut factor K~0.2-0.3,https://en.wikipedia.org/wiki/Torque_wrench,estimate
+ss_ss_dry,Stainless steel,Stainless steel,dry,0.60,0.50,High galling risk; use dissimilar grades or anti-seize,https://en.wikipedia.org/wiki/Galling,estimate
+al_al_dry,Aluminium,Aluminium,dry clean,1.10,1.40,Severe galling,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+al_steel_dry,Aluminium,Mild steel,dry clean,0.61,0.47,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+brass_steel_dry,Brass,Steel,dry,0.51,0.44,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+bronze_steel_lub,Bronze,Steel,lubricated,0.16,0.07,Typical bushing,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+bronze_steel_dry,Bronze,Steel,dry,0.40,0.30,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,estimate
+copper_steel_dry,Copper,Mild steel,dry,0.53,0.36,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+copper_copper_dry,Copper,Copper,dry,1.00,0.80,,https://en.wikipedia.org/wiki/Friction,estimate
+ci_ci_dry,Cast iron,Cast iron,dry,1.10,0.15,Classic table value; kinetic low due to graphite,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+ci_steel_dry,Cast iron,Mild steel,dry,0.40,0.23,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+ti_ti_dry,Titanium,Titanium,dry,0.55,0.40,Severe galling,https://en.wikipedia.org/wiki/Galling,estimate
+babbitt_steel_lub,Babbitt,Steel,lubricated,0.10,0.05,Hydrodynamic film much lower (~0.001-0.005),https://en.wikipedia.org/wiki/Babbitt_(alloy),estimate
+ptfe_steel_dry,PTFE,Steel,dry,0.04,0.04,Lowest of solids; static ~ kinetic (no stick-slip),https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+ptfe_ptfe_dry,PTFE,PTFE,dry,0.04,0.04,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+pom_steel_dry,POM (acetal),Steel,dry,0.20,0.25,Kinetic rises with speed/PV,https://en.wikipedia.org/wiki/Polyoxymethylene,estimate
+pom_pom_dry,POM,POM,dry,0.30,0.35,Avoid self-mated POM gears without lube,https://en.wikipedia.org/wiki/Polyoxymethylene,estimate
+pom_ptfe_steel_dry,POM + PTFE,Steel,dry,0.10,0.12,,https://en.wikipedia.org/wiki/Polyoxymethylene,estimate
+nylon_steel_dry,Nylon PA6/PA66,Steel,dry,0.30,0.35,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,estimate
+nylon_steel_lub,Nylon,Steel,lubricated,0.12,0.10,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,estimate
+nylon_nylon_dry,Nylon,Nylon,dry,0.20,0.25,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,estimate
+uhmw_steel_dry,UHMW-PE,Steel,dry,0.20,0.15,Good for chain guides and slides,https://en.wikipedia.org/wiki/Ultra-high-molecular-weight_polyethylene,estimate
+hdpe_steel_dry,HDPE,Steel,dry,0.25,0.20,,https://en.wikipedia.org/wiki/High-density_polyethylene,estimate
+peek_steel_dry,PEEK,Steel,dry,0.40,0.35,Bearing grades (PTFE/graphite/CF) ~0.15-0.2,https://en.wikipedia.org/wiki/Polyether_ether_ketone,estimate
+pla_pla_dry,PLA (printed),PLA (printed),dry,0.35,0.30,Layer texture dependent; wears fast,https://en.wikipedia.org/wiki/Polylactic_acid,estimate
+pla_steel_dry,PLA (printed),Steel,dry,0.30,0.25,,https://en.wikipedia.org/wiki/Polylactic_acid,estimate
+petg_steel_dry,PETG (printed),Steel,dry,0.30,0.25,,https://en.wikipedia.org/wiki/Polyethylene_terephthalate,estimate
+pmma_pmma_dry,Acrylic,Acrylic,dry,0.80,0.50,,https://en.wikipedia.org/wiki/Poly(methyl_methacrylate),estimate
+abs_steel_dry,ABS,Steel,dry,0.40,0.35,,https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene,estimate
+glass_glass_dry,Glass,Glass,dry clean,0.94,0.40,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+glass_metal_dry,Glass,Metal,dry,0.60,0.50,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,estimate
+rubber_concrete_dry,Rubber,Concrete,dry,1.00,0.80,Tyre on dry road 0.7-0.9 kinetic,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+rubber_concrete_wet,Rubber,Concrete,wet,0.60,0.50,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+rubber_steel_dry,Rubber (NR/neoprene),Steel,dry,0.80,0.60,Drive rollers and feet; highly load/temperature dependent,https://en.wikipedia.org/wiki/Friction,estimate
+pu_steel_dry,Polyurethane 90A,Steel,dry,0.60,0.50,Wheel treads,https://en.wikipedia.org/wiki/Polyurethane,estimate
+silicone_glass_dry,Silicone rubber,Glass,dry,1.00,0.80,Grippers suction-cup type contact,https://en.wikipedia.org/wiki/Silicone_rubber,estimate
+belt_rubber_ci,Rubber V-belt,Cast iron/steel pulley,dry,0.35,0.30,Use effective mu/sin(beta/2) for V grooves,https://en.wikipedia.org/wiki/Belt_(mechanical),estimate
+belt_leather_ci,Leather flat belt,Cast iron pulley,dry,0.40,0.30,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,estimate
+brakepad_ci,Organic brake pad,Cast iron disc,dry,0.45,0.40,Kinetic 0.35-0.45 typical,https://en.wikipedia.org/wiki/Brake_pad,estimate
+wood_wood_dry,Wood,Wood,dry clean,0.40,0.30,Range 0.25-0.5,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+wood_metal_dry,Wood,Metal,dry,0.40,0.30,Range 0.2-0.6,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+leather_metal_dry,Leather,Metal,dry clean,0.40,0.30,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,estimate
+ice_steel,Steel,Ice,wet near 0C,0.03,0.01,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+ice_ice,Ice,Ice,near 0C,0.10,0.03,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+graphite_steel_dry,Graphite,Steel,dry,0.10,0.10,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+diamond_diamond_dry,Diamond,Diamond,dry,0.10,0.10,,https://www.engineeringtoolbox.com/friction-coefficients-d_778.html,handbook_typical
+ceramic_steel_dry,Alumina/silicon nitride,Steel,dry,0.50,0.40,,https://en.wikipedia.org/wiki/Friction,estimate
+sintered_bronze_steel,Oil impregnated sintered bronze,Steel,self lubricated,0.12,0.08,,https://en.wikipedia.org/wiki/Oilite,estimate
+iglide_steel,igus iglidur (typical grades),Steel,dry,0.15,0.12,Grade dependent 0.06-0.25,https://www.igus.com/,estimate
+du_steel,PTFE lined steel-backed bushing (DU type),Steel,dry,0.10,0.08,Range 0.02-0.25 depending on PV,https://www.ggbearings.com/,estimate
+linear_ball,Recirculating ball linear guide,Hardened steel rail,lubricated,0.005,0.003,Rolling; excludes seal drag,https://en.wikipedia.org/wiki/Linear-motion_bearing,estimate
+ball_bearing_rolling,Deep groove ball bearing (rolling),Steel races,lubricated,0.0015,0.0015,Equivalent mu at bore for friction torque M=mu*F*d/2,https://en.wikipedia.org/wiki/Ball_bearing,handbook_typical

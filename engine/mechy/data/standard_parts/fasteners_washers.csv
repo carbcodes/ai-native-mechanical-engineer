@@ -1,0 +1,21 @@
+thread,type,inner_dia_d1_mm,outer_dia_d2_mm,thickness_h_mm,source_url,value_type
+M2,ISO 7089 normal,2.2,5,0.3,https://www.iso.org/standard/38893.html,standard
+M2.5,ISO 7089 normal,2.7,6,0.5,https://www.iso.org/standard/38893.html,standard
+M3,ISO 7089 normal,3.2,7,0.5,https://www.iso.org/standard/38893.html,standard
+M4,ISO 7089 normal,4.3,9,0.8,https://www.iso.org/standard/38893.html,standard
+M5,ISO 7089 normal,5.3,10,1.0,https://www.iso.org/standard/38893.html,standard
+M6,ISO 7089 normal,6.4,12,1.6,https://www.iso.org/standard/38893.html,standard
+M8,ISO 7089 normal,8.4,16,1.6,https://www.iso.org/standard/38893.html,standard
+M10,ISO 7089 normal,10.5,20,2.0,https://www.iso.org/standard/38893.html,standard
+M12,ISO 7089 normal,13.0,24,2.5,https://www.iso.org/standard/38893.html,standard
+M16,ISO 7089 normal,17.0,30,3.0,https://www.iso.org/standard/38893.html,standard
+M20,ISO 7089 normal,21.0,37,3.0,https://www.iso.org/standard/38893.html,standard
+M24,ISO 7089 normal,25.0,44,4.0,https://www.iso.org/standard/38893.html,standard
+M3,ISO 7093 large,3.2,9,0.8,https://www.iso.org/standard/38895.html,standard
+M4,ISO 7093 large,4.3,12,1.0,https://www.iso.org/standard/38895.html,standard
+M5,ISO 7093 large,5.3,15,1.2,https://www.iso.org/standard/38895.html,standard
+M6,ISO 7093 large,6.4,18,1.6,https://www.iso.org/standard/38895.html,standard
+M8,ISO 7093 large,8.4,24,2.0,https://www.iso.org/standard/38895.html,standard
+M10,ISO 7093 large,10.5,30,2.5,https://www.iso.org/standard/38895.html,standard
+M12,ISO 7093 large,13.0,37,3.0,https://www.iso.org/standard/38895.html,standard
+M16,ISO 7093 large,17.0,50,3.0,https://www.iso.org/standard/38895.html,standard

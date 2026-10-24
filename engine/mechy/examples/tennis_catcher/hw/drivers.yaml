@@ -1,0 +1,17 @@
+drivers:
+  - id: a4988
+    count: 4
+    max_current_a: 2.0
+    heatsinks: true
+    microsteps: 4                 # 4 usteps: 800 steps/rev, so the 4000 Hz cap allows 5 rev/s per motor
+    max_step_rate_hz: 4000        # per motor; Arduino Uno stepping 4 drivers (assumed)
+controller: arduino-uno           # Arduino Uno, programmed via Arduino IDE / PlatformIO
+shield: cnc-shield-v3             # Protoneer-style CNC Shield V3 expansion board
+power_supply:
+  voltage_v: 24
+  current_a: 6
+  connector: barrel jack / screw-terminal adapter
+bulk_capacitor:
+  capacitance_uf: 100
+  voltage_v: 50
+  type: electrolytic              # across the shield's motor power input, observe polarity

@@ -1,0 +1,137 @@
+{
+ "repo": "mit-biomimetics/Cheetah-Software",
+ "stars": 3326,
+ "forks": 1049,
+ "pushed": "2023-10-18T20:00:24Z",
+ "spdx": "MIT",
+ "branch": "master",
+ "desc": null,
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2019 MIT Biomimetic Robotics Lab\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial port",
+ "truncated": false,
+ "ext": {
+  ".h": 298,
+  ".cpp": 191,
+  ".c": 85,
+  ".lcm": 67,
+  ".txt": 57,
+  ".hpp": 52,
+  ".rst": 40,
+  ".py": 32,
+  "": 31,
+  ".sh": 22,
+  ".md": 14,
+  ".ipp": 11,
+  ".yaml": 10,
+  ".dat": 10,
+  ".cmake": 9,
+  ".obj": 9,
+  ".m": 8,
+  ".in": 5,
+  ".mk": 5,
+  ".yml": 4,
+  ".jl": 4,
+  ".ui": 3,
+  ".cmd": 3,
+  ".cc": 2,
+  ".hh": 2
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1084
+  ],
+  [
+   "README.md",
+   2990
+  ],
+  [
+   "documentation/doxygen/README.md",
+   182
+  ],
+  [
+   "lcm-types/old_types/README.md",
+   22
+  ],
+  [
+   "scripts/lcm-log2smat/LICENSE",
+   7639
+  ],
+  [
+   "scripts/lcm-log2smat/README.md",
+   3335
+  ],
+  [
+   "third-party/Goldfarb_Optimizer/LICENSE.txt",
+   1077
+  ],
+  [
+   "third-party/JCQP/LICENSE.txt",
+   1066
+  ],
+  [
+   "third-party/JCQP/amd/LICENSE",
+   1924
+  ],
+  [
+   "third-party/ParamHandler/LICENSE.txt",
+   1061
+  ],
+  [
+   "third-party/ParamHandler/README.md",
+   2855
+  ],
+  [
+   "third-party/inih/LICENSE.txt",
+   1542
+  ],
+  [
+   "third-party/osqp/LICENSE",
+   11391
+  ],
+  [
+   "third-party/osqp/README.md",
+   2206
+  ],
+  [
+   "third-party/osqp/lin_sys/direct/qdldl/amd/LICENSE",
+   1924
+  ],
+  [
+   "third-party/osqp/lin_sys/direct/qdldl/qdldl_sources/LICENSE",
+   11357
+  ],
+  [
+   "third-party/osqp/lin_sys/direct/qdldl/qdldl_sources/README.md",
+   4856
+  ],
+  [
+   "third-party/osqp/lin_sys/direct/qdldl/qdldl_sources/julia/README.md",
+   187
+  ],
+  [
+   "third-party/osqp/tests/README.md",
+   112
+  ],
+  [
+   "third-party/qpOASES/LICENSE",
+   26435
+  ],
+  [
+   "third-party/qpOASES/LICENSE.txt",
+   26938
+  ],
+  [
+   "third-party/qpOASES/README",
+   2897
+  ],
+  [
+   "third-party/qpOASES/README.txt",
+   2981
+  ],
+  [
+   "third-party/vectornav/LICENSE.txt",
+   1155
+  ]
+ ]
+}

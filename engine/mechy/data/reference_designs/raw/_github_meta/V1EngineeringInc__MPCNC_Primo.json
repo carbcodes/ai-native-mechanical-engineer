@@ -1,0 +1,32 @@
+{
+ "repo": "V1EngineeringInc/MPCNC_Primo",
+ "stars": 184,
+ "forks": 47,
+ "pushed": "2022-02-21T17:44:26Z",
+ "spdx": null,
+ "branch": "master",
+ "desc": null,
+ "truncated": false,
+ "ext": {
+  ".stl": 75,
+  ".md": 4
+ },
+ "key_files": [
+  [
+   "23.5mm - C STLs/README.md",
+   1164
+  ],
+  [
+   "25.4mm - J STLs/README.md",
+   1164
+  ],
+  [
+   "25mm - F STLs/README.md",
+   1164
+  ],
+  [
+   "README.md",
+   5327
+  ]
+ ]
+}

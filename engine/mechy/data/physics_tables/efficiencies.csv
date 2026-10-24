@@ -1,0 +1,35 @@
+component,eta_min,eta_typical,eta_max,per,notes,source_url,value_type
+spur gear mesh (steel; lubricated),0.97,0.98,0.99,mesh,Precision ground can reach 0.995,https://www.khkgears.net/new/gear_knowledge/gear_technical_reference/,handbook_typical
+helical gear mesh,0.97,0.98,0.99,mesh,,https://www.khkgears.net/new/gear_knowledge/gear_technical_reference/,handbook_typical
+bevel gear mesh,0.95,0.97,0.98,mesh,,https://www.khkgears.net/new/gear_knowledge/gear_technical_reference/,handbook_typical
+plastic spur gear mesh (POM/nylon; dry),0.85,0.92,0.96,mesh,Hobby/printed gears lower; FDM gears ~0.8-0.9,https://www.khkgears.net/new/gear_knowledge/gear_technical_reference/,estimate
+worm gear (single start; high ratio),0.30,0.50,0.70,stage,Often self-locking below ~0.5,https://www.khkgears.net/new/gear_knowledge/gear_technical_reference/,handbook_typical
+worm gear (multi-start; low ratio),0.70,0.85,0.92,stage,,https://www.khkgears.net/new/gear_knowledge/gear_technical_reference/,handbook_typical
+planetary gearbox stage (industrial),0.95,0.97,0.98,stage,Multiply per stage,https://www.apexdyna.com/,datasheet
+hobby metal planetary gearmotor,0.60,0.75,0.85,gearbox,Small DC gearmotors; drops at low load,https://www.pololu.com/category/60/micro-metal-gearmotors,estimate
+hobby plastic spur gearbox (e.g. TT motor/servo),0.40,0.60,0.75,gearbox,Multi-stage; high friction,https://www.pololu.com/,estimate
+strain wave (harmonic) gear,0.60,0.75,0.85,gearbox,Strong dependence on speed/temperature/load,https://www.harmonicdrive.net/,datasheet
+cycloidal reducer,0.80,0.87,0.93,gearbox,,https://www.nabtesco.com/,datasheet
+rack and pinion,0.90,0.94,0.97,mesh,,https://www.khkgears.net/new/gear_knowledge/gear_technical_reference/,handbook_typical
+timing (synchronous) belt,0.95,0.97,0.98,drive,GT2/HTD; tension dependent,https://www.gates.com/,datasheet
+V-belt,0.90,0.94,0.96,drive,,https://www.gates.com/,datasheet
+flat belt,0.95,0.97,0.98,drive,,https://en.wikipedia.org/wiki/Belt_(mechanical),handbook_typical
+roller chain,0.94,0.97,0.98,drive,Lubricated,https://en.wikipedia.org/wiki/Roller_chain,handbook_typical
+capstan/cable drive,0.93,0.96,0.98,drive,Steel cable on drum,https://en.wikipedia.org/wiki/Capstan_(nautical),estimate
+ball screw,0.85,0.90,0.95,drive,Back-drivable,https://www.thk.com/,datasheet
+lead screw (trapezoidal/ACME; bronze nut),0.20,0.35,0.50,drive,Lead-angle dependent: eta = tan(lambda)/tan(lambda+phi); often self-locking,https://www.thomsonlinear.com/,handbook_typical
+lead screw (polymer/PTFE nut; high lead),0.40,0.60,0.80,drive,e.g. T8x8 3D printer screws,https://www.igus.com/,datasheet
+linear rail/carriage (recirculating ball),0.95,0.98,0.99,drive,Friction coef ~0.002-0.005,https://www.thk.com/,datasheet
+plain linear bushing (polymer on steel),0.70,0.85,0.95,drive,Friction coef ~0.1-0.25,https://www.igus.com/,estimate
+deep groove ball bearing,0.998,0.999,0.9995,bearing,Friction coef mu ~0.0015 (SKF),https://www.skf.com/group/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/friction,datasheet
+angular contact ball bearing,0.997,0.998,0.999,bearing,mu ~0.0020,https://www.skf.com/group/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/friction,datasheet
+cylindrical roller bearing,0.998,0.999,0.9995,bearing,mu ~0.0011,https://www.skf.com/group/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/friction,datasheet
+tapered roller bearing,0.997,0.998,0.999,bearing,mu ~0.0018,https://www.skf.com/group/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/friction,datasheet
+plain journal bearing (lubricated bronze),0.95,0.97,0.98,bearing,mu ~0.05-0.1 boundary lubrication,https://en.wikipedia.org/wiki/Plain_bearing,handbook_typical
+brushless DC motor (hobby/industrial),0.75,0.85,0.93,motor,At rated point; lower at low speed/high torque,https://www.maxongroup.com/,datasheet
+brushed DC motor (small coreless),0.70,0.80,0.90,motor,maxon/Faulhaber class,https://www.maxongroup.com/,datasheet
+brushed DC motor (cheap iron-core hobby),0.30,0.50,0.65,motor,e.g. 130/TT motors,https://www.pololu.com/,estimate
+stepper motor (hybrid; NEMA 17),0.30,0.50,0.70,motor,Mechanical out / electrical in; varies with speed,https://www.orientalmotor.com/,estimate
+hobby RC servo (overall),0.20,0.35,0.50,actuator,Motor + gear train,https://www.pololu.com/,estimate
+pneumatic cylinder (mechanical),0.80,0.90,0.95,actuator,Seal friction; excludes compressor losses,https://www.festo.com/,handbook_typical
+hydraulic cylinder (mechanical),0.85,0.92,0.97,actuator,,https://en.wikipedia.org/wiki/Hydraulic_cylinder,handbook_typical

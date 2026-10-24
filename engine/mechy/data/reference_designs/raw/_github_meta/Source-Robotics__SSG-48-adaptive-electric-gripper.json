@@ -1,0 +1,62 @@
+{
+ "repo": "Source-Robotics/SSG-48-adaptive-electric-gripper",
+ "stars": 184,
+ "forks": 26,
+ "pushed": "2026-09-27T10:28:36Z",
+ "spdx": "Apache-2.0",
+ "branch": "main",
+ "desc": "SSG-48 adaptive electric gripper -- Open Source gripper with force feedback",
+ "license_path": "LICENSE",
+ "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n     ",
+ "truncated": false,
+ "ext": {
+  ".stl": 43,
+  ".step": 20,
+  ".png": 10,
+  ".md": 7,
+  ".xml": 5,
+  ".pdf": 3,
+  ".launch": 2,
+  ".yml": 1,
+  "": 1,
+  ".txt": 1,
+  ".yaml": 1,
+  ".log": 1,
+  ".csv": 1,
+  ".urdf": 1
+ },
+ "key_files": [
+  [
+   "BOM/BOM.md",
+   3545
+  ],
+  [
+   "BOM/BOM_PDF_legacy.pdf",
+   581980
+  ],
+  [
+   "LICENSE",
+   11357
+  ],
+  [
+   "README.md",
+   7042
+  ],
+  [
+   "SSG48_gripper_description/URDF/ssg48_gripper/urdf/par6_ssg48_urdf.urdf",
+   4271
+  ],
+  [
+   "SSG48_gripper_description/assets/scene.xml",
+   862
+  ],
+  [
+   "SSG48_gripper_description/readme.md",
+   1812
+  ],
+  [
+   "SSG48_gripper_description/scene.xml",
+   874
+  ]
+ ]
+}

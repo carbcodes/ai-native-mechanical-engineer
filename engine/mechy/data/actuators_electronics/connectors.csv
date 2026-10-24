@@ -1,0 +1,23 @@
+connector,manufacturer,pitch_mm,current_per_contact_A,burst_current_A,voltage_rating_V,wire_awg_min,wire_awg_max,mating_cycles,typical_use,notes,source_url,value_type,verification
+JST SH,JST,1.0,1.0,,50,32,28,50,sensor/I2C (Qwiic/STEMMA QT),,https://www.jst-mfg.com/product/index.php?series=231,datasheet,recalled
+JST GH,JST,1.25,1.0,,50,30,26,50,Pixhawk/drone peripherals; latching,,https://www.jst-mfg.com/product/index.php?series=105,datasheet,recalled
+JST PH,JST,2.0,2.0,,100,32,24,30,small LiPo; sensors,,https://www.jst-mfg.com/product/index.php?series=199,datasheet,recalled
+JST XH,JST,2.5,3.0,,250,30,22,30,stepper motors (3D printers); balance leads,,https://www.jst-mfg.com/product/index.php?series=277,datasheet,recalled
+JST VH,JST,3.96,10.0,,250,22,16,30,power to boards,,https://www.jst-mfg.com/product/index.php?series=241,datasheet,recalled
+Dupont 2.54 header housing,generic,2.54,3.0,,250,28,22,50,prototyping jumpers,crimp quality varies; derate to ~1 A for clone terminals,https://en.wikipedia.org/wiki/Pin_header,handbook_typical,recalled
+Molex KK 254,Molex,2.54,4.0,,250,30,22,25,board-to-wire signal/fans,,https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/kk-connectors,datasheet,recalled
+Molex Micro-Fit 3.0,Molex,3.0,8.5,,600,30,18,30,ATX/PCIe power; motor power,8.5 A with 18 AWG for 2-circuit; derates with circuit count,https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/micro-fit-connectors,datasheet,recalled
+Molex Mini-Fit Jr,Molex,4.2,9.0,,600,24,16,30,ATX/PSU power,13 A with HCS terminals,https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/mini-fit-connectors,datasheet,recalled
+Phoenix MC 1.5 (3.81 mm pluggable),Phoenix Contact,3.81,8.0,,160,28,16,25,pluggable terminal blocks,,https://www.phoenixcontact.com,datasheet,recalled
+Screw terminal 5.08 mm,generic,5.08,10.0,,300,24,12,,PCB power input,,https://www.phoenixcontact.com,handbook_typical,recalled
+WAGO 221 lever connector,WAGO,,32,,450,24,10,,splices (0.2-4 mm2),20 A in UL rating,https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-412,datasheet,recalled
+XT30,Amass,,15,30,500,16,14,1000,small LiPo/ESC power,,https://www.amass.com.cn,datasheet,recalled
+XT60,Amass,,30,60,500,14,12,1000,LiPo/ESC/robot power,,https://www.amass.com.cn,datasheet,recalled
+XT90,Amass,,40,90,500,10,8,1000,large packs,anti-spark XT90-S variant,https://www.amass.com.cn,datasheet,recalled
+MR30 (3-pin),Amass,,15,30,500,18,14,1000,motor phase leads,,https://www.amass.com.cn,datasheet,recalled
+Anderson Powerpole PP15/30/45,Anderson Power,,45,,600,20,10,1000,DC distribution (15/30/45 A contacts),rating is for 45 A contact with 10-14 AWG,https://www.andersonpower.com/us/en/products/powerpole/pp15-45.html,datasheet,recalled
+DC barrel 5.5x2.1 mm,generic,,5.0,,24,,,5000,wall adapters,many jacks rated only 2-3 A,https://en.wikipedia.org/wiki/Coaxial_power_connector,handbook_typical,recalled
+USB-C (power),USB-IF,0.5,5.0,,48,,,10000,USB PD power,3 A default; 5 A only with e-marked cable; 48 V only EPR,https://www.usb.org/usb-charger-pd,standard,recalled
+M8 4-pin (A-coded),various (IEC 61076-2-104),,4.0,,30,,,100,industrial sensors,,https://www.iec.ch,standard,recalled
+M12 4/5-pin (A-coded),various (IEC 61076-2-101),,4.0,,250,,,100,industrial sensors/actuators,,https://www.iec.ch,standard,recalled
+GX16 aviation,generic,,5.0,,125,22,16,500,DIY motor/sensor cables,not rated to spec; never hot-plug stepper motors,https://www.aliexpress.com,estimate,recalled

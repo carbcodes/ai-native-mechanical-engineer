@@ -1,0 +1,15 @@
+designation,type,outer_dia_mm,length_mm,bore_min_mm,bore_max_mm,rated_torque_Nm,max_parallel_misalign_mm,max_angular_misalign_deg,notes,source_url,value_type
+L035,jaw (NBR spider),16.0,,,9.5,0.4,,,"Lovejoy L-type; parallel misalign ~0.38 mm, angular 1 deg",https://cad.timken.com/item/standard-jaw-couplings-l-type/l-type-solid-hubs/68514410218 (Lovejoy L-type),datasheet
+L050,jaw (NBR spider),27.4,,,15.9,2.97,,,"Lovejoy L-type; parallel misalign ~0.38 mm, angular 1 deg",https://cad.timken.com/item/standard-jaw-couplings-l-type/l-type-solid-hubs/68514410218 (Lovejoy L-type),datasheet
+L070,jaw (NBR spider),35.0,,,19.0,4.88,,,"Lovejoy L-type; parallel misalign ~0.38 mm, angular 1 deg",https://cad.timken.com/item/standard-jaw-couplings-l-type/l-type-solid-hubs/68514410218 (Lovejoy L-type),handbook_typical
+L075,jaw (NBR spider),44.5,,,22.2,10.17,,,"Lovejoy L-type; parallel misalign ~0.38 mm, angular 1 deg",https://cad.timken.com/item/standard-jaw-couplings-l-type/l-type-solid-hubs/68514410218 (Lovejoy L-type),handbook_typical
+L090,jaw (NBR spider),53.6,,,25.4,16.27,,,"Lovejoy L-type; parallel misalign ~0.38 mm, angular 1 deg",https://cad.timken.com/item/standard-jaw-couplings-l-type/l-type-solid-hubs/68514410218 (Lovejoy L-type),handbook_typical
+L095,jaw (NBR spider),53.6,,,28.6,21.92,,,"Lovejoy L-type; parallel misalign ~0.38 mm, angular 1 deg",https://cad.timken.com/item/standard-jaw-couplings-l-type/l-type-solid-hubs/68514410218 (Lovejoy L-type),handbook_typical
+L100,jaw (NBR spider),64.3,,,34.9,46.78,,,"Lovejoy L-type; parallel misalign ~0.38 mm, angular 1 deg",https://cad.timken.com/item/standard-jaw-couplings-l-type/l-type-solid-hubs/68514410218 (Lovejoy L-type),handbook_typical
+D19L25 helical,aluminium helical beam,19,25,3,10,1.0,0.25,5,common hobby/CNC sizes; torque rough,Typical AliExpress/Misumi hobby coupling listings (estimate),estimate
+D20L25 jaw,aluminium jaw/plum (TPU spider),20,25,3,10,1.2,0.2,1,common hobby/CNC sizes; torque rough,Typical AliExpress/Misumi hobby coupling listings (estimate),estimate
+D25L30 jaw,aluminium jaw/plum (TPU spider),25,30,4,14,2.5,0.2,1,common hobby/CNC sizes; torque rough,Typical AliExpress/Misumi hobby coupling listings (estimate),estimate
+D25L30 oldham,aluminium oldham (POM disc),25,30,4,14,2.0,1.0,3,common hobby/CNC sizes; torque rough,Typical AliExpress/Misumi hobby coupling listings (estimate),estimate
+D14L25 rigid,aluminium rigid clamp,14,25,3,8,1.5,0.0,0,common hobby/CNC sizes; torque rough,Typical AliExpress/Misumi hobby coupling listings (estimate),estimate
+D20L25 bellows,aluminium bellows,20,25,4,10,1.0,0.15,2,common hobby/CNC sizes; torque rough,Typical AliExpress/Misumi hobby coupling listings (estimate),estimate
+D16L23 bellows,stainless bellows,16,23,3,8,0.6,0.1,1.5,common hobby/CNC sizes; torque rough,Typical AliExpress/Misumi hobby coupling listings (estimate),estimate

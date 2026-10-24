@@ -1,0 +1,54 @@
+{
+ "repo": "grablab/openhand-hardware",
+ "stars": 242,
+ "forks": 115,
+ "pushed": "2025-03-25T20:36:58Z",
+ "spdx": "NOASSERTION",
+ "branch": "master",
+ "desc": "CAD files for the OpenHand hand designs",
+ "license_path": "LICENSE.md",
+ "license_head": "This work is licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.\n\nLicense summary:\n\nYou are free:\n-- to Share - to copy and redistribute the material in any medium or format\n-- to Adapt - to remix, transform, and build upon the material\n\nUnder the following conditions:\n-- Attribution - You must give appropriate credit, provide a link to the license, and indicate if changes ",
+ "truncated": false,
+ "ext": {
+  ".stl": 359,
+  ".sldprt": 291,
+  ".step": 95,
+  ".sldasm": 66,
+  ".easm": 13,
+  ".igs": 8,
+  ".py": 7,
+  ".md": 5,
+  ".pdf": 4,
+  "": 2,
+  ".txt": 2,
+  ".m": 2,
+  ".rpt": 2,
+  ".jpg": 1,
+  ".par": 1,
+  ".p": 1,
+  ".pyc": 1,
+  ".dxf": 1
+ },
+ "key_files": [
+  [
+   "LICENSE.md",
+   2034
+  ],
+  [
+   "README.md",
+   6392
+  ],
+  [
+   "sphinx hand/Solidworks Files/Dynamixel XL-430/readme.md",
+   1
+  ],
+  [
+   "sphinx hand/Solidworks Files/README.md",
+   26
+  ],
+  [
+   "sphinx hand/code/README.md",
+   29
+  ]
+ ]
+}

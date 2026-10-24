@@ -1,0 +1,21 @@
+model,manufacturer,category,kv_rpm_per_V,kt_Nm_per_A,resistance_ohm,resistance_basis,pole_config,outer_diameter_mm,height_mm,mass_kg,peak_current_A,max_voltage_V,peak_torque_Nm,notes,source_url,value_type,verification
+iPower GBM4108H-120T,iPower,gimbal,,,11.4,phase (as listed),12N14P,45,25,0.098,,,,SimpleFOC table; hollow shaft; good for low-speed FOC with 12 V,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+BGM4108-130HS,generic,gimbal,,,17,phase (as listed),24N22P,46,25,0.093,,,,SimpleFOC table,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+2208 90KV gimbal,generic,gimbal,90,0.092,14.5,phase (as listed; 13-16),12N14P,29,25,0.039,,,,Kt from 8.27/Kv,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+GBM5108-120T,iPower,gimbal,,,12.6,phase (as listed),24N22P,60,24,0.175,,,,SimpleFOC table,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+GBM8017-120T,iPower,gimbal,,,14.7,phase (as listed),24N22P,90,13,0.318,,,,SimpleFOC table,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+iPower GM3506,iPower,gimbal,,,5.6,phase,12N14P,40,17,0.070,1.5,,,popular SimpleFOC/AS5048 combo; values recalled,https://shop.iflight.com,estimate,recalled
+iPower GM2804H-100T,iPower,gimbal,,,10.0,phase,12N14P,34,17,0.040,1.0,,,hollow shaft; values recalled,https://shop.iflight.com,estimate,recalled
+N2830 1000KV,generic,drone outrunner,1000,0.0083,0.104,as listed,,28,28,,20,11.1,,SimpleFOC table,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+C2216 880KV,generic,drone outrunner,880,0.0094,0.108,as listed,,28,34,,22,18,,SimpleFOC table,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+GARTT ML4114 330KV,GARTT,drone outrunner,330,0.025,0.1082,as listed,,40,20,,25,36,,SimpleFOC table,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+MAD 5008 240KV,MAD Components,drone outrunner,240,0.034,0.08,as listed,,56,25,,22,36,,SimpleFOC table,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+WJN JK42BL,WJN-Motor,inrunner servo BLDC,,,0.8,as listed,,42,61,,15,24,,SimpleFOC table,https://docs.simplefoc.com/bldc_motors,datasheet,fetched
+mjbots mj5208,mjbots,robot outrunner,330,0.025,,,,63,25,0.193,,,1.7,peak power 600 W; max 7500 rpm; mass with leads,https://mjbots.com/products/mj5208,datasheet,fetched
+T-Motor MN5212 KV340,T-Motor,drone outrunner,340,0.024,0.069,as listed (unverified),,59,32,0.205,60,33.6,,4-8S; max power 1440 W; R and mass unverified,https://www.ligpower.com/jp/product/mn5212-kv340-motor-navigator-type.html,datasheet,fetched
+T-Motor MN4006 KV380,T-Motor,drone outrunner,380,0.022,0.25,line-line,24N22P,44,22,0.066,15,25.2,,values recalled,https://store.tmotor.com,estimate,recalled
+T-Motor U8 Lite KV150,T-Motor,drone outrunner (used in legged robots),150,0.055,0.09,line-line,36N42P,87,30,0.240,40,50.4,,values recalled,https://store.tmotor.com,estimate,recalled
+ODrive D6374 150KV,ODrive Robotics,robot outrunner,150,0.055,0.039,phase,,63,74,0.890,70,48,3.86,values recalled from ODrive shop,https://odriverobotics.com/shop,datasheet,recalled
+ODrive D5065 270KV,ODrive Robotics,robot outrunner,270,0.031,0.039,phase,,50,65,0.420,65,48,1.99,values recalled from ODrive shop,https://odriverobotics.com/shop,datasheet,recalled
+Eaglepower LA8308 KV90,Eaglepower,large outrunner,90,0.092,0.17,line-line,36N40P,87,33,0.300,30,48,,common in DIY legged robots; values recalled,https://www.aliexpress.com,estimate,recalled
+MAD M6C12 KV150,MAD Components,robot outrunner,150,0.055,0.12,line-line,,73,30,0.195,35,50,,values recalled,https://www.madcomponents.com,estimate,recalled

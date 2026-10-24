@@ -1,0 +1,15 @@
+motors:
+  - id: nema17
+    model: 42SHDC3026-15B         # NEMA 17 bipolar, 4-wire (user's motors)
+    count: 4
+    rated_current_a: 0.9          # per phase, from the user
+    holding_torque_nm: 0.30       # assumed: no datasheet found for this model; confirm
+    rotor_inertia_kgm2: 5.4e-6    # assumed (typical 42 mm NEMA 17)
+    max_speed_rps: 10             # usable speed with A4988 at 24 V, approximate
+    step_angle_deg: 1.8
+    leads: 4
+    torque_curve:                 # [rev/s, N*m] pull-out torque, approximate (scaled to 0.30 N*m holding)
+      - [0, 0.30]
+      - [2, 0.27]
+      - [5, 0.19]
+      - [10, 0.08]

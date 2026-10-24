@@ -1,0 +1,12 @@
+mode,fluid,h_W_m2K_min,h_W_m2K_typical,h_W_m2K_max,notes,source_url,value_type
+free convection,gas (air),2,7,25,Incropera Table 1.1; vertical plate in still air ~5-10,https://en.wikipedia.org/wiki/Heat_transfer_coefficient,handbook_typical
+free convection,liquid (water),50,300,1000,,https://en.wikipedia.org/wiki/Heat_transfer_coefficient,handbook_typical
+forced convection,gas (air),25,75,250,Fan-cooled surfaces; ~1-10 m/s,https://en.wikipedia.org/wiki/Heat_transfer_coefficient,handbook_typical
+forced convection,liquid (water),100,3000,20000,,https://en.wikipedia.org/wiki/Heat_transfer_coefficient,handbook_typical
+forced convection,liquid (oil),50,300,1500,,https://en.wikipedia.org/wiki/Heat_transfer_coefficient,estimate
+boiling,water,2500,10000,100000,,https://en.wikipedia.org/wiki/Heat_transfer_coefficient,handbook_typical
+condensation,water vapour,5000,10000,100000,,https://en.wikipedia.org/wiki/Heat_transfer_coefficient,handbook_typical
+radiation (linearised; emissivity 0.9),surroundings at ~300 K,5,6,8,h_rad ~ 4*eps*sigma*T^3 ~ 5.5 at 300 K; add to free convection,https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law,handbook_typical
+electronics enclosure (sealed; still air),air,3,5,8,Effective outside surface h for small boxes,https://en.wikipedia.org/wiki/Heat_transfer_coefficient,estimate
+finned heatsink (natural convection; per base area),air,5,10,20,Use datasheet thermal resistance when available,https://en.wikipedia.org/wiki/Heat_sink,estimate
+finned heatsink (fan forced; per fin area),air,20,50,150,,https://en.wikipedia.org/wiki/Heat_sink,estimate

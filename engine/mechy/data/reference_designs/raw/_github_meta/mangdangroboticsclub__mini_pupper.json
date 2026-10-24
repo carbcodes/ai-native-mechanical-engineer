@@ -1,0 +1,33 @@
+{
+ "repo": "mangdangroboticsclub/mini_pupper",
+ "stars": 1171,
+ "forks": 196,
+ "pushed": "2026-10-23T09:44:27Z",
+ "spdx": "Apache-2.0",
+ "branch": "main",
+ "desc": "Open-source physical AI platform bridging ROS and RL \u2014 from learning to earning.",
+ "license_path": "LICENSE",
+ "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n     ",
+ "truncated": false,
+ "ext": {
+  ".md": 4,
+  ".gif": 4,
+  ".jpg": 3,
+  "": 1,
+  ".jpeg": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   11357
+  ],
+  [
+   "README.md",
+   5387
+  ],
+  [
+   "docs/acurator/MD-300-150/README.md",
+   102292
+  ]
+ ]
+}

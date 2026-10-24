@@ -1,0 +1,25 @@
+{
+ "repo": "HasslerEngineering/3D-Printed-Strain-Wave-Gear",
+ "stars": 11,
+ "forks": 5,
+ "pushed": "2018-09-13T21:52:09Z",
+ "spdx": null,
+ "branch": "master",
+ "desc": "Files and Dokuments for the Strain Wave Gear (https://hackaday.io/project/120377)",
+ "truncated": false,
+ "ext": {
+  ".sldprt": 12,
+  ".stl": 9,
+  ".step": 3,
+  "": 1,
+  ".slddrw": 1,
+  ".sldasm": 1,
+  ".png": 1
+ },
+ "key_files": [
+  [
+   "README",
+   213
+  ]
+ ]
+}

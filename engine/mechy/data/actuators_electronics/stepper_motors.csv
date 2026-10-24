@@ -1,0 +1,39 @@
+model,manufacturer,nema_frame,flange_mm,step_angle_deg,body_length_mm,holding_torque_Nm,rated_current_A,phase_resistance_ohm,phase_inductance_mH,rotor_inertia_gcm2,mass_kg,shaft_diameter_mm,leads,notes,source_url,value_type,verification
+Pololu 2294,Pololu,6,14,1.8,30,0.0065,0.3,21,,,0.027,3,4,miniature; R = rated V / I (6.3 V),https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+Pololu 1204,Pololu,8,20,1.8,30,0.0177,0.6,6.5,,,0.060,4,4,R = 3.9 V / 0.6 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+Pololu 2256,Pololu,8,20,1.8,42,0.0294,0.8,5.4,,,0.080,4,4,R = 4.3 V / 0.8 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+StepperOnline 8HS11-0204S,StepperOnline,8,20,1.8,28,0.016,0.2,18,3.2,2,0.060,4,4,NEMA 8 values recalled; confirm before use,https://www.omc-stepperonline.com/nema-8-stepper-motor,estimate,recalled
+Pololu 1205,Pololu,11,28,1.8,32,0.0588,0.67,5.7,,,0.110,5,4,R = 3.8 V / 0.67 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+Pololu 1206,Pololu,11,28,1.8,45,0.0932,0.67,6.7,,,0.140,5,4,R = 4.5 V / 0.67 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+StepperOnline 11HS20-0674S,StepperOnline,11,28,1.8,51,0.12,0.67,5.6,4.5,18,0.200,5,4,values recalled; confirm,https://www.omc-stepperonline.com/nema-11-stepper-motor,estimate,recalled
+Pololu 1207,Pololu,14,35,1.8,26,0.0637,0.28,26.4,,,0.130,5,4,R = 7.4 V / 0.28 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+Pololu 1208,Pololu,14,35,1.8,28,0.0981,0.5,20,,,0.140,5,4,R = 10 V / 0.5 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+Pololu 1209,Pololu,14,35,1.8,36,0.137,1.0,2.7,,,0.180,5,4,R = 2.7 V / 1.0 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+LDO-36STH20-1004AHG,LDO,14,36,1.8,20,0.10,1.0,2.1,1.5,,0.120,5,4,round 36 mm pancake used on Orbiter/Galileo extruders; values recalled,https://ldomotors.com,estimate,recalled
+Pololu 2298,Pololu,17,42,1.8,11.6,0.0834,1.0,3.5,,,0.070,5,4,pancake; R = 3.5 V / 1 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+Pololu 2296,Pololu,17,42,1.8,18.6,0.186,1.0,5.4,,,0.140,5,4,pancake; R = 5.4 V / 1 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+StepperOnline 17HS08-1004S,StepperOnline,17,42,1.8,20,0.13,1.0,3.5,4.5,20,0.140,5,4,pancake extruder motor; values recalled,https://www.omc-stepperonline.com/nema-17-stepper-motor,datasheet,recalled
+LDO-42STH20-1004ASH,LDO,17,42,1.8,20,0.13,1.0,4.0,3.6,,0.140,5,4,values recalled; confirm,https://ldomotors.com,estimate,recalled
+StepperOnline 17HS13-0404S,StepperOnline,17,42,1.8,34,0.26,0.4,30,48,34,0.220,5,4,12 V class high-R winding; values recalled,https://www.omc-stepperonline.com/nema-17-stepper-motor,estimate,recalled
+Pololu 2267,Pololu,17,42,1.8,38,0.363,1.7,1.65,,,0.285,5,4,R = 2.8 V / 1.7 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+StepperOnline 17HS16-2004S1,StepperOnline,17,42,1.8,40,0.45,2.0,1.1,2.6,54,0.280,5,4,values recalled,https://www.omc-stepperonline.com/nema-17-stepper-motor,datasheet,recalled
+LDO-42STH40-1684AC,LDO,17,42,1.8,40,0.42,1.68,1.65,2.8,54,0.280,5,4,values recalled; confirm,https://ldomotors.com,estimate,recalled
+Pololu 1200,Pololu,17,42,1.8,48,0.314,1.2,3.3,,,0.350,5,4,R = 4.0 V / 1.2 A; 6-lead uni/bipolar,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+StepperOnline 17HS19-2004S1,StepperOnline,17,42,1.8,48,0.59,2.0,1.4,3.0,82,0.390,5,4,full datasheet PDF lists R 1.60 ohm +/-10% vs 1.4 on listing; inertia 82 g.cm2 from PDF,https://static.maritex.eu/file/display/5sXxpHH1SP-JwnhJEZ0lhfX-xdYKZRi3/17HS19-2004S1_Full_Datasheet.pdf,datasheet,fetched
+LDO-42STH48-2504AC,LDO,17,42,1.8,48,0.55,2.5,1.2,1.5,,0.350,5,4,Voron 2.4 A/B motor; retailer-listed specs; mass recalled,https://us.biqu.equipment/products/ldo-42sth48-2504ac-reva-motor-driver,datasheet,fetched
+Moons MS17HD6P420I-05,Moons',17,42,1.8,48,0.67,2.0,1.3,2.7,82,0.360,5,4,retailer-listed; mass recalled,https://biqu.equipment/products/moons-ms17hd6p420i-05-42-stepper-motor,datasheet,fetched
+Moons MS17HD6P4100,Moons',17,42,1.8,48,0.63,1.0,,11.5,82,0.360,5,4,1 A winding of same frame,https://www.mev-elektronik.com/wp-content/uploads/MOONS_Hybrid_Stepper_MEV-Selection.pdf,datasheet,fetched
+Oriental PKP246D23A,Oriental Motor,17,42,1.8,59,0.93,2.3,1.5,3.5,113,0.450,5,4,inertia 0.62 oz.in2 converted; length 2.32 in; mass recalled,https://catalog.orientalmotor.com/sl/printitem/2-phase-bipolar-stepper-motors/42mm-pkp-series-2-phase-bipolar-stepper-motors/pkp246d23a,datasheet,fetched
+StepperOnline 17HS24-2104S,StepperOnline,17,42,1.8,60,0.65,2.1,1.6,3.4,102,0.500,5,4,values recalled,https://www.omc-stepperonline.com/nema-17-stepper-motor,datasheet,recalled
+Pololu 1476,Pololu,23,57,1.8,41,0.392,1.0,5.7,,,0.450,6.35,6,R = 5.7 V / 1 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+Oriental PKP264D28A,Oriental Motor,23,56.4,1.8,40,0.60,2.8,,,120,0.450,6.35,4,inertia 120e-7 kg.m2; mass recalled,https://catalog.orientalmotor.com/item/tegories-shop-online-stepper-motor-driver-packages/-motor-driver-packages-0-9-1-8-cvk2-stepper-motors/cvd228-k-pkp264d28aa-l,datasheet,fetched
+Pololu 1474,Pololu,23,57,1.8,56,1.275,2.8,0.89,,,0.700,6.35,4,R = 2.5 V / 2.8 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+Pololu 1473,Pololu,23,57,1.8,56,0.883,2.0,1.8,,,0.700,6.35,6,R = 3.6 V / 2 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+StepperOnline 23HS22-2804S,StepperOnline,23,57,1.8,56,1.26,2.8,0.9,2.5,300,0.700,6.35,4,torque/current/R fetched from seller listing; L/inertia/mass recalled,https://www.ebay.de/itm/205383259741,datasheet,fetched
+Pololu 1478,Pololu,23,57,1.8,76,1.863,2.8,1.14,,,1.000,6.35,4,R = 3.2 V / 2.8 A,https://www.pololu.com/category/87/stepper-motors,datasheet,fetched
+StepperOnline 23HS30-2804S,StepperOnline,23,57,1.8,76,1.85,2.8,1.13,4.8,480,1.000,6.35,4,figures from -H (high temp) variant listing; inertia/mass recalled,https://www.maritex.eu/en/product/omc-23hs30-2804s-h-stepper-motors,datasheet,fetched
+StepperOnline 23HS32-4004S,StepperOnline,23,57,1.8,82,2.4,4.0,0.9,3.4,520,1.100,8,4,R/L/torque from listing; inertia/mass recalled,https://www.ebay.com/p/15052445267,datasheet,fetched
+StepperOnline 23HS45-4204S,StepperOnline,23,57,1.8,114,3.0,4.2,0.9,3.8,800,1.400,8,4,R/L/inertia/mass recalled,https://www.tindie.com/products/stepperonline/nema-23-stepper-motor-3nm425ozin/,datasheet,recalled
+StepperOnline 34HS31-6004S,StepperOnline,34,86,1.8,80,4.5,6.0,0.45,3.0,1400,2.300,14,4,keyway shaft; values recalled,https://www.omc-stepperonline.com/nema-34-stepper-motor,estimate,recalled
+StepperOnline 34HS46-6004S1,StepperOnline,34,86,1.8,114,8.5,6.0,0.7,6.0,2700,3.800,14,4,torque/current/R from listing; L/inertia/mass recalled,https://www.ebay.de/itm/205394706119,datasheet,fetched
+StepperOnline 34HS59-5004S,StepperOnline,34,86,1.8,151,12.0,5.0,0.9,9.0,4000,5.000,14,4,no datasheet found; all except torque/current estimated,https://www.omc-stepperonline.com/nema-34-stepper-motor,estimate,recalled

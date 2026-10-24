@@ -1,0 +1,10 @@
+thread,pitch_mm,head_dia_theoretical_max_mm,head_dia_actual_min_mm,head_height_k_mm,hex_key_s_mm,countersink_angle_deg,countersink_dia_recommended_mm,clearance_normal_mm,source_url,value_type
+M3,0.5,6.72,5.54,1.86,2,90,7.12,3.4,https://www.iso.org/standard/34004.html,standard
+M4,0.7,8.96,7.53,2.48,2.5,90,9.36,4.5,https://www.iso.org/standard/34004.html,standard
+M5,0.8,11.2,9.43,3.1,3,90,11.6,5.5,https://www.iso.org/standard/34004.html,standard
+M6,1.0,13.44,11.34,3.72,4,90,13.84,6.6,https://www.iso.org/standard/34004.html,standard
+M8,1.25,17.92,15.24,4.96,5,90,18.32,9.0,https://www.iso.org/standard/34004.html,standard
+M10,1.5,22.4,19.22,6.2,6,90,22.8,11.0,https://www.iso.org/standard/34004.html,standard
+M12,1.75,26.88,23.12,7.44,8,90,27.28,13.5,https://www.iso.org/standard/34004.html,standard
+M16,2.0,33.6,29.01,8.8,10,90,34.0,17.5,https://www.iso.org/standard/34004.html,standard
+M20,2.5,40.32,36.05,10.16,12,90,40.72,22.0,https://www.iso.org/standard/34004.html,standard

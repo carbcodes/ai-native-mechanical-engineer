@@ -1,0 +1,7 @@
+# Decisions
+- 2026-10-22: base design is the 20sffactory Community Robot Arm, parallel-linkage (Dobot-style) version, not a from-scratch generator (why: a proven, printable design; the wrist stays level with no motor of its own) [evidence](design/v1/summary.md)
+- 2026-10-22: 140 mm shanks instead of 120 mm (why: reach 280 to 318 mm, 14% more; static payload drops from 614 g to 497 g but both motors stay under 25% of budget with the arm empty) [evidence](design/v1/summary.md)
+- 2026-10-22: the missing 140 mm upper levelling link is a BAM-made part, `arm_pleuel_bend_upper_140` (why: the vendor kit has no 140 mm upper one, and with the 120 mm part the tool tilts as the arm moves; check it clears the upper shank on the first dry-fit) [evidence](design/v1/summary.md)
+- 2026-10-22: the 4th NEMA 17 drives a 400 mm linear rail, not a wrist (why: a motor at the tool costs 30 to 56% of the payload; the rail adds no arm mass and 400 mm of extra reach). The rail is not in the CAD or the sim yet [evidence](design/v1/summary.md)
+- 2026-10-22: design to 200 g, not the 497 g static maximum (why: the static figure assumes both shanks horizontal; acceleration and belt or PLA flex set the real limit) [evidence](requirements.yaml)
+- 2026-10-24: pick and place points sit 50 to 70 mm above the table plane (why: the shoulder stop at 15 degrees keeps the fingertips above about 20 mm even at the best radius; put parts on a tray or block that high, or raise the shoulder limit after a dry-fit) [evidence](sim/pick-v1/summary.md)

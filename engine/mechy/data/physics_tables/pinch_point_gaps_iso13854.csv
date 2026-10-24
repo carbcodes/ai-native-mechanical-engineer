@@ -1,0 +1,9 @@
+body_part,min_gap_mm,notes,source_url,value_type
+body,500,ISO 13854 minimum gap to avoid crushing,https://www.iso.org/standard/66459.html,standard
+head (least favourable position),300,,https://www.iso.org/standard/66459.html,standard
+leg,180,,https://www.iso.org/standard/66459.html,standard
+foot,120,,https://www.iso.org/standard/66459.html,standard
+toes,50,,https://www.iso.org/standard/66459.html,standard
+arm,120,,https://www.iso.org/standard/66459.html,standard
+hand/wrist/fist,100,,https://www.iso.org/standard/66459.html,standard
+finger,25,Gaps < 25 mm that can close are finger pinch points unless ~< 4-5 mm (fingertip cannot enter),https://www.iso.org/standard/66459.html,standard

@@ -1,0 +1,11 @@
+model,manufacturer,topology,input_min_V,input_max_V,output_min_V,output_max_V,output_A_rated,output_A_practical,switching_kHz,dropout_V,quiescent_mA,notes,source_url,value_type,verification
+LM2596 module,TI (chip) / generic module,buck adjustable,4.5,40,1.23,37,3.0,2.0,150,1.5,5,clone chips common; add heatsink above 2 A,https://www.ti.com/product/LM2596,datasheet,recalled
+MP1584EN module,MPS (chip) / generic,buck adjustable,4.5,28,0.8,25,3.0,1.5,1500,,0.1,tiny 22x17 mm module; input caps often 25 V rated,https://www.monolithicpower.com/en/mp1584.html,datasheet,recalled
+XL4015 module,XLSEMI / generic,buck adjustable,8,36,1.25,32,5.0,3.5,180,,,CC/CV versions common,https://www.xlsemi.com,datasheet,recalled
+XL6009 module,XLSEMI / generic,boost adjustable,3,32,5,35,4.0,1.5,400,,,4 A is switch current not output,https://www.xlsemi.com,datasheet,recalled
+Pololu D24V22F5,Pololu,buck fixed 5 V,5.3,36,5,5,2.5,2.5,600,,0.3,reverse-voltage protected,https://www.pololu.com/product/2858,datasheet,recalled
+Pololu D36V28F5,Pololu,buck fixed 5 V,5.3,50,5,5,3.2,3.2,,,1.0,good for 12S/48 V logic rail,https://www.pololu.com/product/3782,datasheet,recalled
+Pololu S13V10F5,Pololu,buck-boost fixed 5 V,2.8,22,5,5,1.0,1.0,,,0.3,1S LiPo to 5 V,https://www.pololu.com/product/4083,datasheet,recalled
+AMS1117-3.3,AMS / generic,LDO linear,4.5,15,3.3,3.3,1.0,0.5,,1.1,5,power dissipation = (Vin-3.3)*I; ~0.5 W practical in SOT-223,http://www.advanced-monolithic.com/pdf/ds1117.pdf,datasheet,recalled
+LM7805,TI / ST,linear fixed 5 V,7,35,5,5,1.5,1.0,,2.0,5,TO-220 needs heatsink above ~0.5 W,https://www.ti.com/product/LM7805,datasheet,recalled
+AP2112K-3.3,Diodes Inc,LDO linear,2.5,6,3.3,3.3,0.6,0.6,,0.25,0.055,common on ESP32 boards,https://www.diodes.com/part/view/AP2112,datasheet,recalled

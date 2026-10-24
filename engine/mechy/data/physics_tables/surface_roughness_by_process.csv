@@ -1,0 +1,36 @@
+process,category,Ra_um_min,Ra_um_typical,Ra_um_max,notes,source_url,value_type
+sand casting,casting,6.3,12.5,50,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+investment casting,casting,1.6,3.2,6.3,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+die casting,casting,0.8,1.6,3.2,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+permanent mold casting,casting,0.8,3.2,6.3,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+hot rolling,forming,6.3,12.5,25,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+forging,forming,1.6,6.3,12.5,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+cold rolling/drawing,forming,0.4,1.6,3.2,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+extrusion,forming,0.8,1.6,3.2,Aluminium profiles as extruded,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+flame/oxy cutting,cutting,12.5,25,25,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+sawing,cutting,1.6,6.3,25,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+laser cutting (metal sheet),cutting,0.8,3.2,6.3,Thickness dependent; worse on thick plate,https://en.wikipedia.org/wiki/Laser_cutting,estimate
+laser cutting (acrylic),cutting,0.2,0.4,1.6,Flame-polished edge,https://en.wikipedia.org/wiki/Laser_cutting,estimate
+abrasive waterjet,cutting,1.6,3.2,6.3,Edge quality grade dependent,https://en.wikipedia.org/wiki/Water_jet_cutter,estimate
+plasma cutting,cutting,3.2,12.5,25,,https://en.wikipedia.org/wiki/Plasma_cutting,estimate
+drilling,machining,1.6,3.2,6.3,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+milling,machining,0.8,3.2,6.3,As-machined CNC default ~3.2,https://www.protolabs.com/services/cnc-machining/,handbook_typical
+turning,machining,0.4,1.6,6.3,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+boring,machining,0.4,1.6,6.3,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+reaming,machining,0.8,1.6,3.2,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+broaching,machining,0.8,1.6,3.2,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+EDM (sinker/wire),machining,0.8,1.6,6.3,Fine finishing passes to ~0.2,https://en.wikipedia.org/wiki/Electrical_discharge_machining,handbook_typical
+grinding,abrasive,0.1,0.4,1.6,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+honing,abrasive,0.1,0.2,0.8,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+polishing,abrasive,0.1,0.2,0.4,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+lapping,abrasive,0.05,0.1,0.4,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+superfinishing,abrasive,0.025,0.05,0.2,,https://en.wikipedia.org/wiki/Surface_roughness,handbook_typical
+injection molding (SPI A-1..B-3),molding,0.025,0.1,0.4,Polished mold,https://www.protolabs.com/services/injection-molding/,datasheet
+injection molding (SPI C-D / textured),molding,0.4,1.6,3.2,Stone or bead-blast mold finish,https://www.protolabs.com/services/injection-molding/,datasheet
+FDM 3D printing (0.2 mm layers; side walls),additive,6,15,25,Top surfaces lower; layer-height dependent,https://www.hubs.com/knowledge-base/,estimate
+SLA 3D printing,additive,0.5,1.5,3,,https://formlabs.com/,estimate
+SLS 3D printing (PA12),additive,6,10,15,,https://www.hubs.com/knowledge-base/,estimate
+MJF 3D printing (PA12),additive,4,6,10,,https://www.hp.com/us-en/printers/3d-printers.html,estimate
+DMLS/SLM metal printing (as built),additive,5,10,20,Machined/polished after for fits,https://www.hubs.com/knowledge-base/,estimate
+bead blasting,finishing,1.6,3.2,6.3,On machined metal,https://en.wikipedia.org/wiki/Abrasive_blasting,estimate
+anodizing (type II),finishing,0.4,1.6,3.2,Roughly preserves substrate finish,https://en.wikipedia.org/wiki/Anodizing,estimate

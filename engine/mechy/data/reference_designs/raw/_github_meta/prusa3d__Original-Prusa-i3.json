@@ -1,0 +1,32 @@
+{
+ "repo": "prusa3d/Original-Prusa-i3",
+ "stars": 1722,
+ "forks": 842,
+ "pushed": "2024-03-10T20:22:37Z",
+ "spdx": "GPL-2.0",
+ "branch": "MK3S",
+ "desc": "Original Prusa i3 MK2 3D printer printed parts",
+ "license_path": "LICENSE",
+ "license_head": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 2, June 1991\n\n Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>\n 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The licenses for most software are designed to take away your\nfreedom to share and change it.  By contrast, the GNU General Public\nLicense is intended to guarantee your freedom to share and change free\nsoftware",
+ "truncated": false,
+ "ext": {
+  ".stl": 45,
+  ".scad": 23,
+  ".stp": 21,
+  ".dxf": 3,
+  ".pdf": 1,
+  "": 1,
+  ".step": 1,
+  ".md": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   18047
+  ],
+  [
+   "README.md",
+   758
+  ]
+ ]
+}

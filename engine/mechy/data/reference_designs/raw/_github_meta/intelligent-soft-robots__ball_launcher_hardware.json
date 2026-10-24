@@ -1,0 +1,29 @@
+{
+ "repo": "intelligent-soft-robots/ball_launcher_hardware",
+ "stars": 11,
+ "forks": 3,
+ "pushed": "2022-10-11T13:54:46Z",
+ "spdx": "BSD-3-Clause",
+ "branch": "main",
+ "desc": "Custom designed table tennis ball launcher hardware share.",
+ "license_path": "LICENSE",
+ "license_head": "BSD 3-Clause License\n\nCopyright (c) 2022, Max Planck Gesellschaft\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of ",
+ "truncated": false,
+ "ext": {
+  ".pdf": 30,
+  ".step": 13,
+  "": 2,
+  ".zip": 1,
+  ".md": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1531
+  ],
+  [
+   "README.md",
+   258
+  ]
+ ]
+}

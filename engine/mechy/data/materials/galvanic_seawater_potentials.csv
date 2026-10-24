@@ -1,0 +1,30 @@
+id,material,potential_min_V_vs_SCE,potential_max_V_vs_SCE,notes,source_url,value_type
+graphite,Graphite,0.20,0.30,Most noble; CFRP behaves like graphite (corrodes Al/steel in contact),https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+platinum,Platinum,0.19,0.25,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+titanium,Titanium,-0.05,0.06,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+ss_316_passive,Stainless steel 316/317 passive,-0.10,0.00,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+ss_304_passive,Stainless steel 302/304/321/347 passive,-0.10,-0.05,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+monel,Nickel-copper alloys (Monel 400),-0.10,-0.04,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+silver,Silver,-0.15,-0.10,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+nickel,Nickel 200,-0.20,-0.10,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+ss_430_passive,Stainless steel 430 passive,-0.25,-0.20,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+lead,Lead,-0.25,-0.19,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+cuni_7030,70/30 copper-nickel,-0.25,-0.18,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+nab,Nickel-aluminium bronze,-0.25,-0.15,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+cuni_9010,90/10 copper-nickel,-0.28,-0.21,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+silver_solder,Silver braze alloys,-0.27,-0.21,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+tin_bronze,Tin bronzes (G and M),-0.31,-0.24,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+copper,Copper,-0.36,-0.30,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+tin,Tin,-0.33,-0.31,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+brass_naval_yellow,Naval brass; yellow brass; red brass,-0.40,-0.30,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+al_bronze,Aluminium bronze,-0.36,-0.30,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+mn_bronze,Manganese bronze,-0.34,-0.27,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+ss_316_active,Stainless steel 316/317 active (crevice/low oxygen),-0.54,-0.43,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+ss_304_active,Stainless steel 302/304/321/347 active,-0.58,-0.46,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+ss_410_active,Stainless steel 410/416 active,-0.57,-0.46,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+cast_iron,Cast iron (gray/ductile),-0.72,-0.60,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+steel,Mild steel and low alloy steel,-0.72,-0.60,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+cadmium,Cadmium,-0.76,-0.70,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+aluminium_alloys,Aluminium alloys,-1.00,-0.76,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+zinc,Zinc,-1.03,-0.98,,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical
+magnesium,Magnesium,-1.63,-1.60,Most active,https://en.wikipedia.org/wiki/Galvanic_series,handbook_typical

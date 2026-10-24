@@ -1,0 +1,9 @@
+thread,length_mm,outer_dia_mm,recommended_hole_dia_mm,min_wall_around_hole_mm,notes,source_url,value_type
+M2,4.0,3.6,3.2,1.6,brass knurled insert for FDM; hole depth >= length + 1 mm; vendors differ +-0.2 mm,https://www.ruthex.de/ ; https://cnckitchen.store/ (heat-set insert datasheets),handbook_typical
+M2.5,5.7,4.6,4.0,2.0,brass knurled insert for FDM; hole depth >= length + 1 mm; vendors differ +-0.2 mm,https://www.ruthex.de/ ; https://cnckitchen.store/ (heat-set insert datasheets),handbook_typical
+M3,5.7,4.6,4.0,2.0,brass knurled insert for FDM; hole depth >= length + 1 mm; vendors differ +-0.2 mm,https://www.ruthex.de/ ; https://cnckitchen.store/ (heat-set insert datasheets),handbook_typical
+M3 short,3.0,4.6,4.0,1.6,brass knurled insert for FDM; hole depth >= length + 1 mm; vendors differ +-0.2 mm,https://www.ruthex.de/ ; https://cnckitchen.store/ (heat-set insert datasheets),handbook_typical
+M4,8.1,6.3,5.6,2.5,brass knurled insert for FDM; hole depth >= length + 1 mm; vendors differ +-0.2 mm,https://www.ruthex.de/ ; https://cnckitchen.store/ (heat-set insert datasheets),handbook_typical
+M5,9.5,7.1,6.4,3.0,brass knurled insert for FDM; hole depth >= length + 1 mm; vendors differ +-0.2 mm,https://www.ruthex.de/ ; https://cnckitchen.store/ (heat-set insert datasheets),handbook_typical
+M6,12.7,8.7,8.0,3.5,brass knurled insert for FDM; hole depth >= length + 1 mm; vendors differ +-0.2 mm,https://www.ruthex.de/ ; https://cnckitchen.store/ (heat-set insert datasheets),handbook_typical
+M8,12.7,10.1,9.7,4.0,brass knurled insert for FDM; hole depth >= length + 1 mm; vendors differ +-0.2 mm,https://www.ruthex.de/ ; https://cnckitchen.store/ (heat-set insert datasheets),handbook_typical

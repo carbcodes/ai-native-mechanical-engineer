@@ -1,0 +1,361 @@
+{
+ "repo": "Source-Robotics/PAROL6-Desktop-robot-arm",
+ "stars": 3394,
+ "forks": 405,
+ "pushed": "2026-10-22T16:38:32Z",
+ "spdx": "GPL-3.0",
+ "branch": "main",
+ "desc": "BOM, STL files and instructions for PAROL6 3D printed robot arm",
+ "license_path": "LICENSE",
+ "license_head": "GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License is intended to guara",
+ "truncated": false,
+ "ext": {
+  ".svg": 2454,
+  ".md5": 1740,
+  ".map": 1738,
+  ".html": 962,
+  ".js": 478,
+  ".png": 98,
+  ".cpp": 80,
+  ".h": 63,
+  ".stl": 52,
+  ".ino": 30,
+  ".pde": 26,
+  "": 23,
+  ".jpg": 20,
+  ".md": 16,
+  ".json": 14,
+  ".css": 12,
+  ".txt": 10,
+  ".py": 6,
+  ".gif": 6,
+  ".properties": 6,
+  ".xlsx": 5,
+  ".pdf": 4,
+  ".checksum": 2,
+  ".ini": 2,
+  ".c": 2
+ },
+ "key_files": [
+  [
+   "BOM/BOM reference images/19mm ESTOP.png",
+   55431
+  ],
+  [
+   "BOM/BOM reference images/AXK3552 needle bearing.png",
+   66446
+  ],
+  [
+   "BOM/BOM reference images/Base Distribution board.jpg",
+   1299432
+  ],
+  [
+   "BOM/BOM reference images/CABLE_GLAND.png",
+   117081
+  ],
+  [
+   "BOM/BOM reference images/Connectors JST XH.jpg",
+   132861
+  ],
+  [
+   "BOM/BOM reference images/Connectors JST ZH.png",
+   77689
+  ],
+  [
+   "BOM/BOM reference images/D8_Oval_flange_coupler.png",
+   106533
+  ],
+  [
+   "BOM/BOM reference images/GX-F8A.png",
+   111975
+  ],
+  [
+   "BOM/BOM reference images/GX16.jpg",
+   50758
+  ],
+  [
+   "BOM/BOM reference images/GX16_POWER_CONNECTOR_RCB.png",
+   72414
+  ],
+  [
+   "BOM/BOM reference images/GX16_disassembled.jpg",
+   1314365
+  ],
+  [
+   "BOM/BOM reference images/GX16_numbering.jpg",
+   1155998
+  ],
+  [
+   "BOM/BOM reference images/GX16_numbering2.jpg",
+   1182896
+  ],
+  [
+   "BOM/BOM reference images/Gripper connector PCB.jpg",
+   1186745
+  ],
+  [
+   "BOM/BOM reference images/Gripper_cable_contact layout.png",
+   23156
+  ],
+  [
+   "BOM/BOM reference images/HTD 3M belt.png",
+   458207
+  ],
+  [
+   "BOM/BOM reference images/HTD 3M pulley.png",
+   211566
+  ],
+  [
+   "BOM/BOM reference images/Hall sensor PCB.jpg",
+   317367
+  ],
+  [
+   "BOM/BOM reference images/INDUCTIVE_4MM.png",
+   53313
+  ],
+  [
+   "BOM/BOM reference images/INDUCTIVE_5MM.png",
+   55592
+  ],
+  [
+   "BOM/BOM reference images/JST_PH.png",
+   71536
+  ],
+  [
+   "BOM/BOM reference images/LIMIT_SWITCH.png",
+   28346
+  ],
+  [
+   "BOM/BOM reference images/M8 cable male head.png",
+   159369
+  ],
+  [
+   "BOM/BOM reference images/M8 connector female 4pin.png",
+   142983
+  ],
+  [
+   "BOM/BOM reference images/M8 connector male 4pin.png",
+   137229
+  ],
+  [
+   "BOM/BOM reference images/M8 male.png",
+   130052
+  ],
+  [
+   "BOM/BOM reference images/M8_female.png",
+   129521
+  ],
+  [
+   "BOM/BOM reference images/MHZ.png",
+   42970
+  ],
+  [
+   "BOM/BOM reference images/Magnet.png",
+   597039
+  ],
+  [
+   "BOM/BOM reference images/PAR6_with_flange.jpg",
+   2248440
+  ],
+  [
+   "BOM/BOM reference images/PC4-M5.png",
+   117426
+  ],
+  [
+   "BOM/BOM reference images/PM4.png",
+   122602
+  ],
+  [
+   "BOM/BOM reference images/Pneumatic_tube.png",
+   254567
+  ],
+  [
+   "BOM/BOM reference images/STEPFOC stepper driver.png",
+   1158978
+  ],
+  [
+   "BOM/BOM reference images/Tapered bearing.png",
+   293947
+  ],
+  [
+   "BOM/BOM reference images/Thermal cement.jpg",
+   119787
+  ],
+  [
+   "BOM/BOM reference images/Thermistor.png",
+   109989
+  ],
+  [
+   "BOM/BOM reference images/XH_series_dual_female_head.jpg",
+   347982
+  ],
+  [
+   "BOM/BOM reference images/XH_series_extension_cable.png",
+   2011002
+  ],
+  [
+   "BOM/BOM reference images/ZH_XH_cable_direction.png",
+   4452890
+  ],
+  [
+   "BOM/BOM reference images/ZH_series_dual_female_head.jpg",
+   355203
+  ],
+  [
+   "BOM/BOM reference images/ZH_series_extension_cable.png",
+   1484204
+  ],
+  [
+   "BOM/BOM reference images/barewire1.png",
+   3279819
+  ],
+  [
+   "BOM/BOM reference images/barewire2.png",
+   3262309
+  ],
+  [
+   "BOM/BOM reference images/barewire3.png",
+   3559377
+  ],
+  [
+   "BOM/BOM reference images/barewire4.png",
+   3712406
+  ],
+  [
+   "BOM/BOM reference images/brass_insert.png",
+   310445
+  ],
+  [
+   "BOM/BOM reference images/broach.png",
+   864355
+  ],
+  [
+   "BOM/BOM reference images/button.png",
+   111247
+  ],
+  [
+   "BOM/BOM reference images/cable_assembly.png",
+   329652
+  ],
+  [
+   "BOM/BOM reference images/coupler_and_flange.png",
+   1611342
+  ],
+  [
+   "BOM/BOM reference images/press.png",
+   1183536
+  ],
+  [
+   "BOM/BOM reference images/reworked_coupler.png",
+   1280210
+  ],
+  [
+   "BOM/BOM reference images/shaft coupler gripper.png",
+   32367
+  ],
+  [
+   "BOM/BOM reference images/shaft_coupler_J2_J3.png",
+   62609
+  ],
+  [
+   "BOM/BOM reference images/small tension bearings.png",
+   250531
+  ],
+  [
+   "BOM/BOM reference images/solenoid_valve.png",
+   171099
+  ],
+  [
+   "BOM/BOM reference images/source_coupler.png",
+   326864
+  ],
+  [
+   "BOM/BOM reference images/stepper 10_1.jpg",
+   91135
+  ],
+  [
+   "BOM/BOM reference images/stepper 20_1.jpg",
+   89493
+  ],
+  [
+   "BOM/BOM reference images/stepper 21_5mm.jpg",
+   81838
+  ],
+  [
+   "BOM/BOM reference images/stepper 40mm.jpg",
+   126927
+  ],
+  [
+   "BOM/BOM reference images/stepper 60mm.jpg",
+   145730
+  ],
+  [
+   "BOM/BOM.md",
+   11730
+  ],
+  [
+   "LICENSE",
+   35129
+  ],
+  [
+   "PAROL6 control board main software/LICENSE",
+   35129
+  ],
+  [
+   "PAROL6 control board main software/include/README",
+   1386
+  ],
+  [
+   "PAROL6 control board main software/lib/AccelStepper-master/LICENSE",
+   834
+  ],
+  [
+   "PAROL6 control board main software/lib/AccelStepper-master/README.md",
+   1278
+  ],
+  [
+   "PAROL6 control board main software/lib/README",
+   1037
+  ],
+  [
+   "PAROL6 control board main software/lib/SerialFlash-master/README.md",
+   3527
+  ],
+  [
+   "PAROL6 control board main software/lib/TMCStepper-master/LICENSE",
+   1067
+  ],
+  [
+   "PAROL6 control board main software/lib/TMCStepper-master/README.md",
+   1714
+  ],
+  [
+   "PAROL6 control board test code/LICENSE",
+   35129
+  ],
+  [
+   "PAROL6 control board test code/include/README",
+   1386
+  ],
+  [
+   "PAROL6 control board test code/lib/AccelStepper-master/LICENSE",
+   834
+  ],
+  [
+   "PAROL6 control board test code/lib/AccelStepper-master/README.md",
+   1278
+  ],
+  [
+   "PAROL6 control board test code/lib/README",
+   1037
+  ],
+  [
+   "PAROL6 control board test code/lib/SerialFlash-master/README.md",
+   3527
+  ],
+  [
+   "PAROL6 control board test code/lib/TMCStepper-master/LICENSE",
+   1067
+  ]
+ ]
+}

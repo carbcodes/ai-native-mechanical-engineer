@@ -1,0 +1,29 @@
+{
+ "repo": "threedesigns/printNC",
+ "stars": 277,
+ "forks": 38,
+ "pushed": "2023-02-27T22:38:43Z",
+ "spdx": "CC-BY-4.0",
+ "branch": "master",
+ "desc": "100% Free and Open Source, the PrintNC is the next generation of high performance, affordable CNC machines",
+ "license_path": "LICENSE.md",
+ "license_head": "## creative commons\n\n# Attribution 4.0 International\n\nCreative Commons Corporation (\u201cCreative Commons\u201d) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an \u201cas-is\u201d basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the ",
+ "truncated": false,
+ "ext": {
+  ".stl": 66,
+  ".md": 2,
+  "": 1,
+  ".png": 1,
+  ".3mf": 1
+ },
+ "key_files": [
+  [
+   "LICENSE.md",
+   17007
+  ],
+  [
+   "README.md",
+   977
+  ]
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "repo": "VoronDesign/Voron-0",
+ "stars": 1665,
+ "forks": 405,
+ "pushed": "2024-12-16T14:35:30Z",
+ "spdx": "GPL-3.0",
+ "branch": "Voron0.2r1",
+ "desc": "Voron 0 CoreXY 3D Printer design",
+ "license_path": "LICENSE",
+ "license_head": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License ",
+ "truncated": false,
+ "ext": {
+  ".stl": 134,
+  ".step": 29,
+  ".pdf": 12,
+  ".dxf": 11,
+  ".cfg": 9,
+  ".md": 5,
+  "": 2,
+  ".ini": 2,
+  ".yml": 1,
+  ".f3d": 1,
+  ".zip": 1
+ },
+ "key_files": [
+  [
+   "Firmware/README.md",
+   1037
+  ],
+  [
+   "LICENSE",
+   35149
+  ],
+  [
+   "README.md",
+   3249
+  ],
+  [
+   "STLs/Multibody_STLs/readme.md",
+   349
+  ],
+  [
+   "STLs/Readme.md",
+   1551
+  ],
+  [
+   "Slicer_Profiles/README.md",
+   886
+  ]
+ ]
+}

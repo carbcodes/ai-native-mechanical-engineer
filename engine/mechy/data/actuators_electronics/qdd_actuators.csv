@@ -1,0 +1,11 @@
+model,manufacturer,gear_ratio,rated_torque_Nm,peak_torque_Nm,rated_speed_rpm,kv_rpm_per_V,kt_Nm_per_A,kt_basis,rated_current_A,peak_current_A,resistance_ll_ohm,inductance_ll_uH,mass_kg,nominal_voltage_V,interface,notes,source_url,value_type,verification
+CubeMars AK70-10 KV100,CubeMars,10,8.3,24.8,310,100,0.123,as listed (motor side per CubeMars),7.2,23.2,0.272,113,0.521,48,CAN (MIT mode) / UART,CubeMars page fetched shows 621 g; CubeMars dimension text and RobotShop give 521 g; rated speed 148 @24 V / 310 @48 V; other listing rated 8.8 A peak 26.1 A,https://www.cubemars.com/goods-1031-AK70-10.html,datasheet,fetched
+CubeMars AK80-9 KV100,CubeMars,9,9,18,390,100,0.091,motor side,12,24,0.17,,0.485,48,CAN (MIT mode),values recalled; confirm against current datasheet,https://www.cubemars.com,estimate,recalled
+CubeMars AK60-6 V1.1 KV80,CubeMars,6,3,9,233,80,0.113,as listed (RobotShop),3.8,13.1,,,0.368,24,CAN / UART,rated current 3.8 A (CubeMars table) vs 4.5 A (RobotShop),https://www.cubemars.com/goods-1142-AK60-6+V11.html,datasheet,fetched
+CubeMars AK10-9 V2.0 KV100,CubeMars,9,15,38,445,100,0.095,as listed,18.5,50,0.090,331,0.960,48,CAN / UART,mass 960 g (RobotShop/mybotshop) vs 820 g; rated speed 222 @24 V / 445 @48 V,https://uk.robotshop.com/products/cubemars-ak10-9-v20-kv100-ak-series-robotic-actuator,datasheet,fetched
+MIT Mini Cheetah actuator,MIT (Katz 2018),6,,17,,,,,,40,,,0.48,24,CAN,single-stage planetary on custom outrunner; mass recalled,https://dspace.mit.edu/bitstream/handle/1721.1/118671/1057343368-MIT.pdf,handbook_typical,recalled
+mjbots qdd100 beta,mjbots,6,,16,,,,,,,,,0.43,24,CAN-FD (moteus),values recalled,https://mjbots.com,estimate,recalled
+Unitree GO-M8010-6,Unitree,6.33,,23.7,,,,,,,,,0.53,24,RS-485,values recalled,https://www.unitree.com,estimate,recalled
+Unitree A1 joint motor,Unitree,9.1,,33.5,,,,,,,,,0.605,24,RS-485,values recalled,https://www.unitree.com,estimate,recalled
+SteadyWin GIM8108-8,SteadyWin,8,7.5,22,,,,,,,,,0.40,24,CAN,values recalled,https://www.steadywin.cn,estimate,recalled
+mjbots mj5208 direct drive,mjbots,1,,1.7,,330,0.025,8.27/Kv,,,,,0.193,24,via moteus r4.11,direct-drive QDD baseline,https://mjbots.com/products/mj5208,datasheet,fetched

@@ -1,0 +1,21 @@
+id,name,symbol,value_SI,unit,exact,rel_uncertainty,edition,source_url,value_type
+c,speed of light in vacuum,c,299792458.0,m*s^-1,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+h,Planck constant,h,6.62607015e-34,J*Hz^-1,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+hbar,reduced Planck constant,hbar,1.054571817e-34,J*s,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+e,elementary charge,e,1.602176634e-19,C,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+k_B,Boltzmann constant,k_B,1.380649e-23,J*K^-1,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+N_A,Avogadro constant,N_A,6.02214076e+23,mol^-1,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+R,molar gas constant,R,8.314462618,J*mol^-1*K^-1,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+G,Newtonian constant of gravitation,G,6.6743e-11,m^3*kg^-1*s^-2,false,2.25e-05,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+g_n,standard acceleration of gravity,g_n,9.80665,m*s^-2,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+atm,standard atmosphere,atm,101325.0,Pa,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+sigma_SB,Stefan-Boltzmann constant,sigma,5.670374419e-08,W*m^-2*K^-4,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+epsilon_0,vacuum electric permittivity,epsilon_0,8.8541878188e-12,F*m^-1,false,1.58e-10,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+mu_0,vacuum mag. permeability,mu_0,1.25663706127e-06,N*A^-2,false,1.59e-10,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+m_e,electron mass,m_e,9.1093837139e-31,kg,false,3.07e-10,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+m_p,proton mass,m_p,1.67262192595e-27,kg,false,3.11e-10,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+m_u,atomic mass constant,m_u,1.66053906892e-27,kg,false,3.13e-10,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+F,Faraday constant,F,96485.33212,C*mol^-1,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+alpha,fine-structure constant,alpha,0.0072973525643,,false,1.51e-10,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+b_Wien,Wien wavelength displacement law constant,b,0.002897771955,m*K,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard
+V_m_STP,"molar volume of ideal gas (273.15 K, 101.325 kPa)",V_m,0.02241396954,m^3*mol^-1,true,,CODATA 2022,https://physics.nist.gov/cuu/Constants/Table/allascii.txt,standard

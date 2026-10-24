@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "description": "Stress concentration factor (Kt) approximations and notch sensitivity. Kt multiplies NOMINAL stress as defined per case. Curve fits are approximations of Peterson's charts; verify critical designs against Peterson's Stress Concentration Factors.",
+    "source_url": "https://en.wikipedia.org/wiki/Stress_concentration",
+    "value_type": "handbook_typical"
+  },
+  "formulas": [
+    {"id": "elliptical_hole_infinite_plate", "name": "Elliptical hole in infinite plate, tension perpendicular to axis a (Inglis)",
+     "variables": {"a": {"unit": "m", "desc": "semi-axis perpendicular to load"}, "b": {"unit": "m", "desc": "semi-axis parallel to load"}},
+     "outputs": {"Kt": {"expr": "1 + 2*a/b", "unit": "1"}}, "notes": "Circular hole (a = b) gives Kt = 3 on gross stress.",
+     "source_url": "https://en.wikipedia.org/wiki/Stress_concentration"},
+    {"id": "notch_root_radius_estimate", "name": "Notch of depth t and root radius rho (Inglis/Neuber estimate)",
+     "variables": {"t": {"unit": "m", "desc": "notch depth"}, "rho": {"unit": "m", "desc": "root radius"}},
+     "outputs": {"Kt": {"expr": "1 + 2*sqrt(t/rho)", "unit": "1"}}, "notes": "Upper-bound style estimate for shallow notches in wide plates."},
+    {"id": "plate_central_hole_tension", "name": "Finite-width plate with central circular hole, tension (Howland fit, NET-section nominal stress)",
+     "variables": {"d": {"unit": "m", "desc": "hole diameter"}, "W": {"unit": "m", "desc": "plate width"}},
+     "outputs": {"Kt": {"expr": "3.00 - 3.13*(d/W) + 3.66*(d/W)**2 - 1.53*(d/W)**3", "unit": "1"}},
+     "valid": "0 <= d/W <= 0.65", "notes": "sigma_nom = P/((W - d)*t).",
+     "source_url": "https://www.efunda.com/formulae/solid_mechanics/stress_concentration/"},
+    {"id": "neuber_notch_sensitivity_steel_bending", "name": "Notch sensitivity q via Neuber constant for steels in bending/axial (Shigley eq. 6-35a; Sut in kpsi, r in inches)",
+     "variables": {"r_in": {"unit": "in", "desc": "notch radius (inches!)"}, "Sut_kpsi": {"unit": "kpsi", "desc": "ultimate strength (kpsi!)"}},
+     "outputs": {"sqrt_a": {"expr": "0.246 - 3.08e-3*Sut_kpsi + 1.51e-5*Sut_kpsi**2 - 2.67e-8*Sut_kpsi**3", "unit": "in^0.5"},
+                 "q": {"expr": "1/(1 + (0.246 - 3.08e-3*Sut_kpsi + 1.51e-5*Sut_kpsi**2 - 2.67e-8*Sut_kpsi**3)/sqrt(r_in))", "unit": "1"}},
+     "valid": "50 <= Sut_kpsi <= 250", "notes": "Imperial-input empirical fit; convert with unit_conversions.csv (1 MPa = 0.145038 kpsi; 1 mm = 1/25.4 in).",
+     "source_url": "https://en.wikipedia.org/wiki/Neuber%27s_rule"},
+    {"id": "fatigue_kf", "name": "Fatigue stress concentration factor",
+     "variables": {"Kt": {"unit": "1", "desc": "theoretical SCF"}, "q": {"unit": "1", "desc": "notch sensitivity 0..1 (use 1 if unknown: conservative)"}},
+     "outputs": {"Kf": {"expr": "1 + q*(Kt - 1)", "unit": "1"}}}
+  ],
+  "stepped_round_shaft_power_fit": {
+    "description": "Stepped round shaft with shoulder fillet: Kt ~= A*(r/d)**b, nominal stress on the SMALL diameter d. Rows by D/d; interpolate A and b linearly in D/d (formulas.kt_stepped_shaft). Fits of Peterson/Shigley charts, valid roughly 0.01 <= r/d <= 0.3.",
+    "source_url": "https://www.engineersedge.com/material_science/stress_concentration_factor_stepped_shaft.htm",
+    "value_type": "handbook_typical",
+    "bending": [[6.00, 0.87868, -0.33243], [3.00, 0.89334, -0.30860], [2.00, 0.90879, -0.28598], [1.50, 0.93836, -0.25759], [1.20, 0.97098, -0.21796], [1.10, 0.95120, -0.23757], [1.07, 0.97527, -0.20958], [1.05, 0.98137, -0.19653], [1.03, 0.98061, -0.18381], [1.02, 0.96048, -0.17711], [1.01, 0.91938, -0.17032]],
+    "axial": [[2.00, 1.01470, -0.30035], [1.50, 0.99957, -0.28221], [1.30, 0.99682, -0.25751], [1.20, 0.96272, -0.25527], [1.15, 0.98084, -0.22485], [1.10, 0.98450, -0.20818], [1.07, 0.98498, -0.19548], [1.05, 1.00480, -0.17076], [1.02, 1.01220, -0.12474], [1.01, 0.98413, -0.10474]],
+    "torsion": [[2.00, 0.86331, -0.23865], [1.33, 0.84897, -0.23161], [1.20, 0.83425, -0.21649], [1.09, 0.90337, -0.12692]],
+    "columns": ["D_over_d", "A", "b"]
+  },
+  "first_iteration_shaft_kt": {
+    "description": "Shigley Table 7-1 first-pass estimates before geometry is known.",
+    "source_url": "https://en.wikipedia.org/wiki/Stress_concentration",
+    "value_type": "handbook_typical",
+    "rows": [
+      {"feature": "shoulder fillet, sharp (r/d = 0.02)", "Kt_bending": 2.7, "Kt_torsion": 2.2, "Kt_axial": 3.0},
+      {"feature": "shoulder fillet, well rounded (r/d = 0.1)", "Kt_bending": 1.7, "Kt_torsion": 1.5, "Kt_axial": 1.9},
+      {"feature": "end-mill keyseat (r/d = 0.02)", "Kt_bending": 2.14, "Kt_torsion": 3.0, "Kt_axial": null},
+      {"feature": "sled-runner keyseat", "Kt_bending": 1.7, "Kt_torsion": null, "Kt_axial": null},
+      {"feature": "retaining ring groove", "Kt_bending": 5.0, "Kt_torsion": 3.0, "Kt_axial": 5.0}
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+material,maker,max_static_pressure_MPa,max_surface_speed_rotating_m_s,max_pv_MPa_m_s,temp_min_C,temp_max_C,friction_coeff_dry_min,friction_coeff_dry_max,recommended_housing_tolerance,recommended_shaft_tolerance,notes,source_url,value_type
+iglidur G,igus,80,1.0,,-40,130,0.08,0.15,H7,h9,all-rounder,https://www.igus.com/iglidur/,handbook_typical
+iglidur J,igus,35,1.5,,-50,90,0.06,0.18,H7,h9,"low friction, soft shafts OK",https://www.igus.com/iglidur/,handbook_typical
+iglidur W300,igus,60,1.0,,-40,90,0.08,0.23,H7,h9,high wear resistance,https://www.igus.com/iglidur/,handbook_typical
+iglidur X,igus,150,1.5,,-100,250,0.09,0.27,H7,h9,high temp/chemical,https://www.igus.com/iglidur/,handbook_typical
+sintered bronze (oil-impregnated),generic (Oilite),14,6.0,1.75,-20,90,0.05,0.1,H7,f7/g6,needs PV check; relube,https://www.oilite.com/ (typical),handbook_typical
+PTFE-lined steel (DU type),GGB,250,2.5,3.6,-200,280,0.02,0.25,H7,f7,dynamic p max ~140 MPa,https://www.ggbearings.com/en/products/metal-polymer/du,handbook_typical

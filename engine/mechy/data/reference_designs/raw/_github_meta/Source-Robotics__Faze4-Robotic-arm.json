@@ -1,0 +1,54 @@
+{
+ "repo": "Source-Robotics/Faze4-Robotic-arm",
+ "stars": 912,
+ "forks": 152,
+ "pushed": "2025-12-28T18:54:32Z",
+ "spdx": "CERN-OHL-S-2.0",
+ "branch": "master",
+ "desc": "All files  for 6 axis robot arm with cycloidal gearboxes .",
+ "license_path": "LICENSE",
+ "license_head": "CERN Open Hardware Licence Version 2 - Strongly Reciprocal\n\n\nPreamble\n\nCERN has developed this licence to promote collaboration among\nhardware designers and to provide a legal tool which supports the\nfreedom to use, study, modify, share and distribute hardware designs\nand products based on those designs. Version 2 of the CERN Open\nHardware Licence comes in three variants: CERN-OHL-P (permissive); and\ntwo reciprocal licences: CERN-OHL-W (weakly reciprocal) and this\nlicence, CERN-OHL-S (strongly reciprocal).\n\nThe CERN-OHL-S is copyright CERN 2020. Anyone is welcome to use it, in\nunmodified form ",
+ "truncated": false,
+ "ext": {
+  ".rst": 12,
+  ".png": 10,
+  ".mlx": 9,
+  ".stl": 7,
+  ".jpg": 7,
+  ".ino": 6,
+  ".pdf": 4,
+  ".zip": 3,
+  ".m": 3,
+  "": 2,
+  ".launch": 2,
+  ".yml": 1,
+  ".xlsx": 1,
+  ".h": 1,
+  ".step": 1,
+  ".md": 1,
+  ".txt": 1,
+  ".yaml": 1,
+  ".xml": 1,
+  ".urdf": 1,
+  ".py": 1,
+  ".bat": 1
+ },
+ "key_files": [
+  [
+   "BOM_7_11_2023.xlsx",
+   14694
+  ],
+  [
+   "LICENSE",
+   13419
+  ],
+  [
+   "README.md",
+   4016
+  ],
+  [
+   "URDF_FAZE4/urdf/Final_light_assembly_URDF.urdf",
+   8607
+  ]
+ ]
+}

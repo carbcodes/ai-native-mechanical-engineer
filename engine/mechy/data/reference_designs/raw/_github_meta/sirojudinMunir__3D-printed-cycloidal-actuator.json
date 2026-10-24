@@ -1,0 +1,29 @@
+{
+ "repo": "sirojudinMunir/3D-printed-cycloidal-actuator",
+ "stars": 215,
+ "forks": 34,
+ "pushed": "2026-02-18T04:25:41Z",
+ "spdx": "MIT",
+ "branch": "main",
+ "desc": null,
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2026 sirojudin munir\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the ",
+ "truncated": false,
+ "ext": {
+  ".stl": 13,
+  ".png": 11,
+  "": 1,
+  ".md": 1,
+  ".xlsx": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1072
+  ],
+  [
+   "README.md",
+   566
+  ]
+ ]
+}

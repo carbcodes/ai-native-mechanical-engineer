@@ -1,0 +1,37 @@
+{
+ "repo": "AngelLM/Thor",
+ "stars": 1626,
+ "forks": 275,
+ "pushed": "2025-05-09T14:25:31Z",
+ "spdx": "CC-BY-SA-4.0",
+ "branch": "main",
+ "desc": "DIY 3D Printable Robotic Arm",
+ "license_path": "LICENSE",
+ "license_head": "Attribution-ShareAlike 4.0 International\n\n=======================================================================\n\nCreative Commons Corporation (\"Creative Commons\") is not a law firm and\ndoes not provide legal services or legal advice. Distribution of\nCreative Commons public licenses does not create a lawyer-client or\nother relationship. Creative Commons makes its licenses and related\ninformation available on an \"as-is\" basis. Creative Commons gives no\nwarranties regarding its licenses, any material licensed under their\nterms and conditions, or any related information. Creative Commons\ndisclai",
+ "truncated": false,
+ "ext": {
+  ".fcstd": 79,
+  ".step": 72,
+  ".stl": 72,
+  ".png": 5,
+  "": 2,
+  ".md": 2,
+  ".svg": 2,
+  ".json": 1,
+  ".jpg": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   20131
+  ],
+  [
+   "README.md",
+   5327
+  ],
+  [
+   "mods/README.md",
+   929
+  ]
+ ]
+}

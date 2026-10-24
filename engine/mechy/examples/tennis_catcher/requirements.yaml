@@ -1,0 +1,17 @@
+catch:
+  throw_distance_m: 1.8
+  ball_diameter_m: 0.067
+  ball_mass_kg: 0.057
+  max_launch_speed_mps: 6.0
+  target_catch_rate: 0.8
+vision:
+  fps: 60
+  latency_s: 0.05
+  # Extensions used by `mechy sim catch` (optional; defaults shown)
+  noise_m: 0.004          # 1-sigma position noise per axis
+  observe_s: 0.20         # how long the ball is tracked before the arm commits
+throw:
+  launch_height_m: 1.0    # underhand toss from about waist height
+  flight_time_s: [0.65, 0.95]
+  aim_center_m: [0.25, 0.0, 0.35]   # where throwers aim, relative to the arm base
+  aim_spread_m: [0.15, 0.20, 0.12]  # 1-sigma spread of the aim point

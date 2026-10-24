@@ -1,0 +1,19 @@
+{
+ "repo": "stanfordroboticsclub/Pupper",
+ "stars": 68,
+ "forks": 36,
+ "pushed": "2021-09-18T18:25:29Z",
+ "spdx": null,
+ "branch": "master",
+ "desc": "Build instructions and code documentation for the Stanford Pupper project.",
+ "truncated": false,
+ "ext": {
+  ".jpg": 84,
+  ".rst": 9,
+  ".png": 5,
+  "": 2,
+  ".py": 1,
+  ".bat": 1
+ },
+ "key_files": []
+}

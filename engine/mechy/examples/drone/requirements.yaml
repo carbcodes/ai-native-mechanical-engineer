@@ -1,0 +1,6 @@
+flight:
+  auw_target_kg: 0.65          # all-up weight with battery
+  thrust_to_weight_min: 3.0    # total max thrust / AUW
+  flight_time_min: 5           # cruising, estimate
+  prop_in: 5
+  battery: "4S 1300 mAh"

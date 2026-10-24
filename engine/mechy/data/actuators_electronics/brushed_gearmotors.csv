@@ -1,0 +1,98 @@
+model,gearbox_diameter_mm,rated_voltage_V,gear_ratio,no_load_speed_rpm,stall_torque_Nm,stall_current_A,no_load_current_A,max_continuous_torque_Nm,notes,source_url,value_type,verification
+Pololu 25D 12V HP 1:1,25,12,1,10000,0.0392,5.0,0.25,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V HP 4.4:1,25,12,4.4,2200,0.1667,5.0,0.25,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V HP 9.7:1,25,12,9.7,1000,0.3825,5.0,0.25,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V HP 20.4:1,25,12,20.4,500,0.7257,5.0,0.25,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V HP 34:1,25,12,34,300,1.0787,5.0,0.25,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V HP 47:1,25,12,47,220,1.471,5.0,0.25,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V HP 75:1,25,12,75,130,2.1575,5.0,0.25,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V HP 99:1,25,12,99,100,2.8439,5.0,0.25,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 1:1,25,6,1,10000,0.0294,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 4.4:1,25,6,4.4,2200,0.1177,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 9.7:1,25,6,9.7,1000,0.2256,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 20.4:1,25,6,20.4,480,0.4707,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 34:1,25,6,34,290,0.6669,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 47:1,25,6,47,210,0.8924,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 75:1,25,6,75,130,1.3729,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 99:1,25,6,99,99,1.471,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 6V HP 172:1,25,6,172,57,2.6478,6.0,0.42,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 1:1,25,12,1,5600,0.0137,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 4.4:1,25,12,4.4,1200,0.052,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 9.7:1,25,12,9.7,580,0.1275,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 20.4:1,25,12,20.4,280,0.2354,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 34:1,25,12,34,170,0.3628,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 47:1,25,12,47,120,0.4707,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 75:1,25,12,75,75,0.6963,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 99:1,25,12,99,57,0.8532,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 172:1,25,12,172,33,1.2749,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 227:1,25,12,227,25,1.5691,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V LP 378:1,25,12,378,15,2.2555,0.9,0.05,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 1:1,25,12,1,8200,0.0167,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 4.4:1,25,12,4.4,1800,0.0696,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 9.7:1,25,12,9.7,800,0.1667,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 20.4:1,25,12,20.4,380,0.3138,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 34:1,25,12,34,230,0.4609,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 47:1,25,12,47,170,0.6276,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 75:1,25,12,75,100,0.8336,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 99:1,25,12,99,79,1.0787,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 172:1,25,12,172,46,1.7652,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 12V MP 227:1,25,12,227,35,2.3536,1.8,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 24V HP 1:1,25,24,1,10000,0.0392,2.7,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 24V HP 4.4:1,25,24,4.4,2300,0.1961,2.7,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 24V HP 9.7:1,25,24,9.7,1000,0.4021,2.7,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 24V HP 20.4:1,25,24,20.4,490,0.7747,2.7,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 24V HP 34:1,25,24,34,300,1.1768,2.7,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 24V HP 47:1,25,24,47,220,1.471,2.7,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 24V HP 75:1,25,24,75,140,2.2555,2.7,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 25D 24V HP 99:1,25,24,99,100,2.8439,2.7,0.08,0.392,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/115/25d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 1:1,37,12,1,10000,0.049,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 6.3:1,37,12,6.3,1600,0.2942,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 10:1,37,12,10,1000,0.4805,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 19:1,37,12,19,530,0.8336,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 30:1,37,12,30,330,1.3729,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 50:1,37,12,50,200,2.0594,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 70:1,37,12,70,150,2.6478,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 100:1,37,12,100,100,3.3343,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 131:1,37,12,131,76,4.413,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 12V 150:1,37,12,150,67,4.8053,5.5,0.2,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 1:1,37,24,1,10000,0.0539,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 6.3:1,37,24,6.3,1600,0.3432,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 10:1,37,24,10,1000,0.5394,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 19:1,37,24,19,530,0.9316,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 30:1,37,24,30,330,1.471,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 50:1,37,24,50,200,2.2555,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 70:1,37,24,70,140,3.0401,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 100:1,37,24,100,100,3.8246,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 131:1,37,24,131,79,4.6091,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu 37D 24V 150:1,37,24,150,68,5.4917,3.0,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/116/37d-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HPCB 10:1,12,6,10,3300,0.0167,1.5,0.15,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HPCB 30:1,12,6,30,1100,0.0441,1.5,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HPCB 50:1,12,6,50,650,0.0726,1.5,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HPCB 100:1,12,6,100,330,0.1569,1.5,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HPCB 150:1,12,6,150,220,0.1961,1.5,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HPCB 298:1,12,6,298,110,0.3334,1.5,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HPCB 1000:1,12,6,1000,33,1.0787,1.5,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HP 10:1,12,6,10,3100,0.0216,1.6,0.1,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HP 30:1,12,6,30,1000,0.0559,1.6,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HP 50:1,12,6,50,590,0.0843,1.6,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HP 100:1,12,6,100,310,0.1667,1.6,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HP 150:1,12,6,150,210,0.2354,1.6,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HP 298:1,12,6,298,100,0.3923,1.6,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V HP 1000:1,12,6,1000,31,1.1768,1.6,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V MP 10:1,12,6,10,2200,0.0108,0.67,0.07,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V MP 30:1,12,6,30,720,0.0324,0.67,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V MP 50:1,12,6,50,420,0.053,0.67,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V MP 100:1,12,6,100,220,0.0922,0.67,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V MP 150:1,12,6,150,150,0.1275,0.67,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V MP 298:1,12,6,298,73,0.2354,0.67,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 6V MP 1000:1,12,6,1000,22,0.657,0.67,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 12V HPCB 10:1,12,12,10,3400,0.0167,0.75,0.08,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 12V HPCB 30:1,12,12,30,1100,0.0382,0.75,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 12V HPCB 50:1,12,12,50,650,0.0657,0.75,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 12V HPCB 100:1,12,12,100,330,0.1275,0.75,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 12V HPCB 150:1,12,12,150,220,0.1765,0.75,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 12V HPCB 298:1,12,12,298,110,0.3236,0.75,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Pololu micro 12V HPCB 1000:1,12,12,1000,35,0.9807,0.75,,,stall torque extrapolated by Pololu; keep load well below stall,https://www.pololu.com/category/60/micro-metal-gearmotors,datasheet,fetched
+Generic N20 12V 30:1,12,12,30,1000,0.04,0.4,0.04,,AliExpress-grade N20 clone; wide variance; use Pololu rows for design,https://www.pololu.com/category/60/micro-metal-gearmotors,estimate,recalled
+Generic N20 12V 100:1,12,12,100,300,0.12,0.4,0.04,,AliExpress-grade N20 clone; wide variance; use Pololu rows for design,https://www.pololu.com/category/60/micro-metal-gearmotors,estimate,recalled
+Generic N20 12V 298:1,12,12,298,100,0.3,0.4,0.04,,AliExpress-grade N20 clone; wide variance; use Pololu rows for design,https://www.pololu.com/category/60/micro-metal-gearmotors,estimate,recalled

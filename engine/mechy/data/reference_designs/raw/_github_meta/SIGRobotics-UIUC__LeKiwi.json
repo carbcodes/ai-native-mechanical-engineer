@@ -1,0 +1,51 @@
+{
+ "repo": "SIGRobotics-UIUC/LeKiwi",
+ "stars": 1477,
+ "forks": 161,
+ "pushed": "2026-08-05T09:25:59Z",
+ "spdx": "Apache-2.0",
+ "branch": "main",
+ "desc": "LeKiwi - Low-Cost Mobile Manipulator",
+ "license_path": "LICENSE.txt",
+ "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n     ",
+ "truncated": false,
+ "ext": {
+  ".stl": 76,
+  ".jpg": 57,
+  ".md": 9,
+  ".png": 5,
+  ".jpeg": 5,
+  ".step": 2,
+  ".cff": 1,
+  ".txt": 1,
+  ".urdf": 1,
+  "": 1,
+  ".gif": 1
+ },
+ "key_files": [
+  [
+   "BOM.md",
+   14818
+  ],
+  [
+   "DynamixelLeKiwi/BOM.md",
+   25413
+  ],
+  [
+   "DynamixelLeKiwi/README.md",
+   681
+  ],
+  [
+   "LICENSE.txt",
+   11357
+  ],
+  [
+   "README.md",
+   3088
+  ],
+  [
+   "URDF/LeKiwi.urdf",
+   66793
+  ]
+ ]
+}

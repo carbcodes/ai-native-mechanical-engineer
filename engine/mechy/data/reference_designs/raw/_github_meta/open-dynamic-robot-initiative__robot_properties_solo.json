@@ -1,0 +1,61 @@
+{
+ "repo": "open-dynamic-robot-initiative/robot_properties_solo",
+ "stars": 45,
+ "forks": 23,
+ "pushed": "2023-03-22T16:49:50Z",
+ "spdx": "BSD-3-Clause",
+ "branch": "master",
+ "desc": null,
+ "license_path": "license.txt",
+ "license_head": "BSD 3-Clause License\n\nCopyright (c) 2019, New York University and Max Planck Gesellschaft.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.",
+ "truncated": false,
+ "ext": {
+  ".stl": 22,
+  ".py": 18,
+  ".obj": 15,
+  ".mtl": 12,
+  ".yaml": 8,
+  ".png": 5,
+  "": 4,
+  ".launch": 4,
+  ".xacro": 4,
+  ".rviz": 3,
+  ".md": 2,
+  ".txt": 1,
+  ".xml": 1,
+  ".cfg": 1,
+  ".pdf": 1,
+  ".in": 1,
+  ".srdf": 1
+ },
+ "key_files": [
+  [
+   "license.txt",
+   1556
+  ],
+  [
+   "readme.md",
+   1527
+  ],
+  [
+   "src/robot_properties_solo/resources/pre_generated_urdf/readme.md",
+   301
+  ],
+  [
+   "src/robot_properties_solo/resources/xacro/leg.xacro",
+   17504
+  ],
+  [
+   "src/robot_properties_solo/resources/xacro/plane_with_restitution.urdf.xacro",
+   767
+  ],
+  [
+   "src/robot_properties_solo/resources/xacro/solo12.urdf.xacro",
+   3266
+  ],
+  [
+   "src/robot_properties_solo/resources/xacro/solo8.urdf.xacro",
+   3126
+  ]
+ ]
+}

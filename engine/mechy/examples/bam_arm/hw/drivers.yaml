@@ -1,0 +1,12 @@
+drivers:
+  - id: a4988
+    count: 4
+    max_current_a: 2.0
+    heatsinks: true
+    microsteps: 8
+    max_step_rate_hz: 8000      # Mega 2560 stepping 4 drivers (assumed)
+controller: arduino-mega        # Arduino Mega 2560 + RAMPS 1.4 (BAM firmware robotArm_bam)
+power_supply:
+  voltage_v: 12
+  current_a: 6
+  connector: DC jack 2.1 mm

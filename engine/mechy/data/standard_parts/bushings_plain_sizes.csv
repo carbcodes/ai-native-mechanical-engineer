@@ -1,0 +1,19 @@
+part,type,bore_d1_mm,outer_d2_mm,flange_d3_mm,flange_thickness_mm,available_lengths_mm,notes,source_url,value_type
+GSM-0304,sleeve,3,4.5,,,3;4;5;6,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GSM-0405,sleeve,4,5.5,,,3;4;6,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GSM-0507,sleeve,5,7,,,4;5;8,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GSM-0608,sleeve,6,8,,,6;8;10,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GFM-0608,flanged,6,8,12,1.0,6;8;10,igus iglidur G flange bearing,https://www.igus.com/iglidur/,handbook_typical
+GSM-0810,sleeve,8,10,,,8;10;12,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GFM-0810,flanged,8,10,15,1.0,8;10;12,igus iglidur G flange bearing,https://www.igus.com/iglidur/,handbook_typical
+GSM-1012,sleeve,10,12,,,10;12;15,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GFM-1012,flanged,10,12,18,1.0,10;12;15,igus iglidur G flange bearing,https://www.igus.com/iglidur/,handbook_typical
+GSM-1214,sleeve,12,14,,,10;12;15;20,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GFM-1214,flanged,12,14,20,1.0,10;12;15;20,igus iglidur G flange bearing,https://www.igus.com/iglidur/,handbook_typical
+GSM-1618,sleeve,16,18,,,12;15;20;25,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GFM-1618,flanged,16,18,24,1.0,12;15;20;25,igus iglidur G flange bearing,https://www.igus.com/iglidur/,handbook_typical
+GSM-2023,sleeve,20,23,,,15;20;25;30,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GFM-2023,flanged,20,23,30,1.5,15;20;25;30,igus iglidur G flange bearing,https://www.igus.com/iglidur/,handbook_typical
+GSM-2528,sleeve,25,28,,,20;25;30,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical
+GFM-2528,flanged,25,28,35,1.5,20;25;30,igus iglidur G flange bearing,https://www.igus.com/iglidur/,handbook_typical
+GSM-3034,sleeve,30,34,,,20;30;40,"igus iglidur G sleeve; press into H7 bore, bore closes to ~E10 after press-in",https://www.igus.com/iglidur/,handbook_typical

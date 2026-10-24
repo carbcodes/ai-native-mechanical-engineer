@@ -1,0 +1,26 @@
+{
+ "repo": "aaedmusa/Internal-Cycloidal-Actuator",
+ "stars": 315,
+ "forks": 56,
+ "pushed": "2024-05-28T03:00:18Z",
+ "spdx": null,
+ "branch": "main",
+ "desc": null,
+ "truncated": false,
+ "ext": {
+  ".png": 1,
+  ".xlsx": 1,
+  ".zip": 1,
+  ".md": 1
+ },
+ "key_files": [
+  [
+   "BOM.xlsx",
+   14443
+  ],
+  [
+   "README.md",
+   923
+  ]
+ ]
+}

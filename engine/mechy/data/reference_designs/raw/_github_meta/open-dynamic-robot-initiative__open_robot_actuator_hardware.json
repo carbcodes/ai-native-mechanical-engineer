@@ -1,0 +1,130 @@
+{
+ "repo": "open-dynamic-robot-initiative/open_robot_actuator_hardware",
+ "stars": 1503,
+ "forks": 257,
+ "pushed": "2022-09-06T15:20:50Z",
+ "spdx": "BSD-3-Clause",
+ "branch": "master",
+ "desc": null,
+ "license_path": "LICENSE",
+ "license_head": "BSD 3-Clause License\n\nCopyright (c) 2019, New York University and Max Planck Gesellschaft.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.",
+ "truncated": false,
+ "ext": {
+  ".jpg": 654,
+  ".png": 385,
+  ".stl": 207,
+  ".md": 44,
+  ".pdf": 32,
+  ".zip": 20,
+  ".step": 7,
+  ".fcstd": 4,
+  ".easm": 4,
+  ".vsk": 2,
+  "": 1,
+  ".brd": 1,
+  ".sch": 1,
+  ".xlsx": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1556
+  ],
+  [
+   "README.md",
+   8822
+  ],
+  [
+   "electronics/README.md",
+   1563
+  ],
+  [
+   "electronics/micro_driver_electronics/README.md",
+   9278
+  ],
+  [
+   "electronics/ti_electronics/README.md",
+   12173
+  ],
+  [
+   "mechanics/README.md",
+   7303
+  ],
+  [
+   "mechanics/actuator_module_v1/README.md",
+   22948
+  ],
+  [
+   "mechanics/biped_6dof_v1/README.md",
+   24484
+  ],
+  [
+   "mechanics/biped_leg_3dof_v1/README.md",
+   13219
+  ],
+  [
+   "mechanics/dual_motor_testbed_v1/README.md",
+   9523
+  ],
+  [
+   "mechanics/finger_edu_v1/README.md",
+   4417
+  ],
+  [
+   "mechanics/foot_contact_switch_v1/README.md",
+   7825
+  ],
+  [
+   "mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.pdf",
+   429262
+  ],
+  [
+   "mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.xlsx",
+   12346
+  ],
+  [
+   "mechanics/leg_2dof_v1/README.md",
+   4402
+  ],
+  [
+   "mechanics/leg_2dof_v2/README.md",
+   2316
+  ],
+  [
+   "mechanics/leg_3dof_v1/README.md",
+   10767
+  ],
+  [
+   "mechanics/leg_test_stand_v1/README.md",
+   13166
+  ],
+  [
+   "mechanics/leg_test_stand_v2/README.md",
+   14004
+  ],
+  [
+   "mechanics/nyu_finger_v1/README.md",
+   5600
+  ],
+  [
+   "mechanics/quadruped_robot_12dof_v1.1/README.md",
+   11094
+  ],
+  [
+   "mechanics/quadruped_robot_12dof_v1/README.md",
+   23567
+  ],
+  [
+   "mechanics/quadruped_robot_8dof_v1/README.md",
+   5265
+  ],
+  [
+   "mechanics/quadruped_robot_8dof_v2/README.md",
+   11114
+  ],
+  [
+   "mechanics/tri_finger_edu_v1/README.md",
+   4602
+  ]
+ ]
+}

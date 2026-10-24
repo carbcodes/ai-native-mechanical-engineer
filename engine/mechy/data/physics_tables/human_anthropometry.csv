@@ -1,0 +1,11 @@
+dimension,population,p5_mm,p50_mm,p95_mm,notes,source_url,value_type
+index finger breadth (distal joint),adult combined,14,17,21,Approximate; use 25 mm finger-gap rule from ISO 13854,https://www.openlab.psu.edu/,estimate
+index finger length,adult combined,63,72,82,,https://www.openlab.psu.edu/,estimate
+hand breadth (metacarpal),adult combined,70,83,95,,https://www.openlab.psu.edu/,estimate
+hand length,adult combined,165,185,205,,https://www.openlab.psu.edu/,estimate
+hand thickness (metacarpal),adult combined,23,28,33,,https://www.openlab.psu.edu/,estimate
+forward grip reach (standing; from back of shoulder),adult combined,650,740,840,Functional reach envelope for placing controls,https://www.openlab.psu.edu/,estimate
+shoulder height (standing),adult combined,1250,1400,1550,,https://www.openlab.psu.edu/,estimate
+elbow height (standing),adult combined,950,1060,1180,Work surface ~50-100 mm below elbow,https://www.openlab.psu.edu/,estimate
+stature,adult combined,1520,1700,1880,,https://www.openlab.psu.edu/,estimate
+eye height (seated; above seat),adult combined,690,770,850,,https://www.openlab.psu.edu/,estimate

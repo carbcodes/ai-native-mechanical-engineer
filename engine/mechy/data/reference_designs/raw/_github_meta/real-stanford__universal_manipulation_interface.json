@@ -1,0 +1,209 @@
+{
+ "repo": "real-stanford/universal_manipulation_interface",
+ "stars": 1612,
+ "forks": 295,
+ "pushed": "2026-05-26T17:22:25Z",
+ "spdx": "MIT",
+ "branch": "main",
+ "desc": "Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2023 Columbia Artificial Intelligence and Robotics Lab\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopi",
+ "truncated": false,
+ "ext": {
+  ".py": 263,
+  ".yaml": 78,
+  ".stl": 53,
+  ".xml": 35,
+  ".urdf": 16,
+  ".png": 10,
+  ".obj": 10,
+  "": 7,
+  ".md": 5,
+  ".json": 4,
+  ".gif": 2,
+  ".yapf": 1,
+  ".lua": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1105
+  ],
+  [
+   "README.md",
+   8673
+  ],
+  [
+   "diffusion_policy/common/robomimic_config_util.py",
+   1597
+  ],
+  [
+   "diffusion_policy/common/robomimic_util.py",
+   6395
+  ],
+  [
+   "diffusion_policy/config/legacy/train_robomimic_image_workspace.yaml",
+   2066
+  ],
+  [
+   "diffusion_policy/config/legacy/train_robomimic_lowdim_workspace.yaml",
+   2109
+  ],
+  [
+   "diffusion_policy/config/legacy/train_robomimic_real_image_workspace.yaml",
+   2083
+  ],
+  [
+   "diffusion_policy/config/train_diffusion_unet_timm_robomimic_workspace.yaml",
+   3663
+  ],
+  [
+   "diffusion_policy/dataset/robomimic_replay_dataset.py",
+   14015
+  ],
+  [
+   "diffusion_policy/dataset/robomimic_replay_image_dataset.py",
+   14522
+  ],
+  [
+   "diffusion_policy/dataset/robomimic_replay_lowdim_dataset.py",
+   5868
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/block.urdf",
+   779
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/block2.urdf",
+   780
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/blocks/blue_cube.urdf",
+   814
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/blocks/green_star.urdf",
+   816
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/blocks/red_moon.urdf",
+   810
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/blocks/yellow_pentagon.urdf",
+   826
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/insert.urdf",
+   1548
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/suction/cylinder.urdf",
+   2732
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/suction/cylinder_real.urdf",
+   2720
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/suction/suction-base.urdf",
+   1897
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/suction/suction-head-long.urdf",
+   2854
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/suction/suction-head.urdf",
+   1937
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/workspace.urdf",
+   771
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/workspace_real.urdf",
+   772
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/zone.urdf",
+   612
+  ],
+  [
+   "diffusion_policy/env/block_pushing/assets/zone2.urdf",
+   611
+  ],
+  [
+   "diffusion_policy/env/kitchen/relay_policy_learning/adept_models/LICENSE",
+   11415
+  ],
+  [
+   "diffusion_policy/env/kitchen/relay_policy_learning/adept_models/README.public.md",
+   289
+  ],
+  [
+   "diffusion_policy/env/kitchen/relay_policy_learning/adept_models/scenes/basic_scene.xml",
+   1697
+  ],
+  [
+   "diffusion_policy/env/kitchen/relay_policy_learning/third_party/franka/LICENSE",
+   11357
+  ],
+  [
+   "diffusion_policy/env/kitchen/relay_policy_learning/third_party/franka/README.md",
+   215
+  ],
+  [
+   "diffusion_policy/env/kitchen/relay_policy_learning/third_party/franka/assets/basic_scene.xml",
+   766
+  ],
+  [
+   "diffusion_policy/env/robomimic/robomimic_image_wrapper.py",
+   5379
+  ],
+  [
+   "diffusion_policy/env/robomimic/robomimic_lowdim_wrapper.py",
+   4045
+  ],
+  [
+   "diffusion_policy/env_runner/robomimic_image_runner.py",
+   14016
+  ],
+  [
+   "diffusion_policy/env_runner/robomimic_lowdim_runner.py",
+   13497
+  ],
+  [
+   "diffusion_policy/env_runner/robomimic_runner.py",
+   19232
+  ],
+  [
+   "diffusion_policy/model/bet/libraries/mingpt/LICENSE",
+   1082
+  ],
+  [
+   "diffusion_policy/policy/robomimic_image_policy.py",
+   4941
+  ],
+  [
+   "diffusion_policy/policy/robomimic_lowdim_policy.py",
+   3119
+  ],
+  [
+   "diffusion_policy/scripts/robomimic_dataset_action_comparison.py",
+   1603
+  ],
+  [
+   "diffusion_policy/scripts/robomimic_dataset_conversion.py",
+   3255
+  ],
+  [
+   "diffusion_policy/workspace/train_robomimic_image_workspace.py",
+   10313
+  ],
+  [
+   "diffusion_policy/workspace/train_robomimic_lowdim_workspace.py",
+   8736
+  ]
+ ]
+}

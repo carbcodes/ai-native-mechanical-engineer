@@ -1,0 +1,217 @@
+model,supply_V,speed_rps,speed_rpm,pullout_torque_Nm,method,source_url,value_type
+StepperOnline 17HS16-2004S1,12,0.5,30,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,12,1,60,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,12,2,120,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,12,5,300,0.334,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,12,10,600,0.061,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,24,0.5,30,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,24,1,60,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,24,2,120,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,24,5,300,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,24,10,600,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,24,15,900,0.196,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,24,20,1200,0.072,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,48,0.5,30,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,48,1,60,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,48,2,120,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,48,5,300,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,48,10,600,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,48,15,900,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,48,20,1200,0.338,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS16-2004S1,48,30,1800,0.205,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,12,0.5,30,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,12,1,60,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,12,2,120,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,12,5,300,0.311,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,12,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,24,0.5,30,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,24,1,60,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,24,2,120,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,24,5,300,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,24,10,600,0.356,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,24,15,900,0.112,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,24,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,48,0.5,30,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,48,1,60,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,48,2,120,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,48,5,300,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,48,10,600,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,48,15,900,0.443,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,48,20,1200,0.38,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 17HS19-2004S1,48,30,1800,0.125,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,12,0.5,30,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,12,1,60,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,12,2,120,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,12,5,300,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,12,10,600,0.094,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,24,0.5,30,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,24,1,60,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,24,2,120,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,24,5,300,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,24,10,600,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,24,15,900,0.313,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,24,20,1200,0.122,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,48,0.5,30,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,48,1,60,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,48,2,120,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,48,5,300,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,48,10,600,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,48,15,900,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,48,20,1200,0.412,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+LDO-42STH48-2504AC,48,30,1800,0.341,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,12,0.5,30,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,12,1,60,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,12,2,120,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,12,5,300,0.337,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,12,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,24,0.5,30,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,24,1,60,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,24,2,120,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,24,5,300,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,24,10,600,0.397,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,24,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,24,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,48,0.5,30,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,48,1,60,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,48,2,120,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,48,5,300,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,48,10,600,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,48,15,900,0.503,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,48,20,1200,0.43,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Moons MS17HD6P420I-05,48,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,12,0.5,30,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,12,1,60,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,12,2,120,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,12,5,300,0.217,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,12,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,24,0.5,30,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,24,1,60,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,24,2,120,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,24,5,300,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,24,10,600,0.268,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,24,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,24,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,48,0.5,30,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,48,1,60,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,48,2,120,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,48,5,300,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,48,10,600,0.698,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,48,15,900,0.575,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,48,20,1200,0.298,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+Oriental PKP246D23A,48,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,12,0.5,30,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,12,1,60,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,12,2,120,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,12,5,300,0.203,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,12,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,24,0.5,30,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,24,1,60,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,24,2,120,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,24,5,300,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,24,10,600,0.265,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,24,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,24,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,48,0.5,30,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,48,1,60,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,48,2,120,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,48,5,300,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,48,10,600,0.945,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,48,15,900,0.825,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,48,20,1200,0.305,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS22-2804S,48,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,12,0.5,30,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,12,1,60,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,12,2,120,1.113,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,12,5,300,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,12,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,24,0.5,30,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,24,1,60,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,24,2,120,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,24,5,300,0.898,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,24,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,24,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,24,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,48,0.5,30,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,48,1,60,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,48,2,120,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,48,5,300,1.388,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,48,10,600,0.969,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,48,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,48,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS30-2804S,48,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,12,0.5,30,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,12,1,60,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,12,2,120,1.424,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,12,5,300,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,12,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,24,0.5,30,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,24,1,60,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,24,2,120,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,24,5,300,1.108,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,24,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,24,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,24,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,48,0.5,30,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,48,1,60,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,48,2,120,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,48,5,300,2.25,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,48,10,600,1.209,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,48,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,48,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 23HS45-4204S,48,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,12,0.5,30,6.375,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,12,1,60,3.622,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,12,2,120,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,12,5,300,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,12,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,12,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,12,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,12,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,24,0.5,30,6.375,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,24,1,60,6.375,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,24,2,120,4.269,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,24,5,300,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,24,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,24,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,24,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,24,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,48,0.5,30,6.375,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,48,1,60,6.375,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,48,2,120,6.375,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,48,5,300,3.075,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,48,10,600,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,48,15,900,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,48,20,1200,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate
+StepperOnline 34HS46-6004S1,48,30,1800,0.0,model: 0.75*T_hold*I(w) solving (0.9V)^2=(I*R+Ke*w)^2+(I*50*w*L)^2; Ke=T_hold/(I_rated*sqrt2); capped at I_rated,derived from stepper_motors.csv,estimate

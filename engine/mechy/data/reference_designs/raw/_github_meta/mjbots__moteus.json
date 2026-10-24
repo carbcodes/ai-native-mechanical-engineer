@@ -1,0 +1,77 @@
+{
+ "repo": "mjbots/moteus",
+ "stars": 1350,
+ "forks": 407,
+ "pushed": "2026-09-27T11:33:52Z",
+ "spdx": "Apache-2.0",
+ "branch": "main",
+ "desc": "Brushless DC motor controller",
+ "license_path": "LICENSE",
+ "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n     ",
+ "truncated": false,
+ "ext": {
+  ".py": 106,
+  ".kicad_sch": 80,
+  ".h": 75,
+  ".kicad_mod": 66,
+  ".md": 60,
+  ".rs": 54,
+  ".cc": 53,
+  "": 41,
+  ".step": 38,
+  ".lbr": 28,
+  ".png": 14,
+  ".bzl": 13,
+  ".sh": 12,
+  ".brd": 12,
+  ".sch": 12,
+  ".yml": 11,
+  ".stp": 11,
+  ".gz": 9,
+  ".kicad_pcb": 8,
+  ".kicad_prl": 8,
+  ".kicad_pro": 8,
+  ".svg": 8,
+  ".kicad_sym": 7,
+  ".pdf": 7,
+  ".json": 7
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   11357
+  ],
+  [
+   "README.md",
+   2974
+  ],
+  [
+   "hw/c1/bom.ini",
+   4465
+  ],
+  [
+   "hw/x1/bom.ini",
+   4465
+  ],
+  [
+   "lib/python/README.md",
+   2704
+  ],
+  [
+   "lib/rust/moteus-derive/README.md",
+   1889
+  ],
+  [
+   "lib/rust/moteus-protocol/README.md",
+   5545
+  ],
+  [
+   "lib/rust/moteus/README.md",
+   5619
+  ],
+  [
+   "utils/gui/README.md",
+   194
+  ]
+ ]
+}

@@ -1,0 +1,13 @@
+model,manufacturer,drive,supply_V,stroke_mm,gear_ratio,peak_force_N,speed_no_load_mm_s,speed_at_rated_mm_s,max_current_A,mass_kg,feedback,notes,source_url,value_type,verification
+Actuonix PQ12-63-12-P,Actuonix,micro gearmotor + lead screw,12,20,63,18,15,10,0.55,0.015,potentiometer,miniature; values recalled,https://www.actuonix.com/pq12-micro-linear-actuators,datasheet,recalled
+Actuonix PQ12-100-12-P,Actuonix,micro gearmotor + lead screw,12,20,100,45,10,6,0.55,0.015,potentiometer,values recalled,https://www.actuonix.com/pq12-micro-linear-actuators,datasheet,recalled
+Actuonix L12-50-50-12-P,Actuonix,micro gearmotor + lead screw,12,50,50,42,23,12,0.46,0.040,potentiometer,values recalled,https://www.actuonix.com/l12-micro-linear-actuators,datasheet,recalled
+Actuonix L12-50-100-12-P,Actuonix,micro gearmotor + lead screw,12,50,100,80,12,6,0.46,0.040,potentiometer,values recalled,https://www.actuonix.com/l12-micro-linear-actuators,datasheet,recalled
+Actuonix L12-50-210-12-P,Actuonix,micro gearmotor + lead screw,12,50,210,130,6,3,0.46,0.040,potentiometer,values recalled,https://www.actuonix.com/l12-micro-linear-actuators,datasheet,recalled
+Actuonix L16-50-35-12-P,Actuonix,gearmotor + lead screw,12,50,35,50,32,24,0.65,0.056,potentiometer,values recalled,https://www.actuonix.com/l16-linear-actuators,datasheet,recalled
+Actuonix L16-50-63-12-P,Actuonix,gearmotor + lead screw,12,50,63,100,20,13,0.65,0.056,potentiometer,values recalled,https://www.actuonix.com/l16-linear-actuators,datasheet,recalled
+Actuonix L16-50-150-12-P,Actuonix,gearmotor + lead screw,12,50,150,175,8,6,0.65,0.056,potentiometer,values recalled,https://www.actuonix.com/l16-linear-actuators,datasheet,recalled
+Progressive Automations PA-14 (35 lb),Progressive Automations,DC motor + acme screw,12,50,,156,51,,5,0.9,limit switches only (P version has pot),stroke options 25-1016 mm; values recalled,https://www.progressiveautomations.com/products/linear-actuator,datasheet,recalled
+Progressive Automations PA-14 (150 lb),Progressive Automations,DC motor + acme screw,12,50,,667,13,,5,0.9,limit switches only,values recalled,https://www.progressiveautomations.com/products/linear-actuator,datasheet,recalled
+Generic 12 V 1000 N linear actuator,generic,DC motor + acme screw,12,100,,1000,10,5,3,1.2,limit switches,cheap marketplace type; self-locking; wide spec variance,https://www.aliexpress.com,estimate,recalled
+NEMA17 + T8x8 lead screw (Pololu 2267 class),generic,stepper + lead screw,24,300,,250,40,,1.7,0.40,none (open loop),force ~ 2*pi*T*eta/lead with eta ~0.3-0.4 for trapezoidal brass nut; 0.36 N.m motor,https://www.pololu.com/category/87/stepper-motors,estimate,recalled

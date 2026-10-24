@@ -1,0 +1,11 @@
+designation,d_mm,pitch_mm,starts,lead_mm,pitch_dia_d2_mm,minor_dia_d3_mm,lead_angle_deg,efficiency_mu0_1,torque_per_N_load_mu0_1_Nm,efficiency_mu0_2,torque_per_N_load_mu0_2_Nm,self_locking_mu0_1,mass_kg_per_m,notes,source_url,value_type
+Tr8x1.5,8,1.5,1,1.5,7.25,6.2,3.77,0.386,0.000618,0.238,0.001003,yes,0.273,ISO 2904,"https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",standard
+Tr8x2 (T8 P2 L2),8,2,1,2,7.0,5.5,5.2,0.463,0.000687,0.299,0.001063,yes,0.214,"hobby T8 (not ISO): brass flange nut flange 22, body 10.2, len 15, 4x3.5 holes on PCD 16","https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",handbook_typical
+Tr8x4 (T8 L4),8,2,2,4,7.0,5.5,10.31,0.625,0.001018,0.45,0.001415,no,0.214,"hobby T8 (not ISO): brass flange nut flange 22, body 10.2, len 15, 4x3.5 holes on PCD 16","https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",handbook_typical
+Tr8x8 (T8 L8),8,2,4,8,7.0,5.5,19.99,0.749,0.0017,0.589,0.002161,no,0.214,"hobby T8 (not ISO): brass flange nut flange 22, body 10.2, len 15, 4x3.5 holes on PCD 16","https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",handbook_typical
+Tr10x2,10,2,1,2,9.0,7.5,4.05,0.403,0.00079,0.251,0.001269,yes,0.399,ISO 2904,"https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",standard
+Tr10x3,10,3,1,3,8.5,6.5,6.41,0.514,0.000928,0.344,0.00139,no,0.3,ISO 2904,"https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",standard
+Tr12x3,12,3,1,3,10.5,8.5,5.2,0.463,0.001031,0.299,0.001595,yes,0.512,ISO 2904,"https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",standard
+Tr16x4,16,4,1,4,14.0,11.5,5.2,0.463,0.001374,0.299,0.002126,yes,0.938,ISO 2904,"https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",standard
+Tr20x4,20,4,1,4,18.0,15.5,4.05,0.403,0.00158,0.251,0.002537,yes,1.703,ISO 2904,"https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",standard
+Tr24x5,24,5,1,5,21.5,18.5,4.23,0.414,0.001923,0.259,0.003069,yes,2.427,ISO 2904,"https://www.iso.org/standard/7830.html (ISO 2904 trapezoidal threads, formulas)",standard

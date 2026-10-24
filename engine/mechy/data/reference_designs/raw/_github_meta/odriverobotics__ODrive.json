@@ -1,0 +1,81 @@
+{
+ "repo": "odriverobotics/ODrive",
+ "stars": 3810,
+ "forks": 1759,
+ "pushed": "2026-01-20T10:54:42Z",
+ "spdx": "MIT",
+ "branch": "master",
+ "desc": "High performance motor control",
+ "license_path": "LICENSE.md",
+ "license_head": "MIT License\n\nCopyright (c) 2016-2018 ODrive Robotics\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of",
+ "truncated": false,
+ "ext": {
+  ".h": 119,
+  ".c": 66,
+  ".py": 64,
+  ".hpp": 53,
+  ".cpp": 46,
+  ".png": 33,
+  ".rst": 31,
+  ".vue": 28,
+  "": 20,
+  ".json": 14,
+  ".js": 14,
+  ".md": 11,
+  ".yaml": 9,
+  ".j2": 7,
+  ".config": 5,
+  ".lua": 4,
+  ".yml": 3,
+  ".sh": 3,
+  ".html": 3,
+  ".m": 3,
+  ".so": 3,
+  ".ino": 2,
+  ".a": 2,
+  ".jpg": 2,
+  ".css": 2
+ },
+ "key_files": [
+  [
+   "Arduino/ODriveArduino/LICENSE",
+   1068
+  ],
+  [
+   "Arduino/ODriveArduino/README.md",
+   393
+  ],
+  [
+   "Firmware/LICENSE",
+   1083
+  ],
+  [
+   "Firmware/fibre-cpp/README.md",
+   6432
+  ],
+  [
+   "GUI/LICENSE.md",
+   1072
+  ],
+  [
+   "GUI/README.md",
+   1428
+  ],
+  [
+   "GUI/fibre-js/README.md",
+   3819
+  ],
+  [
+   "LICENSE.md",
+   1077
+  ],
+  [
+   "README.md",
+   2049
+  ],
+  [
+   "tools/odrive/pyfibre/README.md",
+   604
+  ]
+ ]
+}

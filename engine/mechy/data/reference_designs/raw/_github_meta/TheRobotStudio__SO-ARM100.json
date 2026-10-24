@@ -1,0 +1,118 @@
+{
+ "repo": "TheRobotStudio/SO-ARM100",
+ "stars": 7863,
+ "forks": 726,
+ "pushed": "2026-10-06T07:26:52Z",
+ "spdx": "Apache-2.0",
+ "branch": "main",
+ "desc": "Standard Open Arm 100",
+ "license_path": "LICENSE",
+ "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n     ",
+ "truncated": false,
+ "ext": {
+  ".stl": 114,
+  ".step": 36,
+  ".png": 19,
+  ".jpg": 19,
+  ".md": 18,
+  ".part": 13,
+  ".urdf": 5,
+  ".xml": 5,
+  "": 3,
+  ".3mf": 3,
+  ".jpeg": 2,
+  ".webp": 2,
+  ".cff": 1,
+  ".rrd": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   11357
+  ],
+  [
+   "Mini/readme",
+   787
+  ],
+  [
+   "Optional/4040_Base_Mount/README.md",
+   1044
+  ],
+  [
+   "Optional/Compliant_Gripper/README.md",
+   2039
+  ],
+  [
+   "Optional/Mount_Helper/README.md",
+   343
+  ],
+  [
+   "Optional/Overhead_Cam_Mount_32x32_UVC_Module/README.md",
+   4259
+  ],
+  [
+   "Optional/Overhead_Cam_Mount_Webcam/README.md",
+   5075
+  ],
+  [
+   "Optional/SO101_Wrist_Cam_Hex-Nut_Mount_32x32_UVC_Module/README.md",
+   3584
+  ],
+  [
+   "Optional/Wrist_Cam_Mount_32x32_UVC_Module/README.md",
+   3385
+  ],
+  [
+   "Optional/Wrist_Cam_Mount_RealSense_D405/README.md",
+   383
+  ],
+  [
+   "Optional/Wrist_Cam_Mount_RealSense_D435/README.md",
+   1164
+  ],
+  [
+   "Optional/Wrist_Cam_Mount_Vinmooog_Webcam/README.md",
+   1526
+  ],
+  [
+   "Optional/Wrist_Cam_Plug_Mount_32x32_UVC_Module/README.md",
+   3114
+  ],
+  [
+   "README.md",
+   26605
+  ],
+  [
+   "Simulation/README.md",
+   1089
+  ],
+  [
+   "Simulation/SO100/so100.urdf",
+   9110
+  ],
+  [
+   "Simulation/SO101/README.md",
+   2408
+  ],
+  [
+   "Simulation/SO101/scene.xml",
+   931
+  ],
+  [
+   "Simulation/SO101/so101_leader_new_calib.urdf",
+   17229
+  ],
+  [
+   "Simulation/SO101/so101_new_calib.urdf",
+   16231
+  ],
+  [
+   "Simulation/SO101/so101_new_calib_camera.urdf",
+   18330
+  ],
+  [
+   "Simulation/SO101/so101_old_calib.urdf",
+   15422
+  ]
+ ]
+}

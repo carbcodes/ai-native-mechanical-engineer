@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mechy CAD viewer</title>
+<!--
+  Mechy CAD viewer (docs/architecture/ui-style.md, "3D viewer"):
+  paper background + grid, flat light-grey surfaces with black edge outlines
+  (technical illustration), optional shaded mode. three.js is vendored from npm (version in vendor/three/package.json).
+
+  Swift -> JS:  window.mechy.load(fileURL, stamp), loadBase64(b64), setShaded(bool), fit(),
+                setTheme("system" | "light" | "dark")   (app appearance: System / Paper / Graphite)
+                loadReplay(fileURL, stamp, title), loadReplayBase64(b64, title), loadReplayData(obj, title),
+                closeReplay()   (sim theater, contracts.md section 11: sim/<task>/replay.json)
+                window.__mechyTheme is set by a document-start user script for the first paint.
+  JS -> Swift:  webkit.messageHandlers.mechy.postMessage({type: "ready" | "loaded" | "loadFailed" |
+                "replayLoaded" | "replayFailed", ...})
+-->
+<style>
+  :root {
+    --paper: #ECECEA; --surface: #F5F5F3; --ink: #1C1C1C; --muted: #6B6B6B;
+    --grid: rgba(28, 28, 28, 0.10);
+    color-scheme: light dark;
+  }
+  :root[data-theme="light"] { color-scheme: light; }
+  :root[data-theme="dark"] {
+    --paper: #1A1A1A; --surface: #1F1F1F; --ink: #EDEDED; --muted: #8E8E8E; --grid: rgba(255, 255, 255, 0.10);
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --paper: #1A1A1A; --surface: #1F1F1F; --ink: #EDEDED; --muted: #8E8E8E; --grid: rgba(255, 255, 255, 0.10); }
+  }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: var(--paper); }
+  body {
+    background-image: radial-gradient(var(--grid) 0.9px, transparent 1px);
+    background-size: 24px 24px;
+    font: 500 10px/1.2 ui-monospace, "SF Mono", Menlo, monospace;
+    letter-spacing: 0.11em; text-transform: uppercase; color: var(--muted);
+    user-select: none; -webkit-user-select: none;
+  }
+  canvas { display: block; }
+  .tag {
+    position: fixed; padding: 3px 6px; border: 1px solid var(--muted);
+    background: var(--paper); pointer-events: none;
+  }
+  #dims { left: 10px; bottom: 10px; color: var(--ink); border-color: var(--ink); }
+  #hint { right: 10px; bottom: 10px; }
+  #status { left: 50%; top: 50%; transform: translate(-50%, -50%); border-style: dashed; }
+  .hidden { display: none !important; }
+
+  /* Sim theater (replay mode) ------------------------------------------------ */
+  :root { --good: #1E7F4F; --danger: #C8102E; --accent: #20A4F3; }
+  body.replaying #dims { bottom: 50px; }
+  body.replaying #hint { display: none; }
+  #rp-head {
+    position: fixed; left: 10px; top: 10px; right: 10px;
+    display: flex; flex-wrap: wrap; gap: 6px; align-items: center; pointer-events: none;
+  }
+  #rp-head .tag { position: static; }
+  #rp-outcome { color: var(--ink); border-color: var(--ink); font-weight: 600; }
+  #rp-outcome.good { color: var(--good); border-color: var(--good); }
+  #rp-outcome.bad { color: var(--danger); border-color: var(--danger); }
+  #rp-note { border-style: dashed; }
+  #rp-joints { margin-left: auto; color: var(--muted); border-style: dashed; }
+  #rp-bar {
+    position: fixed; left: 10px; right: 10px; bottom: 10px; height: 28px;
+    display: flex; align-items: stretch; gap: 0;
+    border: 1px solid var(--ink); background: var(--paper); color: var(--ink);
+  }
+  #rp-bar button {
+    font: inherit; letter-spacing: inherit; text-transform: inherit; color: var(--ink);
+    background: transparent; border: 0; border-right: 1px solid var(--ink);
+    min-width: 30px; padding: 0 8px; cursor: pointer; border-radius: 0;
+  }
+  #rp-bar button:hover { background: rgba(127, 127, 127, 0.12); }
+  #rp-bar button:active { opacity: 0.7; }
+  #rp-play { min-width: 40px; color: var(--accent) !important; }
+  #rp-speed { border-left: 1px solid var(--ink) !important; border-right: 0 !important; min-width: 52px; }
+  #rp-scrub-wrap { flex: 1; display: flex; align-items: center; padding: 0 10px; min-width: 60px; }
+  #rp-time { display: flex; align-items: center; padding: 0 8px; white-space: nowrap; color: var(--muted);
+             border-left: 1px solid var(--ink); }
+  input[type=range]#rp-scrub {
+    -webkit-appearance: none; appearance: none; width: 100%; height: 14px; margin: 0;
+    background: transparent; cursor: pointer;
+  }
+  input[type=range]#rp-scrub::-webkit-slider-runnable-track { height: 1px; background: var(--ink); }
+  input[type=range]#rp-scrub::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none; width: 9px; height: 9px; margin-top: -4px;
+    background: var(--paper); border: 1px solid var(--accent); border-radius: 0;
+  }
+  input[type=range]#rp-scrub::-moz-range-track { height: 1px; background: var(--ink); }
+  input[type=range]#rp-scrub::-moz-range-thumb {
+    width: 9px; height: 9px; background: var(--paper); border: 1px solid var(--accent); border-radius: 0;
+  }
+  @media (max-width: 420px) { #rp-time, #hint, #rp-joints { display: none; } }
+
+  /* Part legend + hover label ------------------------------------------------ */
+  #legend {
+    position: fixed; left: 10px; top: 10px; max-height: calc(100% - 110px); overflow-y: auto;
+    display: flex; flex-direction: column; gap: 2px; padding: 5px 6px;
+    border: 1px solid var(--muted); background: var(--paper); pointer-events: auto;
+  }
+  #legend .row { display: flex; align-items: center; gap: 6px; padding: 1px 2px; cursor: default; white-space: nowrap; }
+  #legend .row:hover, #legend .row.hot { color: var(--ink); background: rgba(127, 127, 127, 0.12); }
+  #legend .sw { width: 9px; height: 9px; border: 1px solid var(--ink); flex: none; }
+  body.replaying #legend { display: none; }
+  body.moving #legend { max-height: calc(100% - 150px); }
+  #hover { pointer-events: none; color: var(--ink); border-color: var(--ink); transform: translate(12px, 12px); }
+  @media (max-width: 480px) { #legend { display: none; } }
+
+  /* Motion simulator --------------------------------------------------------- */
+  body.moving #dims { bottom: 96px; }
+  body.moving #hint { display: none; }
+  #mv-bar {
+    position: fixed; left: 10px; right: 10px; bottom: 10px;
+    display: flex; flex-direction: column; border: 1px solid var(--ink); background: var(--paper); color: var(--ink);
+  }
+  #mv-top { display: flex; align-items: stretch; height: 26px; border-bottom: 1px solid var(--ink); }
+  #mv-top button {
+    font: inherit; letter-spacing: inherit; text-transform: inherit; color: var(--ink);
+    background: transparent; border: 0; border-right: 1px solid var(--ink);
+    min-width: 30px; padding: 0 10px; cursor: pointer; border-radius: 0;
+  }
+  #mv-top button:hover { background: rgba(127, 127, 127, 0.12); }
+  #mv-play { color: var(--accent) !important; min-width: 40px; }
+  #mv-title { display: flex; align-items: center; padding: 0 10px; color: var(--muted); flex: 1; white-space: nowrap; overflow: hidden; }
+  #mv-live { width: 6px; height: 6px; background: var(--accent); margin-right: 8px; flex: none; }
+  #mv-joints { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .mv-j { display: flex; flex-direction: column; gap: 2px; padding: 5px 10px 6px; border-right: 1px solid var(--ink); min-width: 0; }
+  .mv-j:last-child { border-right: 0; }
+  .mv-j .lab { display: flex; justify-content: space-between; color: var(--muted); }
+  .mv-j .lab b { color: var(--ink); font-weight: 600; }
+  .mv-j input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 14px; margin: 0; background: transparent; cursor: pointer; }
+  .mv-j input[type=range]::-webkit-slider-runnable-track { height: 1px; background: var(--ink); }
+  .mv-j input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none; width: 9px; height: 9px; margin-top: -4px;
+    background: var(--paper); border: 1px solid var(--accent); border-radius: 0;
+  }
+  @media (max-width: 420px) { #mv-joints { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+<script>
+  // App appearance override (Paper = light, Graphite = dark); "system" follows prefers-color-scheme.
+  (function () {
+    var t = window.__mechyTheme;
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/build/three.module.min.js",
+    "three/addons/": "./vendor/three/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="status" class="tag">Loading viewer</div>
+<div id="dims" class="tag hidden"></div>
+<div id="hint" class="tag">Drag orbit · Scroll zoom · Double-click fit</div>
+<div id="legend" class="hidden"></div>
+<div id="hover" class="tag hidden"></div>
+<div id="mv-bar" class="hidden">
+  <div id="mv-top">
+    <button id="mv-play" title="Play / pause the motion (space)">&#x275A;&#x275A;</button>
+    <button id="mv-home" title="Back to the ready pose">Home</button>
+    <span id="mv-title"><span id="mv-live"></span>Motion sim · demo moves, drag a slider to pose</span>
+    <button id="mv-speed" title="Playback speed">1&#xD7;</button>
+  </div>
+  <div id="mv-joints"></div>
+</div>
+<div id="rp-head" class="hidden">
+  <span id="rp-outcome" class="tag"></span>
+  <span id="rp-label" class="tag"></span>
+  <span id="rp-note" class="tag hidden"></span>
+  <span id="rp-joints" class="tag"></span>
+</div>
+<div id="rp-bar" class="hidden">
+  <button id="rp-prev" title="Previous throw  [">&#x2039;</button>
+  <button id="rp-play" title="Play / pause  (space)">&#x275A;&#x275A;</button>
+  <button id="rp-next" title="Next throw  ]">&#x203A;</button>
+  <div id="rp-scrub-wrap"><input id="rp-scrub" type="range" min="0" max="1000" step="1" value="0" aria-label="Scrub"></div>
+  <span id="rp-time">0.00 / 0.00 s</span>
+  <button id="rp-speed" title="Playback speed">1&#xD7;</button>
+</div>
+
+<script>
+  // If the module never starts (vendored three.js missing), say so instead of a blank sheet.
+  setTimeout(function () {
+    if (!window.mechy) {
+      document.getElementById('status').textContent = '3D viewer failed to load the bundled three.js';
+    }
+  }, 8000);
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const post = (msg) => {
+  try { window.webkit.messageHandlers.mechy.postMessage(msg); } catch (e) { /* not in the app */ }
+};
+const statusEl = document.getElementById('status');
+const dimsEl = document.getElementById('dims');
+const setStatus = (t) => { statusEl.textContent = t; statusEl.classList.toggle('hidden', !t); };
+
+const dark = window.matchMedia('(prefers-color-scheme: dark)');
+let themeMode = (window.__mechyTheme === 'light' || window.__mechyTheme === 'dark') ? window.__mechyTheme : 'system';
+const isDark = () => themeMode === 'dark' || (themeMode !== 'light' && dark.matches);
+const palette = () => isDark()
+  ? { paper: 0x1A1A1A, surface: 0x262626, ink: 0xD8D8D8, muted: 0x8E8E8E, grid: 0x3A3A3A, gridMajor: 0x555555, accent: 0x20A4F3 }
+  : { paper: 0xECECEA, surface: 0xF5F5F3, ink: 0x1C1C1C, muted: 0x6B6B6B, grid: 0xCFCFCC, gridMajor: 0xA8A8A4, accent: 0x20A4F3 };
+
+// Renderer / scene ------------------------------------------------------
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.setClearColor(0x000000, 0);   // CSS paper + dot grid shows through
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const pmrem = new THREE.PMREMGenerator(renderer);
+const envMap = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.001, 1000);
+camera.position.set(1.2, 0.9, 1.4);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.08;
+controls.screenSpacePanning = true;
+
+// Lights: only used in shaded mode (line mode uses unlit flat surfaces).
+const hemi = new THREE.HemisphereLight(0xffffff, 0x8a8a86, 0.9);
+const sun = new THREE.DirectionalLight(0xffffff, 1.6);
+sun.position.set(2, 4, 3);
+sun.castShadow = true;
+sun.shadow.mapSize.set(2048, 2048);
+scene.add(hemi, sun, sun.target);
+
+// Ground: grid + shadow catcher.
+let grid = null;
+const shadowFloor = new THREE.Mesh(
+  new THREE.PlaneGeometry(1, 1),
+  new THREE.ShadowMaterial({ opacity: 0.12 })
+);
+shadowFloor.rotation.x = -Math.PI / 2;
+shadowFloor.receiveShadow = true;
+scene.add(shadowFloor);
+
+function rebuildGrid(size) {
+  if (grid) { scene.remove(grid); grid.geometry.dispose(); grid.material.dispose(); }
+  const p = palette();
+  const divisions = 16;
+  grid = new THREE.GridHelper(size, divisions, p.gridMajor, p.grid);
+  grid.material.transparent = true;
+  grid.material.opacity = 0.9;
+  grid.userData.size = size;
+  scene.add(grid);
+  shadowFloor.scale.set(size, size, 1);
+}
+
+// Model ----------------------------------------------------------------
+let model = null;
+let shaded = false;
+const loader = new GLTFLoader();
+
+function niceStep(x) {
+  const e = Math.pow(10, Math.floor(Math.log10(x)));
+  const f = x / e;
+  return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * e;
+}
+
+// Part colors: every printed / structural part gets its own hue; bought parts of one kind
+// (motors, pulleys) share one so they read as "the same thing".
+const PART_HUES = [0x3E7CC9, 0xE0782F, 0x2F9A6E, 0xC94F66, 0x8462C4, 0xD3A12B, 0x2EA3B8, 0x7E8F2E, 0xB0603F, 0x5A6FD6];
+const KIND_COLORS = [
+  { re: /pulley|gear|belt/i, color: 0xA9B3BD, label: 'Pulleys' },     // before motors: "pulley_base_motor"
+  { re: /motor|nema|stepper/i, color: 0x34373C, label: 'Motors' },
+  { re: /bearing|shaft|bolt|screw/i, color: 0x8A9098, label: 'Hardware' },
+];
+let partList = [];   // [{key, label, color, meshes}]
+
+/** A part's node name. GLTFLoader splits multi-primitive meshes into "<node>_<i>" children of a group. */
+function partName(o) {
+  const parent = o.parent && o.parent.name;
+  if (parent && o.name && o.name.startsWith(parent + '_') && /^\d+$/.test(o.name.slice(parent.length + 1))) return parent;
+  return o.name || parent || 'part';
+}
+const prettyName = (n) => String(n).replace(/[_-]+/g, ' ').trim();
+
+function assignPartColors() {
+  const byKey = new Map();
+  let hue = 0;
+  model.traverse((o) => {
+    if (!o.isMesh || o.userData.noStyle) return;
+    const name = partName(o);
+    const kind = KIND_COLORS.find((k) => k.re.test(name));
+    const key = kind ? kind.label : name;
+    if (!byKey.has(key)) {
+      byKey.set(key, { key, label: kind ? kind.label : prettyName(name),
+                       color: kind ? kind.color : PART_HUES[hue++ % PART_HUES.length], meshes: [] });
+    }
+    const entry = byKey.get(key);
+    entry.meshes.push(o);
+    (entry.names = entry.names || new Set()).add(name);
+    o.userData.part = entry;
+  });
+  partList = [...byKey.values()];
+  buildLegend();
+}
+
+const _paperC = new THREE.Color(), _partC = new THREE.Color();
+/** Flat (line-drawing) fill: the part color washed toward the paper so ink edges stay legible. */
+function flatColor(hex, p) {
+  return _partC.setHex(hex).lerp(_paperC.setHex(p.surface), isDark() ? 0.15 : 0.2).getHex();
+}
+
+function applyStyle() {
+  if (!model) return;
+  const p = palette();
+  model.traverse((o) => {
+    if (o.isMesh && !o.userData.noStyle) {
+      const hex = o.userData.part ? o.userData.part.color : p.surface;
+      if (!o.userData.shadedMaterial) {
+        const motor = o.userData.part && o.userData.part.key === 'Motors';
+        o.userData.shadedMaterial = new THREE.MeshStandardMaterial({
+          color: hex, roughness: motor ? 0.45 : 0.62, metalness: motor ? 0.35 : 0.05, side: THREE.DoubleSide,
+        });
+      }
+      if (!o.userData.flatMaterial) {
+        o.userData.flatMaterial = new THREE.MeshBasicMaterial({
+          color: p.surface, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1,
+        });
+      }
+      o.userData.flatMaterial.color.setHex(flatColor(hex, p));
+      o.material = shaded ? o.userData.shadedMaterial : o.userData.flatMaterial;
+      o.castShadow = shaded;
+      if (!o.userData.edges) {
+        const edges = new THREE.LineSegments(
+          new THREE.EdgesGeometry(o.geometry, 30),
+          new THREE.LineBasicMaterial({ color: p.ink })
+        );
+        edges.raycast = () => {};
+        o.add(edges);
+        o.userData.edges = edges;
+      }
+      o.userData.edges.material.color.setHex(o.userData.part && o.userData.part === hotPart ? p.accent : p.ink);
+      o.userData.edges.visible = true;
+    }
+  });
+  scene.environment = shaded ? envMap : null;
+  hemi.visible = sun.visible = shaded;
+  shadowFloor.visible = shaded;
+  if (grid) rebuildGrid(grid.userData.size || 1);
+}
+
+function fit() {
+  if (!model) return;
+  const box = new THREE.Box3().setFromObject(model);
+  const size = box.getSize(new THREE.Vector3());
+  const center = box.getCenter(new THREE.Vector3());
+  const sphere = box.getBoundingSphere(new THREE.Sphere());
+  const r = Math.max(sphere.radius, 1e-6);
+  const dist = r / Math.sin(THREE.MathUtils.degToRad(camera.fov) / 2) * 1.15;
+  const dir = new THREE.Vector3(1, 0.7, 1.15).normalize();
+  camera.position.copy(center).addScaledVector(dir, dist);
+  camera.near = dist / 100;
+  camera.far = dist * 100;
+  camera.updateProjectionMatrix();
+  controls.target.copy(center);
+  controls.update();
+  const gridSize = niceStep(Math.max(size.x, size.z, size.y) * 2.5);
+  rebuildGrid(gridSize);
+  sun.position.copy(center).add(new THREE.Vector3(r * 2, r * 4, r * 3));
+  sun.target.position.copy(center);
+  const s = sun.shadow.camera;
+  s.left = s.bottom = -r * 2; s.right = s.top = r * 2; s.near = r * 0.1; s.far = r * 10;
+  s.updateProjectionMatrix();
+}
+
+function showDims() {
+  const box = new THREE.Box3().setFromObject(model);
+  const size = box.getSize(new THREE.Vector3());
+  // glTF is metres by spec; treat a huge model as millimetres.
+  const toMM = Math.max(size.x, size.y, size.z) > 20 ? 1 : 1000;
+  const f = (v) => Math.round(v * toMM);
+  dimsEl.textContent = `W ${f(size.x)} × D ${f(size.z)} × H ${f(size.y)} mm`;
+  dimsEl.classList.remove('hidden');
+}
+
+function onLoaded(gltf) {
+  if (model) {
+    detachReplay();
+    scene.remove(model);
+    model.traverse((o) => {
+      if (o.geometry) o.geometry.dispose();
+      if (o.userData && o.userData.flatMaterial) o.userData.flatMaterial.dispose();
+      if (o.userData && o.userData.shadedMaterial) o.userData.shadedMaterial.dispose();
+    });
+  }
+  model = gltf.scene;
+  hotPart = null;
+  assignPartColors();
+  // Stand the model on the floor (y = 0).
+  const box = new THREE.Box3().setFromObject(model);
+  model.position.y -= box.min.y;
+  scene.add(model);
+  applyStyle();
+  fit();
+  showDims();
+  setStatus('');
+  post({ type: 'loaded' });
+  if (rp.data) attachReplay();
+  else if (mv.on) startMotion();
+}
+
+// Part legend and hover ------------------------------------------------------
+const legendEl = document.getElementById('legend');
+const hoverEl = document.getElementById('hover');
+let hotPart = null;
+
+function setHotPart(part) {
+  if (part === hotPart) return;
+  hotPart = part;
+  const p = palette();
+  if (model) model.traverse((o) => {
+    if (o.userData && o.userData.edges) o.userData.edges.material.color.setHex(o.userData.part && o.userData.part === hotPart ? p.accent : p.ink);
+  });
+  for (const row of legendEl.children) row.classList.toggle('hot', row.dataset.key === (part && part.key));
+}
+
+function buildLegend() {
+  legendEl.innerHTML = '';
+  for (const part of partList) {
+    const row = document.createElement('div');
+    row.className = 'row';
+    row.dataset.key = part.key;
+    const sw = document.createElement('span');
+    sw.className = 'sw';
+    sw.style.background = '#' + part.color.toString(16).padStart(6, '0');
+    const label = document.createElement('span');
+    label.textContent = part.names.size > 1 ? `${part.label} ×${part.names.size}` : part.label;
+    row.append(sw, label);
+    row.addEventListener('mouseenter', () => setHotPart(part));
+    row.addEventListener('mouseleave', () => setHotPart(null));
+    legendEl.appendChild(row);
+  }
+  legendEl.classList.toggle('hidden', partList.length < 2);
+}
+
+const raycaster = new THREE.Raycaster();
+const _ndc = new THREE.Vector2();
+let pointerDown = false;
+renderer.domElement.addEventListener('pointerdown', () => { pointerDown = true; });
+window.addEventListener('pointerup', () => { pointerDown = false; });
+renderer.domElement.addEventListener('pointerleave', () => { hoverEl.classList.add('hidden'); setHotPart(null); });
+renderer.domElement.addEventListener('pointermove', (e) => {
+  if (!model || pointerDown) return;
+  _ndc.set((e.clientX / window.innerWidth) * 2 - 1, -(e.clientY / window.innerHeight) * 2 + 1);
+  raycaster.setFromCamera(_ndc, camera);
+  const hit = raycaster.intersectObject(model, true).find((h) => h.object.isMesh && h.object.userData.part);
+  if (hit) {
+    hoverEl.textContent = prettyName(partName(hit.object));
+    hoverEl.style.left = e.clientX + 'px';
+    hoverEl.style.top = e.clientY + 'px';
+    hoverEl.classList.remove('hidden');
+    setHotPart(hit.object.userData.part);
+  } else {
+    hoverEl.classList.add('hidden');
+    setHotPart(null);
+  }
+});
+
+// Sim theater (contracts.md section 11) ------------------------------------
+// Animates the named GLB bodies (turntable, upper_arm, forearm, hand) from
+// sim/<task>/replay.json and draws the ball (67 mm sphere), its travelled path
+// (solid), the predicted path (dashed) and the catch point (cross).
+let BALL_R = 0.067 / 2;    // replay.json ball_diameter_m overrides (the pick sim's payload is 40 mm)
+const JOINT_NODES = ['turntable', 'upper_arm', 'forearm', 'hand'];
+const JOINT_LABELS = ['BASE', 'SHLD', 'ELB', 'WR'];
+const DEFAULT_AXES = { turntable: [0, 0, 1], upper_arm: [0, -1, 0], forearm: [0, -1, 0], hand: [0, -1, 0] };
+const END_HOLD_S = 1.0;
+
+const rp = {
+  data: null, title: '', index: 0, t: 0, playing: true, speed: 1, hold: 0, scrubbing: false,
+  rig: null, frame: null, ownFrame: false, group: null, objs: null, note: '',
+};
+const $ = (id) => document.getElementById(id);
+const ui = {
+  head: $('rp-head'), bar: $('rp-bar'), outcome: $('rp-outcome'), label: $('rp-label'), note: $('rp-note'),
+  joints: $('rp-joints'), prev: $('rp-prev'), play: $('rp-play'), next: $('rp-next'), scrub: $('rp-scrub'),
+  time: $('rp-time'), speed: $('rp-speed'),
+};
+let uiCache = { time: '', scrub: -1, joints: '' };
+
+function vec3(p) {
+  if (!Array.isArray(p) || p.length < 3) return null;
+  const v = [Number(p[0]), Number(p[1]), Number(p[2])];
+  return v.every(Number.isFinite) ? v : null;
+}
+
+function normalizeReplay(d) {
+  if (!d || typeof d !== 'object' || !Array.isArray(d.throws)) throw new Error('replay.json has no throws');
+  const dt = Number(d.dt) > 0 ? Number(d.dt) : 0.01;
+  const throws = d.throws.map((th, i) => {
+    th = th || {};
+    const q = Array.isArray(th.q) ? th.q.filter((r) => Array.isArray(r)).map((r) => r.map(Number)) : [];
+    const ball = Array.isArray(th.ball) ? th.ball.map(vec3).filter(Boolean) : [];
+    const n = Math.max(q.length, ball.length, 2);
+    let t = Array.isArray(th.t) ? th.t.map(Number).filter(Number.isFinite) : [];
+    if (t.length < 2) t = Array.from({ length: n }, (_, k) => k * dt);
+    return {
+      id: th.id != null ? th.id : i + 1,
+      outcome: String(th.outcome || 'unknown'),
+      t, q, ball,
+      predicted: Array.isArray(th.predicted) ? th.predicted.map(vec3).filter(Boolean) : [],
+      catchPoint: vec3(th.catch_point),
+    };
+  }).filter((th) => th.q.length || th.ball.length);
+  if (!throws.length) throw new Error('replay.json has no throws');
+  const axes = Object.assign({}, DEFAULT_AXES);
+  if (d.joint_axes && typeof d.joint_axes === 'object') {
+    for (const k of JOINT_NODES) { const a = vec3(d.joint_axes[k]); if (a) axes[k] = a; }
+  }
+  // Optional override of the joint angles arm.glb was exported at. Normally not needed: the
+  // rest angle is read from each node's own rotation (see bindRig).
+  const rest = Array.isArray(d.glb_q) ? JOINT_NODES.map((_, k) => Number(d.glb_q[k]) || 0) : null;
+  const ballD = Number(d.ball_diameter_m) > 0 ? Number(d.ball_diameter_m) : 0.067;
+  return { variant: d.variant, axes, axesGiven: !!d.joint_axes, rest, throws, ballD };
+}
+
+const currentThrow = () => (rp.data ? rp.data.throws[rp.index] : null);
+const clamp01 = (x) => Math.min(1, Math.max(0, x));
+
+/** Segment index i (0..n-2) and fraction f for time t in a monotonic array. */
+function locate(ts, t) {
+  const n = ts.length;
+  if (n < 2 || t <= ts[0]) return [0, 0];
+  if (t >= ts[n - 1]) return [n - 2, 1];
+  let lo = 0, hi = n - 1;
+  while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (ts[mid] <= t) lo = mid; else hi = mid; }
+  const span = ts[hi] - ts[lo];
+  return [lo, span > 0 ? (t - ts[lo]) / span : 0];
+}
+
+/** Interpolated row of `rows` at time t. Rows sampled on th.t, or spread evenly over it. */
+function sampleRows(rows, th, t) {
+  if (!rows.length) return null;
+  if (rows.length === 1) return { v: rows[0], i: 0 };
+  let i, f;
+  if (rows.length === th.t.length) {
+    [i, f] = locate(th.t, t);
+  } else {
+    const t0 = th.t[0], t1 = th.t[th.t.length - 1];
+    const u = clamp01((t - t0) / Math.max(1e-9, t1 - t0)) * (rows.length - 1);
+    i = Math.min(rows.length - 2, Math.floor(u)); f = u - i;
+  }
+  const a = rows[i], b = rows[i + 1];
+  return { v: a.map((x, k) => x + ((Number.isFinite(b[k]) ? b[k] : x) - x) * f), i: f > 0 ? i + 1 : i };
+}
+
+/** Angle of the twist of quaternion q about unit axis a (radians). */
+function twistAngle(q, a) {
+  const proj = q.x * a.x + q.y * a.y + q.z * a.z;
+  let ang = 2 * Math.atan2(proj, q.w);
+  if (ang > Math.PI) ang -= 2 * Math.PI;
+  if (ang < -Math.PI) ang += 2 * Math.PI;
+  return ang;
+}
+
+/**
+ * Joint angle the GLB node sits at. arm.glb stores each body's rest pose as its node
+ * rotation R(axis, rest) (engine/mechy/cad/glb.py), so the twist of that rotation about the
+ * axis is the rest angle; extras.q / rest_q override it when present.
+ */
+function restAngle(node, axis) {
+  const u = node.userData || {};
+  for (const k of ['q', 'rest_q', 'joint_q']) if (Number.isFinite(Number(u[k]))) return Number(u[k]);
+  return twistAngle(node.userData.mechyRestQ || node.quaternion, axis);
+}
+
+/** Find the joint bodies and the arm base frame (z up, metres) in the loaded model. */
+function bindRig() {
+  rp.rig = null; rp.frame = null; rp.ownFrame = false; rp.note = '';
+  if (!model) return;
+  const nodes = {};
+  for (const n of JOINT_NODES) nodes[n] = model.getObjectByName(n) || null;
+  const missing = JOINT_NODES.filter((n) => !nodes[n]);
+  if (!missing.length) {
+    rp.rig = JOINT_NODES.map((n, k) => {
+      const node = nodes[n];
+      if (!node.userData.mechyRestQ) node.userData.mechyRestQ = node.quaternion.clone();
+      // Axis: replay.json joint_axes, else the node's extras.axis, else the contract default.
+      const extra = vec3(node.userData.axis);
+      const a = (!rp.data.axesGiven && extra) ? extra : rp.data.axes[n];
+      const axis = new THREE.Vector3().fromArray(a).normalize();
+      return {
+        node, axis,
+        rest: rp.data.rest ? rp.data.rest[k] : restAngle(node, axis),
+        restQ: node.userData.mechyRestQ,
+      };
+    });
+    const base = model.getObjectByName('base');
+    const parent = (base || nodes.turntable).parent;
+    if (parent && parent !== model) rp.frame = parent;
+    bindCoupled();
+  } else {
+    rp.note = missing.length === JOINT_NODES.length
+      ? 'Static model: no joint nodes in arm.glb (rebuild CAD)'
+      : `Static model: arm.glb lacks ${missing.join(', ')}`;
+  }
+  if (!rp.frame) {
+    // glTF is y-up; the arm frame is z-up (the same wrapper build123d writes).
+    const g = new THREE.Group();
+    g.name = 'mechy_arm_frame';
+    g.rotation.x = -Math.PI / 2;
+    model.add(g);
+    rp.frame = g; rp.ownFrame = true;
+  }
+}
+
+const _q = new THREE.Quaternion();
+
+/** Passive-linkage nodes (ref_arm GLB): extras.coupled = [[joint_index, coeff], ...]; the node's
+ * local angle about extras.axis is rest + sum(coeff * (q[j] - rest_q[j])). */
+function bindCoupled() {
+  rp.coupled = [];
+  if (!model) return;
+  const rq = (model.userData && model.userData.rest_q_rad) || (rp.data && rp.data.rest) || [0, 0, 0, 0];
+  rp.restQ = rq;
+  model.traverse((o) => {
+    const u = o.userData || {};
+    if (!Array.isArray(u.coupled)) return;
+    if (!u.mechyRestQ) u.mechyRestQ = o.quaternion.clone();
+    const axis = new THREE.Vector3().fromArray(vec3(u.axis) || [0, -1, 0]).normalize();
+    rp.coupled.push({ node: o, axis, rest: Number(u.rest) || 0, coupled: u.coupled });
+  });
+}
+
+function applyCoupled(deltaQ) {
+  if (!rp.coupled) return;
+  for (const c of rp.coupled) {
+    let ang = c.rest;
+    for (const [j, coef] of c.coupled) ang += coef * (deltaQ[j] || 0);
+    c.node.quaternion.setFromAxisAngle(c.axis, ang);
+  }
+}
+
+function levelWrist() {
+  return !!(model && model.userData && model.userData.kinematics === 'parallel_level');
+}
+
+function applyPose(q) {
+  if (!rp.rig || !q) return;
+  const qq = q.slice();
+  if (levelWrist()) qq[3] = -(Number(qq[1]) + Number(qq[2]));   // passive wrist keeps the hand level
+  rp.rig.forEach((j, k) => {
+    const a = Number(qq[k]);
+    if (!Number.isFinite(a)) return;
+    // Axis is fixed in the parent body: pre-multiply the rest orientation.
+    _q.setFromAxisAngle(j.axis, a - j.rest);
+    j.node.quaternion.copy(_q).multiply(j.restQ);
+  });
+  applyCoupled(qq.map((a, k) => Number(a) - (rp.restQ ? rp.restQ[k] : rp.rig[k].rest)));
+}
+
+function resetPose() {
+  if (rp.rig) rp.rig.forEach((j) => j.node.quaternion.copy(j.restQ));
+  if (rp.coupled) rp.coupled.forEach((c) => c.node.quaternion.copy(c.node.userData.mechyRestQ));
+}
+
+function disposeTree(root) {
+  root.traverse((o) => {
+    if (o.geometry) o.geometry.dispose();
+    if (o.material) (Array.isArray(o.material) ? o.material : [o.material]).forEach((m) => m.dispose());
+  });
+}
+
+function clearThrowObjects() {
+  if (!rp.group) return;
+  if (rp.group.parent) rp.group.parent.remove(rp.group);
+  disposeTree(rp.group);
+  rp.group = null; rp.objs = null;
+}
+
+const v3 = (a) => new THREE.Vector3(a[0], a[1], a[2]);
+
+function buildThrow() {
+  clearThrowObjects();
+  const th = currentThrow();
+  if (!th || !rp.frame) return;
+  const p = palette();
+  const g = new THREE.Group();
+  g.name = 'mechy_replay';
+  const objs = {};
+
+  if (th.predicted.length >= 2) {
+    const geo = new THREE.BufferGeometry().setFromPoints(th.predicted.map(v3));
+    const line = new THREE.Line(geo, new THREE.LineDashedMaterial({ color: p.muted, dashSize: 0.015, gapSize: 0.015 }));
+    line.computeLineDistances();
+    g.add(line); objs.predicted = line;
+  }
+  if (th.ball.length >= 2) {
+    const geo = new THREE.BufferGeometry().setFromPoints(th.ball.map(v3));
+    geo.setDrawRange(0, 1);
+    const line = new THREE.Line(geo, new THREE.LineBasicMaterial({ color: p.ink }));
+    g.add(line); objs.trail = line;
+  }
+  if (th.ball.length) {
+    const ball = new THREE.Group();
+    const fill = new THREE.Mesh(new THREE.SphereGeometry(BALL_R, 32, 16), new THREE.MeshBasicMaterial({ color: p.surface }));
+    // Inverted hull: a slightly larger back-face sphere draws the ink outline.
+    const rim = new THREE.Mesh(new THREE.SphereGeometry(BALL_R * 1.14, 32, 16),
+      new THREE.MeshBasicMaterial({ color: p.ink, side: THREE.BackSide }));
+    fill.userData.noStyle = rim.userData.noStyle = true;
+    fill.raycast = rim.raycast = () => {};
+    ball.add(fill, rim);
+    ball.position.copy(v3(th.ball[0]));
+    g.add(ball); objs.ball = ball; objs.fill = fill; objs.rim = rim;
+  }
+  if (th.catchPoint) {
+    const c = th.catchPoint, s = 0.022;
+    const pts = [
+      [c[0] - s, c[1], c[2]], [c[0] + s, c[1], c[2]],
+      [c[0], c[1] - s, c[2]], [c[0], c[1] + s, c[2]],
+      [c[0], c[1], c[2] - s], [c[0], c[1], c[2] + s],
+    ].map(v3);
+    const cross = new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(pts),
+      new THREE.LineBasicMaterial({ color: p.accent, depthTest: false, transparent: true }));
+    cross.renderOrder = 10;
+    g.add(cross); objs.cross = cross;
+  }
+  rp.frame.add(g);
+  rp.group = g; rp.objs = objs;
+}
+
+function restyleReplay() {
+  if (!rp.objs) return;
+  const p = palette(), o = rp.objs;
+  if (o.predicted) o.predicted.material.color.setHex(p.muted);
+  if (o.trail) o.trail.material.color.setHex(p.ink);
+  if (o.fill) o.fill.material.color.setHex(p.surface);
+  if (o.rim) o.rim.material.color.setHex(p.ink);
+  if (o.cross) o.cross.material.color.setHex(p.accent);
+}
+
+function renderReplayFrame() {
+  const th = currentThrow();
+  if (!th) return;
+  const t0 = th.t[0], t1 = th.t[th.t.length - 1];
+  const q = sampleRows(th.q, th, rp.t);
+  if (q) applyPose(q.v);
+  const b = sampleRows(th.ball, th, rp.t);
+  if (b && rp.objs) {
+    if (rp.objs.ball) rp.objs.ball.position.set(b.v[0], b.v[1], b.v[2]);
+    if (rp.objs.trail) rp.objs.trail.geometry.setDrawRange(0, Math.max(1, b.i + 1));
+  }
+  // Controls (only touch the DOM when something changed).
+  const time = `${(rp.t - t0).toFixed(2)} / ${(t1 - t0).toFixed(2)} s`;
+  if (time !== uiCache.time) { ui.time.textContent = time; uiCache.time = time; }
+  if (!rp.scrubbing) {
+    const sv = Math.round(clamp01((rp.t - t0) / Math.max(1e-9, t1 - t0)) * 1000);
+    if (sv !== uiCache.scrub) { ui.scrub.value = String(sv); uiCache.scrub = sv; }
+  }
+  if (q) {
+    const j = q.v.slice(0, 4).map((a, k) => `${JOINT_LABELS[k]} ${Math.round(a * 180 / Math.PI)}°`).join('  ');
+    if (j !== uiCache.joints) { ui.joints.textContent = j; uiCache.joints = j; }
+  }
+}
+
+const replayClock = new THREE.Clock();
+function tickReplay() {
+  const dt = Math.min(replayClock.getDelta(), 0.1);
+  const th = currentThrow();
+  if (!th || !model) return;
+  const t0 = th.t[0], t1 = th.t[th.t.length - 1];
+  if (rp.playing && !rp.scrubbing) {
+    if (rp.t >= t1) {
+      rp.hold += dt;
+      if (rp.hold >= END_HOLD_S) { rp.hold = 0; rp.t = t0; }
+    } else {
+      rp.t = Math.min(t1, rp.t + dt * rp.speed);
+    }
+  }
+  renderReplayFrame();
+}
+
+function outcomeText(o) { return String(o).replace(/[_-]+/g, ' ').toUpperCase(); }
+
+function updateReplayLabels() {
+  const th = currentThrow();
+  if (!th) return;
+  const n = rp.data.throws.length;
+  ui.outcome.textContent = outcomeText(th.outcome);
+  ui.outcome.className = 'tag ' + (th.outcome === 'caught' ? 'good' : (th.outcome === 'unknown' ? '' : 'bad'));
+  ui.label.textContent = `${rp.title ? rp.title + ' · ' : ''}Throw ${th.id} · ${rp.index + 1}/${n}`;
+  ui.note.textContent = rp.note;
+  ui.note.classList.toggle('hidden', !rp.note);
+  ui.joints.classList.toggle('hidden', !th.q.length);
+  ui.prev.disabled = ui.next.disabled = n < 2;
+  ui.play.innerHTML = rp.playing ? '&#x275A;&#x275A;' : '&#x25B6;';
+  ui.speed.innerHTML = rp.speed === 1 ? '1&#xD7;' : '0.25&#xD7;';
+}
+
+function setThrow(i) {
+  if (!rp.data) return;
+  const n = rp.data.throws.length;
+  rp.index = ((i % n) + n) % n;
+  const th = currentThrow();
+  rp.t = th.t[0]; rp.hold = 0;
+  uiCache = { time: '', scrub: -1, joints: '' };
+  buildThrow();
+  updateReplayLabels();
+  renderReplayFrame();
+}
+
+function showReplayUI(on) {
+  ui.head.classList.toggle('hidden', !on);
+  ui.bar.classList.toggle('hidden', !on);
+  document.body.classList.toggle('replaying', on);
+}
+
+/** Bind the stored replay to the current model and show the first throw. */
+function attachReplay() {
+  if (!rp.data || !model) return;
+  if (mv.on) stopMotion(true);
+  bindRig();
+  setThrow(Math.min(rp.index, rp.data.throws.length - 1));
+  showReplayUI(true);
+  fit();
+  post({ type: 'replayLoaded', throws: rp.data.throws.length, animated: !!rp.rig });
+}
+
+/** Remove replay objects from the model (keeps rp.data so a reloaded model re-attaches). */
+function detachReplay() {
+  clearThrowObjects();
+  resetPose();
+  if (rp.ownFrame && rp.frame && rp.frame.parent) rp.frame.parent.remove(rp.frame);
+  rp.rig = null; rp.frame = null; rp.ownFrame = false;
+}
+
+function setReplay(obj, title) {
+  try {
+    rp.data = normalizeReplay(obj);
+    BALL_R = rp.data.ballD / 2;
+  } catch (e) {
+    rp.data = null;
+    showReplayUI(false);
+    setStatus(String(e && e.message || 'Could not read replay.json'));
+    post({ type: 'replayFailed', error: String(e && e.message || e), parse: true });
+    return;
+  }
+  rp.title = title || '';
+  rp.index = 0; rp.playing = true; rp.hold = 0;
+  detachReplay();
+  if (model) attachReplay();
+}
+
+function closeReplay() {
+  if (!rp.data && !rp.group) return;
+  detachReplay();
+  rp.data = null;
+  showReplayUI(false);
+  if (mv.on) startMotion();
+  fit();
+}
+
+function togglePlay() {
+  const th = currentThrow();
+  if (!th) return;
+  if (!rp.playing && rp.t >= th.t[th.t.length - 1]) rp.t = th.t[0];
+  rp.playing = !rp.playing; rp.hold = 0;
+  updateReplayLabels();
+}
+
+ui.play.addEventListener('click', togglePlay);
+ui.prev.addEventListener('click', () => setThrow(rp.index - 1));
+ui.next.addEventListener('click', () => setThrow(rp.index + 1));
+ui.speed.addEventListener('click', () => { rp.speed = rp.speed === 1 ? 0.25 : 1; updateReplayLabels(); });
+ui.scrub.addEventListener('input', () => {
+  const th = currentThrow();
+  if (!th) return;
+  rp.scrubbing = true;
+  if (rp.playing) { rp.playing = false; updateReplayLabels(); }
+  const t0 = th.t[0], t1 = th.t[th.t.length - 1];
+  rp.t = t0 + (Number(ui.scrub.value) / 1000) * (t1 - t0); rp.hold = 0;
+});
+ui.scrub.addEventListener('change', () => { rp.scrubbing = false; });
+window.addEventListener('keydown', (e) => {
+  if (!rp.data) {
+    if (mv.on && e.key === ' ') { toggleMotionPlay(); e.preventDefault(); }
+    return;
+  }
+  if (e.key === ' ') { togglePlay(); e.preventDefault(); }
+  else if (e.key === '[') setThrow(rp.index - 1);
+  else if (e.key === ']') setThrow(rp.index + 1);
+});
+
+
+// Motion sim ---------------------------------------------------------------
+// Animates the arm's joint bodies through a looping demo routine (reach, pick, swing,
+// place) with minimum-jerk moves between waypoints, or holds a pose set by the joint
+// sliders. Kinematic only: it shows how the arm moves, not whether the motors can do it
+// (that is what the catch sim replay is for).
+const MV_LIMITS = [[-180, 180], [-100, 100], [-120, 120], [-110, 110]];   // degrees about rest
+// Waypoints: degrees relative to the ready pose, [base, shoulder, elbow, wrist], seconds to get there.
+const MV_ROUTINE = [
+  { d: [0, 0, 0, 0], t: 1.0 },
+  { d: [-55, 25, -35, 20], t: 1.4 },      // reach out to the left
+  { d: [-55, 40, -55, 25], t: 0.8 },      // dip to pick
+  { d: [-55, 15, -20, 5], t: 0.8 },       // lift
+  { d: [60, 15, -20, 5], t: 1.8 },        // swing across
+  { d: [60, 38, -50, 22], t: 0.8 },       // place
+  { d: [60, -10, 25, -20], t: 1.2 },      // raise high
+  { d: [0, -25, 45, -30], t: 1.4 },       // tall pose, centred
+  { d: [0, 0, 0, 0], t: 1.2 },            // back to ready
+];
+const MV_HOLD_S = 0.25;
+const mv = { on: false, playing: true, speed: 1, rig: null, t: 0, seg: 0, hold: 0, pose: [0, 0, 0, 0], resumeFrom: null };
+const mvUI = { bar: $('mv-bar'), play: $('mv-play'), home: $('mv-home'), speed: $('mv-speed'), joints: $('mv-joints'),
+               title: $('mv-title'), sliders: [], values: [] };
+
+function bindMotionRig() {
+  if (!model) return null;
+  const nodes = JOINT_NODES.map((n) => model.getObjectByName(n));
+  if (nodes.some((n) => !n)) return null;
+  return nodes.map((node) => {
+    if (!node.userData.mechyRestQ) node.userData.mechyRestQ = node.quaternion.clone();
+    const axis = new THREE.Vector3().fromArray(vec3(node.userData.axis) || DEFAULT_AXES[node.name]).normalize();
+    return { node, axis, rest: restAngle(node, axis), restQ: node.userData.mechyRestQ };
+  });
+}
+
+function applyMotionPose(deg) {
+  if (!mv.rig) return;
+  const dd = deg.slice();
+  if (levelWrist()) dd[3] = -(dd[1] + dd[2]);        // parallel linkage: wrist follows the level rule
+  mv.rig.forEach((j, k) => {
+    _q.setFromAxisAngle(j.axis, dd[k] * Math.PI / 180);
+    j.node.quaternion.copy(_q).multiply(j.restQ);
+  });
+  applyCoupled(dd.map((d) => d * Math.PI / 180));
+}
+
+const minJerk = (u) => u * u * u * (10 - 15 * u + 6 * u * u);
+
+function buildMotionUI() {
+  mvUI.joints.innerHTML = ''; mvUI.sliders = []; mvUI.values = [];
+  JOINT_LABELS.forEach((lab, k) => {
+    const cell = document.createElement('div');
+    cell.className = 'mv-j';
+    const head = document.createElement('div');
+    head.className = 'lab';
+    const name = document.createElement('span');
+    name.textContent = ['Base', 'Shoulder', 'Elbow', 'Wrist'][k];
+    const val = document.createElement('b');
+    head.append(name, val);
+    const sl = document.createElement('input');
+    sl.type = 'range'; sl.min = MV_LIMITS[k][0]; sl.max = MV_LIMITS[k][1]; sl.step = 1; sl.value = 0;
+    sl.setAttribute('aria-label', name.textContent);
+    sl.addEventListener('input', () => {
+      if (mv.playing) { mv.playing = false; updateMotionLabels(); }
+      mv.pose[k] = Number(sl.value);
+      applyMotionPose(mv.pose);
+      showMotionValues();
+    });
+    cell.append(head, sl);
+    if (levelWrist() && k === 3) {
+      cell.classList.add('hidden');               // passive wrist: the parallel linkage drives it
+    }
+    mvUI.joints.appendChild(cell);
+    mvUI.sliders.push(sl); mvUI.values.push(val);
+  });
+}
+
+function showMotionValues() {
+  mv.pose.forEach((d, k) => {
+    const abs = mv.rig ? Math.round(d + mv.rig[k].rest * 180 / Math.PI) : Math.round(d);
+    const txt = `${abs}°`;
+    if (mvUI.values[k].textContent !== txt) mvUI.values[k].textContent = txt;
+    if (document.activeElement !== mvUI.sliders[k]) mvUI.sliders[k].value = String(Math.round(d));
+  });
+}
+
+function updateMotionLabels() {
+  mvUI.play.innerHTML = mv.playing ? '&#x275A;&#x275A;' : '&#x25B6;';
+  mvUI.speed.innerHTML = mv.speed === 1 ? '1&#xD7;' : (mv.speed === 0.5 ? '0.5&#xD7;' : '2&#xD7;');
+  $('mv-live').style.visibility = mv.playing ? 'visible' : 'hidden';
+}
+
+function tickMotion(dt) {
+  if (!mv.on || !mv.rig || !mv.playing || rp.data) return;
+  const n = MV_ROUTINE.length;
+  const from = mv.resumeFrom || MV_ROUTINE[mv.seg].d, step = MV_ROUTINE[(mv.seg + 1) % n];
+  if (mv.hold > 0) { mv.hold -= dt * mv.speed; return; }
+  mv.t += dt * mv.speed;
+  const u = Math.min(1, mv.t / step.t), s = minJerk(u);
+  mv.pose = from.map((a, k) => a + (step.d[k] - a) * s);
+  applyMotionPose(mv.pose);
+  showMotionValues();
+  if (u >= 1) { mv.seg = (mv.seg + 1) % n; mv.t = 0; mv.hold = MV_HOLD_S; mv.resumeFrom = null; }
+}
+
+function startMotion() {
+  mv.on = true;
+  if (rp.data) return;            // a sim replay owns the joints; motion resumes when it closes
+  mv.rig = bindMotionRig();
+  if (!mvUI.sliders.length) buildMotionUI();
+  mvUI.bar.classList.remove('hidden');
+  document.body.classList.add('moving');
+  if (!mv.rig) {
+    mvUI.title.textContent = 'Static model: no joint nodes in arm.glb (rebuild CAD)';
+    mvUI.joints.classList.add('hidden');
+  } else {
+    mvUI.joints.classList.remove('hidden');
+    mv.seg = 0; mv.t = 0; mv.hold = 0; mv.playing = true; mv.resumeFrom = mv.pose.slice();
+    applyMotionPose(mv.pose);
+  }
+  showMotionValues();
+  updateMotionLabels();
+}
+
+function stopMotion(keepOn) {
+  if (mv.rig) mv.rig.forEach((j) => j.node.quaternion.copy(j.restQ));
+  mv.rig = null;
+  mv.on = !!keepOn;
+  mv.pose = [0, 0, 0, 0];
+  mvUI.bar.classList.add('hidden');
+  document.body.classList.remove('moving');
+}
+
+function toggleMotionPlay() {
+  if (!mv.rig) return;
+  mv.playing = !mv.playing;
+  if (mv.playing) {
+    // Resume the routine from the current pose: blend into the next waypoint.
+    mv.t = 0; mv.hold = 0;
+    mv.resumeFrom = mv.pose.slice();
+  }
+  updateMotionLabels();
+}
+
+mvUI.play.addEventListener('click', toggleMotionPlay);
+mvUI.home.addEventListener('click', () => {
+  mv.playing = false; mv.pose = [0, 0, 0, 0]; applyMotionPose(mv.pose); showMotionValues(); updateMotionLabels();
+});
+mvUI.speed.addEventListener('click', () => {
+  mv.speed = mv.speed === 1 ? 2 : (mv.speed === 2 ? 0.5 : 1);
+  updateMotionLabels();
+});
+
+function decodeBase64Text(b64) {
+  const bin = atob(b64);
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return new TextDecoder('utf-8').decode(bytes);
+}
+
+/** XHR rather than fetch(): WebKit lets XHR read file:// URLs under the read-access grant. */
+function loadReplayURL(url, stamp, title) {
+  const xhr = new XMLHttpRequest();
+  const fail = (why) => post({ type: 'replayFailed', url, error: why });
+  try {
+    xhr.open('GET', url, true);   // file:// ignores cache-busting; WebKit reloads from disk
+    xhr.responseType = 'text';
+    xhr.onload = () => {
+      if ((xhr.status === 200 || xhr.status === 0) && xhr.responseText) {
+        let obj;
+        try { obj = JSON.parse(xhr.responseText); } catch (e) { fail('parse: ' + e.message); return; }
+        setReplay(obj, title);
+      } else {
+        fail('status ' + xhr.status);
+      }
+    };
+    xhr.onerror = () => fail('xhr error');
+    xhr.send();
+  } catch (e) {
+    fail(String(e && e.message || e));
+  }
+}
+
+let lastURL = null;
+window.mechy = {
+  load(url, stamp) {
+    lastURL = url;
+    setStatus('Loading model');
+    const busted = stamp ? `${url}#${stamp}` : url;
+    loader.load(busted, onLoaded, undefined, (err) => {
+      setStatus('Loading model…');
+      post({ type: 'loadFailed', url, error: String(err && err.message || err) });
+    });
+  },
+  loadBase64(b64) {
+    try {
+      const bin = atob(b64);
+      const bytes = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      loader.parse(bytes.buffer, '', onLoaded, (err) => setStatus('Could not read model'));
+    } catch (e) {
+      setStatus('Could not read model');
+    }
+  },
+  setShaded(on) { shaded = !!on; applyStyle(); },
+  setTheme(mode) {
+    themeMode = (mode === 'light' || mode === 'dark') ? mode : 'system';
+    if (themeMode === 'system') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', themeMode);
+    restyle();
+  },
+  fit,
+  loadReplay(url, stamp, title) { loadReplayURL(url, stamp, title); },
+  loadReplayBase64(b64, title) {
+    let obj;
+    try { obj = JSON.parse(decodeBase64Text(b64)); } catch (e) {
+      setStatus('Could not read replay.json');
+      post({ type: 'replayFailed', error: String(e && e.message || e), parse: true });
+      return;
+    }
+    setReplay(obj, title);
+  },
+  loadReplayData(obj, title) { setReplay(obj, title); },
+  closeReplay,
+  /** Motion sim on/off (demo routine + joint sliders). */
+  setMotion(on) { if (on) startMotion(); else stopMotion(false); },
+  motionState() { return { on: mv.on, playing: mv.playing, animated: !!mv.rig, pose: mv.pose.slice() }; },
+  /** Test/debug: pose the arm at joint degrees [base, shoulder, elbow, wrist] and read a node's
+   * world position in the arm frame (metres). */
+  poseArm(qDeg) { if (rp.rig) applyPose(qDeg.map((d) => d * Math.PI / 180)); },
+  nodeWorld(name) {
+    const n = model && model.getObjectByName(name);
+    if (!n) return null;
+    scene.updateMatrixWorld(true);
+    const v = n.getWorldPosition(new THREE.Vector3());
+    return (rp.frame ? rp.frame.worldToLocal(v.clone()) : v).toArray();
+  },
+  nodeNames() { const out = []; model && model.traverse((o) => o.name && out.push(o.name)); return out; },
+  /** Read-only snapshot for tests and debugging: throw, time, and the hand origin in the arm frame. */
+  replayState() {
+    const th = currentThrow();
+    let hand = null;
+    if (rp.rig && rp.frame) {
+      rp.frame.updateMatrixWorld(true);
+      const w = rp.rig[3].node.getWorldPosition(new THREE.Vector3());
+      hand = rp.frame.worldToLocal(w).toArray();
+    }
+    return th ? { index: rp.index, id: th.id, outcome: th.outcome, t: rp.t, playing: rp.playing, speed: rp.speed,
+                  animated: !!rp.rig, rest: rp.rig ? rp.rig.map((j) => j.rest) : null, hand } : null;
+  },
+};
+
+renderer.domElement.addEventListener('dblclick', fit);
+function restyle() {
+  applyStyle();
+  restyleReplay();
+  if (!model && grid) rebuildGrid(grid.userData.size || 1);
+}
+dark.addEventListener('change', restyle);
+
+function onResize() {
+  camera.aspect = window.innerWidth / Math.max(1, window.innerHeight);
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+window.addEventListener('resize', onResize);
+
+rebuildGrid(1);
+const motionClock = new THREE.Clock();
+renderer.setAnimationLoop(() => {
+  tickMotion(Math.min(motionClock.getDelta(), 0.1));
+  tickReplay();
+  controls.update();
+  renderer.render(scene, camera);
+});
+
+setStatus('No model');
+post({ type: 'ready' });
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+ "repo": "ycheng517/ar4_ros_driver",
+ "stars": 151,
+ "forks": 52,
+ "pushed": "2026-04-04T18:20:36Z",
+ "spdx": "MIT",
+ "branch": "main",
+ "desc": "ROS 2 driver for the Annin Robotics AR4 robot arm",
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2021 Dexter Ong\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Softw",
+ "truncated": false,
+ "ext": {
+  ".stl": 17,
+  ".yaml": 15,
+  ".xacro": 11,
+  ".cpp": 6,
+  ".xml": 5,
+  ".hpp": 5,
+  "": 4,
+  ".md": 4,
+  ".txt": 4,
+  ".py": 4,
+  ".json": 2,
+  ".sh": 2,
+  ".ino": 2,
+  ".rviz": 2,
+  ".png": 2,
+  ".world": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1067
+  ],
+  [
+   "README.md",
+   8881
+  ],
+  [
+   "annin_ar4_description/README.md",
+   348
+  ],
+  [
+   "annin_ar4_description/urdf/ar.ros2_control.xacro",
+   5041
+  ],
+  [
+   "annin_ar4_description/urdf/ar.urdf.xacro",
+   776
+  ],
+  [
+   "annin_ar4_description/urdf/ar_gazebo.urdf.xacro",
+   1955
+  ],
+  [
+   "annin_ar4_description/urdf/ar_gripper.ros2_control.xacro",
+   1758
+  ],
+  [
+   "annin_ar4_description/urdf/ar_gripper_macro.xacro",
+   3400
+  ],
+  [
+   "annin_ar4_description/urdf/ar_macro.xacro",
+   9193
+  ],
+  [
+   "annin_ar4_driver/README.md",
+   1139
+  ],
+  [
+   "annin_ar4_driver/urdf/ar.urdf.xacro",
+   1914
+  ],
+  [
+   "annin_ar4_moveit_config/srdf/ar.srdf.xacro",
+   564
+  ],
+  [
+   "annin_ar4_moveit_config/srdf/ar_gripper_macro.srdf.xacro",
+   1595
+  ],
+  [
+   "annin_ar4_moveit_config/srdf/ar_macro.srdf.xacro",
+   2441
+  ],
+  [
+   "annin_ar4_moveit_config/urdf/fake_ar.urdf.xacro",
+   1557
+  ]
+ ]
+}

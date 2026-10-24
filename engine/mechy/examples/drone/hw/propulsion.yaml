@@ -1,0 +1,39 @@
+# Every number is an estimate until a datasheet confirms it.
+motors:
+  id: 2306 2400KV
+  count: 4
+  mass_g: 31
+  max_thrust_kgf: 1.1          # with 5x4.3x3 props on 4S, estimate
+  value_type: estimate
+  source: typical 2306 2400KV datasheet class values (verify chosen motor)
+props:
+  id: 5x4.3x3 tri-blade
+  mass_g: 4.5                  # per prop
+  value_type: estimate
+  source: spec class of a 5 inch tri-blade prop
+esc:
+  id: 35A 4-in-1, 30.5 mm
+  mass_g: 12
+  value_type: estimate
+  source: spec class of a 30.5 mm 4-in-1 ESC
+fc:
+  id: F405 30.5 mm
+  mass_g: 8
+  value_type: estimate
+  source: spec class of an F405 flight controller
+battery:
+  id: 4S 1300 mAh LiPo
+  mass_g: 160
+  value_type: estimate
+  source: typical 4S 1300 pack mass
+receiver:
+  id: ELRS nano
+  mass_g: 3
+  value_type: estimate
+  source: spec class of a nano receiver
+camera_vtx:
+  id: micro camera + 25-400 mW VTX
+  mass_g: 20
+  optional: true
+  value_type: estimate
+  source: spec class of a micro FPV camera + VTX

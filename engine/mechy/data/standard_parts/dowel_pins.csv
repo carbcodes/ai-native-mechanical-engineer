@@ -1,0 +1,13 @@
+designation,type,d_mm,tolerance,upper_dev_um,lower_dev_um,length_min_mm,length_max_mm,double_shear_min_kN,notes,source_url,value_type
+ISO 8734 1.5,hardened (HRC 60 core ~550HV),1.5,m6,8,2,4,16,3.18,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 2,hardened (HRC 60 core ~550HV),2,m6,8,2,5,20,5.65,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 2.5,hardened (HRC 60 core ~550HV),2.5,m6,8,2,6,24,8.84,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 3,hardened (HRC 60 core ~550HV),3,m6,8,2,6,30,12.72,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 4,hardened (HRC 60 core ~550HV),4,m6,12,4,8,40,22.62,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 5,hardened (HRC 60 core ~550HV),5,m6,12,4,10,50,35.34,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 6,hardened (HRC 60 core ~550HV),6,m6,12,4,12,60,50.89,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 8,hardened (HRC 60 core ~550HV),8,m6,15,6,16,80,90.48,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 10,hardened (HRC 60 core ~550HV),10,m6,15,6,20,100,141.37,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 12,hardened (HRC 60 core ~550HV),12,m6,18,7,25,100,203.58,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 16,hardened (HRC 60 core ~550HV),16,m6,18,7,40,100,361.91,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate
+ISO 8734 20,hardened (HRC 60 core ~550HV),20,m6,21,8,50,100,565.49,press into H7 (interference); slip into G7/F7 side; double shear est. 2*A*900 MPa,https://www.iso.org/standard/15880.html,estimate

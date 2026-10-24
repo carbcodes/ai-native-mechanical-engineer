@@ -1,0 +1,34 @@
+name: v1
+style: ref_arm        # the proven 20sffactory Community Robot Arm (CC BY 4.0), assembled from the
+                      # vendor STEP solids in mechy/data/reference_designs; not the toy generator
+kinematics: parallel_level   # Dobot-style parallel linkage: wrist passive, manipulator stays level
+joints:               # order matters: base yaw, shoulder pitch, elbow pitch, wrist pitch (passive)
+  # gear 4.5 = vendor GT2 20T pulley -> 90T printed gear, on all three driven joints
+  - {name: base,     axis: z, limit_deg: [-150, 150],    gear_ratio: 4.5, motor: nema17}  # yaw, Z socket
+  - {name: shoulder, axis: y, limit_deg: [15, 160],      gear_ratio: 4.5, motor: nema17}  # lower shank, Y
+    # shoulder range is an estimate from the printed part clearances - check on the bench
+  - {name: elbow,    axis: y, limit_deg: [-142.3, -39.2], gear_ratio: 4.5, motor: nema17} # upper shank via the
+    # lever+pleuel loop, X socket. Interior-angle limits from the vendor firmware's R_MIN/R_MAX
+    # (config.h): L1=L2=140 mm -> |q2| in [acos(110^2/..)] = [39.2, 142.3] deg.
+  - {name: wrist,    axis: y, limit_deg: [-175, 175],    gear_ratio: 4.5, motor: nema17}  # passive: no motor,
+    # the linkage enforces q1+q2+q3 = 0 (level). Motor slot A is the spare (vendor rail).
+links:
+  base_height_m: 0.0897   # S pivot above the socket's table face (measured from the vendor STEP)
+  shoulder_x_m: 0.000011  # shoulder axis is 0.011 mm off the yaw axis (measured)
+  upper_arm_m: 0.14       # lower shank, vendor 140 mm kit
+  forearm_m: 0.14         # upper shank, vendor 140 mm kit
+  hand_m: 0.054           # vendor END_EFFECTOR_OFFSET: wrist pivot -> tool midpoint
+  tool_z_m: 0.020          # gripper fingertip midpoint above the wrist level (vendor tool offset)
+catcher:                # unused for pick-and-place; kept because the arm model reads it
+  type: cup
+  diameter_m: 0.095
+  depth_m: 0.070
+  liner: net_pocket
+  give_m: 0.0
+ready_pose_deg: [0, 90, -90, 0]   # vendor INITIAL pose: lower shank vertical, upper shank level
+ref_arm:
+  reference: 20sffactory
+  shank_mm: 140
+  toolhead: gripper       # vendor servo gripper (MG90S)
+  material: PLA
+  mount_mm: 0

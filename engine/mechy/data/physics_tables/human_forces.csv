@@ -1,0 +1,21 @@
+item,body_region,force_N_min,force_N_typical,force_N_max,notes,source_url,value_type
+cobot quasi-static contact limit,skull/forehead,,130,130,ISO/TS 15066 Annex A; transient limit = 2x quasi-static,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,face,,65,65,Avoid any face contact,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,neck,,150,150,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,back/shoulders,,210,210,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,chest,,140,140,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,abdomen,,110,110,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,pelvis,,180,180,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,upper arm/elbow,,150,150,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,lower arm/wrist,,160,160,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,hand/fingers,,140,140,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,thigh/knee,,220,220,,https://www.iso.org/standard/62996.html,standard
+cobot quasi-static contact limit,lower leg,,130,130,,https://www.iso.org/standard/62996.html,standard
+push-button actuation force (finger),fingertip,2.8,5,11,MIL-STD-1472 range for fingertip push buttons,https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=36903,standard
+toggle switch actuation force,fingertip,2.8,3.5,4.5,MIL-STD-1472 small toggle 2.8-4.5 N,https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=36903,standard
+power grip strength (adult female; mean),hand,200,280,350,Jamar dynamometer norms; ~25-30 kgf,https://en.wikipedia.org/wiki/Grip_strength,handbook_typical
+power grip strength (adult male; mean),hand,350,450,550,~40-50 kgf at age 20-50,https://en.wikipedia.org/wiki/Grip_strength,handbook_typical
+key (lateral) pinch strength (adult; mean),thumb+index,60,85,110,Mathiowetz 1985 norms,https://pubmed.ncbi.nlm.nih.gov/3970367/,handbook_typical
+tip pinch strength (adult; mean),thumb+index tips,40,55,75,Mathiowetz 1985 norms,https://pubmed.ncbi.nlm.nih.gov/3970367/,handbook_typical
+comfortable repeated finger press (design target),fingertip,1,3,10,Keyboard ~0.5-0.8 N; design consumer controls <10 N,https://en.wikipedia.org/wiki/Keyboard_technology,estimate
+two-hand push/pull (standing; 5th pct female),hands,100,150,200,Design-to value for occasional manual effort,https://www.hse.gov.uk/msd/pushpull/,estimate

@@ -1,0 +1,48 @@
+{
+ "repo": "rolohaun/SimpleCore",
+ "stars": 299,
+ "forks": 39,
+ "pushed": "2026-03-22T21:56:52Z",
+ "spdx": null,
+ "branch": "main",
+ "desc": "DIY CoreXY Printer called SimpleCore",
+ "truncated": false,
+ "ext": {
+  ".stl": 64,
+  ".jpg": 13,
+  ".cfg": 8,
+  ".md": 5,
+  "": 3,
+  ".f3z": 2,
+  ".png": 1,
+  ".step": 1,
+  ".3mf": 1,
+  ".txt": 1
+ },
+ "key_files": [
+  [
+   "README.md",
+   661
+  ],
+  [
+   "SimpleCore Legacy/Build_Photos/image_readme/Preview.jpg",
+   141317
+  ],
+  [
+   "SimpleCore Legacy/Klipper/Speedtest Macro/README.md",
+   101
+  ],
+  [
+   "SimpleCore Legacy/README.md",
+   897
+  ],
+  [
+   "SimpleCore Legacy/User Mods/CF Tube X Axis guides/README.md",
+   1322
+  ],
+  [
+   "SimpleCore Legacy/User Mods/Y/README.md",
+   72
+  ]
+ ]
+}

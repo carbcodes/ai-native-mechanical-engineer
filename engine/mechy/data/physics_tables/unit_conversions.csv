@@ -1,0 +1,76 @@
+quantity,from_unit,to_unit,factor,offset,exact,trap_note,source_url,value_type
+length,in,m,0.0254,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+length,ft,m,0.3048,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+length,mile,m,1609.344,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+length,mm,m,0.001,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+length,mil (thou),m,2.54e-05,0,true,"""mil"" = 0.001 in (not millimetre)",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+length,um,m,1e-06,0,true,"""micron"" = micrometre",https://www.bipm.org/en/publications/si-brochure,standard
+mass,lb,kg,0.45359237,0,true,lb (mass) vs lbf (force) are different quantities,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+mass,oz,kg,0.028349523125,0,true,avoirdupois ounce; not troy ounce,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+mass,g,kg,0.001,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+force,kgf,N,9.80665,0,true,"Datasheets often write ""kg"" when they mean kgf",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+force,gf,N,0.00980665,0,true,"Hobby load cells/springs quote ""g"" meaning gram-force",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+force,lbf,N,4.4482216152605,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+force,ozf,N,0.27801385095378125,0,true,"""oz"" on a force spec means ozf = lbf/16",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+force,kN,N,1000,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+torque,kgf*cm,N*m,0.0980665,0,true,"Hobby servo/stepper ""kg.cm"" or ""kg-cm"" means kgf*cm; 1 kgf*cm ~ 0.098 N*m (not 1 N*m and not 0.01)",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+torque,gf*cm,N*m,9.80665e-05,0,true,"Tiny motors quote ""g.cm"" meaning gf*cm",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+torque,ozf*in,N*m,0.00706155181422604,0,true,"""oz-in"" on servo/stepper specs = ozf*in; 1 oz-in ~ 7.06 mN*m",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+torque,lbf*in,N*m,0.112984829027617,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+torque,lbf*ft,N*m,1.3558179483314,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+torque,N*cm,N*m,0.01,0,true,Stepper datasheets often use N*cm,https://www.bipm.org/en/publications/si-brochure,standard
+torque,mN*m,N*m,0.001,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+inertia,g*cm^2,kg*m^2,1e-07,0,true,"Motor rotor inertia ""g.cm2"" is a mass*length^2 (not gf); 1 g*cm^2 = 1e-7 kg*m^2",https://www.bipm.org/en/publications/si-brochure,standard
+inertia,kg*cm^2,kg*m^2,0.0001,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+inertia,kg*mm^2,kg*m^2,1e-06,0,true,CAD mass properties often report kg*mm^2 or g*mm^2,https://www.bipm.org/en/publications/si-brochure,standard
+inertia,g*mm^2,kg*m^2,1e-09,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+inertia,lb*in^2,kg*m^2,0.0002926396534292,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+inertia,oz*in^2,kg*m^2,1.8289978339325e-05,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+inertia,ozf*in*s^2,kg*m^2,0.00706155181422604,0,true,"US motor catalogs give inertia in oz-in-s^2 (force-based); numerically equals oz-in torque factor",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+pressure,psi,Pa,6894.75729316836,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+pressure,ksi,Pa,6894757.29316836,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+pressure,bar,Pa,100000,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+pressure,atm,Pa,101325,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+pressure,mmHg,Pa,133.322387415,0,false,conventional mmHg (0 degC),https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+pressure,inH2O,Pa,249.08891,0,false,conventional inch of water (4 degC),https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+pressure,MPa,Pa,1000000,0,true,1 MPa = 1 N/mm^2,https://www.bipm.org/en/publications/si-brochure,standard
+pressure,N/mm^2,Pa,1000000,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+pressure,kgf/cm^2,Pa,98066.5,0,true,"""kg/cm2"" on pneumatics = kgf/cm^2 ~ 0.98 bar",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+energy,Wh,J,3600,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+energy,kWh,J,3600000,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+energy,kcal,J,4184,0,true,thermochemical kcal (food Calorie),https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+energy,BTU,J,1055.05585262,0,true,International Table BTU,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+energy,lbf*ft (energy),J,1.3558179483314,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+charge,mAh,C,3.6,0,true,Battery capacity; energy = mAh * V * 3.6 J,https://www.bipm.org/en/publications/si-brochure,standard
+charge,Ah,C,3600,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+power,hp,W,745.69987158227,0,true,mechanical (imperial) horsepower,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+power,PS (metric hp),W,735.49875,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+power,BTU/h,W,0.29307107017222,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+angle,deg,rad,0.0174532925199433,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+angle,rev,rad,6.28318530717959,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+angle,arcmin,rad,0.000290888208665722,0,true,Gearbox backlash often in arcmin,https://www.bipm.org/en/publications/si-brochure,standard
+angle,arcsec,rad,4.84813681109536e-06,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+angular_velocity,rpm,rad/s,0.10471975511966,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+angular_velocity,deg/s,rad/s,0.0174532925199433,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+angular_velocity,"sec/60deg",rad/s,1.0471975511966,0,true,"Servo speed spec ""0.12 s/60deg"" is a TIME per 60 deg: omega = factor / value (inverse!), not value*factor",https://www.bipm.org/en/publications/si-brochure,standard
+velocity,km/h,m/s,0.277777777777778,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+velocity,mph,m/s,0.44704,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+velocity,knot,m/s,0.514444444444444,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+velocity,ft/s,m/s,0.3048,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+velocity,mm/s,m/s,0.001,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+volume,L,m^3,0.001,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+volume,cc (cm^3),m^3,1e-06,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+volume,gal (US),m^3,0.003785411784,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+volume,in^3,m^3,1.6387064e-05,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+flow,L/min,m^3/s,1.66666666666667e-05,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+flow,CFM,m^3/s,0.0004719474432,0,true,fan airflow,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+density,g/cm^3,kg/m^3,1000,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+density,lb/in^3,kg/m^3,27679.9047102031,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+stiffness,N/mm,N/m,1000,0,true,,https://www.bipm.org/en/publications/si-brochure,standard
+stiffness,lbf/in,N/m,175.126835246476,0,true,spring rate,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+stiffness,kgf/mm,N/m,9806.65,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+temperature,degC,K,1,273.15,true,"Affine: K = degC + 273.15 (temperature DIFFERENCES use factor only)",https://www.bipm.org/en/publications/si-brochure,standard
+temperature,degF,K,0.555555555555556,255.372222222222,true,"Affine: K = (degF + 459.67)*5/9 = degF*5/9 + 255.3722",https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+temperature_difference,delta_degF,K,0.555555555555556,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+viscosity_dynamic,cP,Pa*s,0.001,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard
+viscosity_kinematic,cSt,m^2/s,1e-06,0,true,,https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors,standard

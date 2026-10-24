@@ -1,0 +1,9 @@
+thread,pitch_mm,head_dia_dk_mm,head_height_k_mm,hex_key_s_mm,clearance_normal_mm,notes,source_url,value_type
+M3,0.5,5.7,1.65,2,3.4,usually class 10.9 / A2; lower key torque than SHCS,https://www.iso.org/standard/52585.html,standard
+M4,0.7,7.6,2.2,2.5,4.5,usually class 10.9 / A2; lower key torque than SHCS,https://www.iso.org/standard/52585.html,standard
+M5,0.8,9.5,2.75,3,5.5,usually class 10.9 / A2; lower key torque than SHCS,https://www.iso.org/standard/52585.html,standard
+M6,1.0,10.5,3.3,4,6.6,usually class 10.9 / A2; lower key torque than SHCS,https://www.iso.org/standard/52585.html,standard
+M8,1.25,14.0,4.4,5,9.0,usually class 10.9 / A2; lower key torque than SHCS,https://www.iso.org/standard/52585.html,standard
+M10,1.5,17.5,5.5,6,11.0,usually class 10.9 / A2; lower key torque than SHCS,https://www.iso.org/standard/52585.html,standard
+M12,1.75,21.0,6.6,8,13.5,usually class 10.9 / A2; lower key torque than SHCS,https://www.iso.org/standard/52585.html,standard
+M16,2.0,28.0,8.8,10,17.5,usually class 10.9 / A2; lower key torque than SHCS,https://www.iso.org/standard/52585.html,standard

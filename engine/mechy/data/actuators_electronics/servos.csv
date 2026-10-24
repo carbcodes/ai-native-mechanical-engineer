@@ -1,0 +1,29 @@
+model,manufacturer,class,supply_V,stall_torque_Nm,no_load_speed_rpm,stall_current_A,mass_kg,gear_ratio,interface,position_feedback,dimensions_WxHxD_text,notes,source_url,value_type,verification
+SG90,TowerPro,analog hobby,4.8,0.176,100,0.65,0.009,,PWM 50 Hz 1-2 ms,internal pot only,23x12x29,plastic gears; 0.1 s/60deg; stall current typical,http://www.towerpro.com.tw,datasheet,recalled
+MG90S,TowerPro,analog hobby,4.8,0.177,100,0.70,0.0134,,PWM 50 Hz 1-2 ms,internal pot only,23x12x29,metal gears; 0.10 s/60deg,http://www.towerpro.com.tw,datasheet,recalled
+MG90S,TowerPro,analog hobby,6.0,0.216,125,0.80,0.0134,,PWM 50 Hz 1-2 ms,internal pot only,23x12x29,0.08 s/60deg,http://www.towerpro.com.tw,datasheet,recalled
+MG996R,TowerPro,analog hobby,4.8,0.922,59,2.5,0.055,,PWM 50 Hz 1-2 ms,internal pot only,40.7x19.7x42.9,9.4 kg.cm; 0.17 s/60deg; clones often weaker,http://www.towerpro.com.tw,datasheet,recalled
+MG996R,TowerPro,analog hobby,6.0,1.079,71,2.5,0.055,,PWM 50 Hz 1-2 ms,internal pot only,40.7x19.7x42.9,11 kg.cm; 0.14 s/60deg,http://www.towerpro.com.tw,datasheet,recalled
+DS3218,DSServo,digital hobby,5.0,1.863,63,,0.060,,PWM 50-330 Hz 0.5-2.5 ms,internal pot only,40x20x40.5,19 kg.cm; 0.16 s/60deg; 180 or 270 deg versions,https://www.dsservo.com,datasheet,recalled
+DS3218,DSServo,digital hobby,6.8,2.108,71,,0.060,,PWM 50-330 Hz 0.5-2.5 ms,internal pot only,40x20x40.5,21.5 kg.cm; 0.14 s/60deg,https://www.dsservo.com,datasheet,recalled
+Dynamixel XL330-M288-T,ROBOTIS,smart bus,3.7,0.42,76,1.11,0.018,288.4,TTL half-duplex 9.6k-4M baud,magnetic absolute 12-bit,20x34x26,,https://emanual.robotis.com/docs/en/dxl/x/xl330-m288/,datasheet,fetched
+Dynamixel XL330-M288-T,ROBOTIS,smart bus,5.0,0.52,103,1.47,0.018,288.4,TTL half-duplex 9.6k-4M baud,magnetic absolute 12-bit,20x34x26,recommended voltage,https://emanual.robotis.com/docs/en/dxl/x/xl330-m288/,datasheet,fetched
+Dynamixel XL330-M288-T,ROBOTIS,smart bus,6.0,0.60,123,1.74,0.018,288.4,TTL half-duplex 9.6k-4M baud,magnetic absolute 12-bit,20x34x26,,https://emanual.robotis.com/docs/en/dxl/x/xl330-m288/,datasheet,fetched
+Dynamixel XL430-W250-T,ROBOTIS,smart bus,9.0,1.0,47,1.0,0.0572,258.5,TTL half-duplex 9.6k-4.5M baud,magnetic absolute 12-bit,28.5x46.5x34,,https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/,datasheet,fetched
+Dynamixel XL430-W250-T,ROBOTIS,smart bus,11.1,1.4,57,1.3,0.0572,258.5,TTL half-duplex 9.6k-4.5M baud,magnetic absolute 12-bit,28.5x46.5x34,recommended voltage,https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/,datasheet,fetched
+Dynamixel XL430-W250-T,ROBOTIS,smart bus,12.0,1.5,61,1.4,0.0572,258.5,TTL half-duplex 9.6k-4.5M baud,magnetic absolute 12-bit,28.5x46.5x34,,https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/,datasheet,fetched
+Dynamixel XM430-W210-T/R,ROBOTIS,smart bus,12.0,3.0,77,2.3,0.082,212.6,TTL or RS-485 9.6k-4.5M baud,magnetic absolute 12-bit,28.5x46.5x34,values recalled,https://emanual.robotis.com/docs/en/dxl/x/xm430-w210/,datasheet,recalled
+Dynamixel XM430-W350-T/R,ROBOTIS,smart bus,11.1,3.8,43,2.1,0.082,353.5,TTL or RS-485 9.6k-4.5M baud,magnetic absolute 12-bit,28.5x46.5x34,Kt 1.81 N.m/A (output),https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/,datasheet,fetched
+Dynamixel XM430-W350-T/R,ROBOTIS,smart bus,12.0,4.1,46,2.3,0.082,353.5,TTL or RS-485 9.6k-4.5M baud,magnetic absolute 12-bit,28.5x46.5x34,recommended voltage,https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/,datasheet,fetched
+Dynamixel XM430-W350-T/R,ROBOTIS,smart bus,14.8,4.8,57,2.7,0.082,353.5,TTL or RS-485 9.6k-4.5M baud,magnetic absolute 12-bit,28.5x46.5x34,,https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/,datasheet,fetched
+Dynamixel XH430-W350-T/R,ROBOTIS,smart bus,11.1,3.1,27,1.2,0.082,353.5,TTL or RS-485,magnetic absolute 12-bit,28.5x46.5x34,coreless (Maxon) motor,https://emanual.robotis.com/docs/en/dxl/x/xh430-w350/,datasheet,fetched
+Dynamixel XH430-W350-T/R,ROBOTIS,smart bus,12.0,3.4,30,1.3,0.082,353.5,TTL or RS-485,magnetic absolute 12-bit,28.5x46.5x34,recommended voltage,https://emanual.robotis.com/docs/en/dxl/x/xh430-w350/,datasheet,fetched
+Dynamixel XH430-W350-T/R,ROBOTIS,smart bus,14.8,4.2,37,1.5,0.082,353.5,TTL or RS-485,magnetic absolute 12-bit,28.5x46.5x34,,https://emanual.robotis.com/docs/en/dxl/x/xh430-w350/,datasheet,fetched
+Dynamixel XM540-W270-T/R,ROBOTIS,smart bus,11.1,10.0,28,4.2,0.165,272.5,TTL or RS-485 9.6k-4.5M baud,magnetic absolute 12-bit,33.5x58.5x44,,https://emanual.robotis.com/docs/en/dxl/x/xm540-w270/,datasheet,fetched
+Dynamixel XM540-W270-T/R,ROBOTIS,smart bus,12.0,10.6,30,4.4,0.165,272.5,TTL or RS-485 9.6k-4.5M baud,magnetic absolute 12-bit,33.5x58.5x44,recommended voltage,https://emanual.robotis.com/docs/en/dxl/x/xm540-w270/,datasheet,fetched
+Dynamixel XM540-W270-T/R,ROBOTIS,smart bus,14.8,12.9,37,5.5,0.165,272.5,TTL or RS-485 9.6k-4.5M baud,magnetic absolute 12-bit,33.5x58.5x44,,https://emanual.robotis.com/docs/en/dxl/x/xm540-w270/,datasheet,fetched
+Feetech STS3215 (7.4 V),Feetech,smart bus,7.4,1.91,45,2.7,0.055,345,TTL half-duplex 1 Mbps (SCS protocol),magnetic 12-bit (4096/rev),45.2x24.7x35,19.5 kg.cm; used in SO-100/LeRobot arms,https://www.feetechrc.com,datasheet,recalled
+Feetech STS3215 (12 V),Feetech,smart bus,12.0,2.94,45,2.4,0.055,345,TTL half-duplex 1 Mbps (SCS protocol),magnetic 12-bit (4096/rev),45.2x24.7x35,30 kg.cm,https://www.feetechrc.com,datasheet,recalled
+Feetech SCS0009,Feetech,smart bus,6.0,0.226,100,,0.013,,TTL half-duplex 1 Mbps,potentiometer 10-bit,23.2x12.1x25.25,micro size; values recalled,https://www.feetechrc.com,datasheet,recalled
+Hiwonder LX-16A,Hiwonder,smart bus,7.4,1.67,62,,0.052,,TTL half-duplex serial 115200,potentiometer 240 deg,45.2x24.7x35,17 kg.cm; 0.16 s/60deg,https://www.hiwonder.com,datasheet,recalled
+Hiwonder HTD-45H,Hiwonder,smart bus,12.0,4.41,,,0.064,,TTL half-duplex serial,potentiometer,40x20x40,45 kg.cm; values recalled,https://www.hiwonder.com,estimate,recalled

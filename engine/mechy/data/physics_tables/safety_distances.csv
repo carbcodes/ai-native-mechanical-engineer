@@ -1,0 +1,33 @@
+item,opening_type,opening_min_mm,opening_max_mm,safety_distance_mm,body_part,notes,source_url,value_type
+reach through regular opening,slot,0,4,2,fingertip,ISO 13857 Table 4 (persons >= 14 yr); distance from opening to hazard,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,0,4,2,fingertip,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,0,4,2,fingertip,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,slot,4,6,10,fingertip,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,4,6,5,fingertip,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,4,6,5,fingertip,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,slot,6,8,20,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,6,8,15,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,6,8,5,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,slot,8,10,80,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,8,10,25,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,8,10,20,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,slot,10,12,100,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,10,12,80,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,10,12,80,finger,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,slot,12,20,120,hand,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,12,20,120,hand,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,12,20,120,hand,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,slot,20,30,850,arm,Slot 20-30 allows arm to shoulder,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,20,30,120,hand,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,20,30,120,hand,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,slot,30,40,850,arm,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,30,40,200,hand,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,30,40,120,hand,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,slot,40,120,850,arm,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,square,40,120,850,arm,,https://www.iso.org/standard/69569.html,standard
+reach through regular opening,round,40,120,850,arm,,https://www.iso.org/standard/69569.html,standard
+upward reach (low risk),none,,,2500,whole body,Hazard height above which no guard needed (low risk),https://www.iso.org/standard/69569.html,standard
+upward reach (high risk),none,,,2700,whole body,,https://www.iso.org/standard/69569.html,standard
+approach speed hand/arm,n/a,,,2000,hand,ISO 13855: K = 2000 mm/s in S = K*T + C (if S<=500 mm),https://www.iso.org/standard/42845.html,standard
+approach speed whole body,n/a,,,1600,whole body,ISO 13855: K = 1600 mm/s when S > 500 mm,https://www.iso.org/standard/42845.html,standard
+minimum distance light curtain (hand),n/a,,,100,hand,ISO 13855 minimum S = 100 mm for detection capability <= 40 mm; C = 8*(d-14) mm,https://www.iso.org/standard/42845.html,standard

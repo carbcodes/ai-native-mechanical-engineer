@@ -1,0 +1,67 @@
+{
+ "repo": "EverydayDynamics/bjr",
+ "stars": 20,
+ "forks": 0,
+ "pushed": "2025-09-27T11:38:35Z",
+ "spdx": null,
+ "branch": "main",
+ "desc": "A Ball Juggling Robot's repository",
+ "truncated": false,
+ "ext": {
+  ".rs": 63,
+  ".kicad_mod": 42,
+  "": 28,
+  ".zip": 24,
+  ".xml": 17,
+  ".dcm": 14,
+  ".mod": 14,
+  ".kicad_sym": 14,
+  ".lib": 13,
+  ".stp": 12,
+  ".toml": 12,
+  ".kicad_sch": 9,
+  ".py": 7,
+  ".step": 6,
+  ".iml": 6,
+  ".kicad_pcb": 5,
+  ".kicad_prl": 5,
+  ".kicad_pro": 5,
+  ".lck": 4,
+  ".md": 3,
+  ".lock": 3,
+  ".svg": 2,
+  ".x": 2,
+  ".htm": 1,
+  ".bak": 1
+ },
+ "key_files": [
+  [
+   "README.md",
+   677
+  ],
+  [
+   "software/bjr_bsp/LICENSE-APACHE",
+   10850
+  ],
+  [
+   "software/bjr_bsp/LICENSE-MIT",
+   1022
+  ],
+  [
+   "software/bjr_bsp/README.md",
+   6935
+  ],
+  [
+   "software/bjr_central_control_rust/LICENSE-APACHE",
+   10850
+  ],
+  [
+   "software/bjr_central_control_rust/LICENSE-MIT",
+   1022
+  ],
+  [
+   "software/bjr_central_control_rust/README.md",
+   6935
+  ]
+ ]
+}

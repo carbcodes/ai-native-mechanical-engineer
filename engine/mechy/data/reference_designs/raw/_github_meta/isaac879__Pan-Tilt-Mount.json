@@ -1,0 +1,35 @@
+{
+ "repo": "isaac879/Pan-Tilt-Mount",
+ "stars": 514,
+ "forks": 116,
+ "pushed": "2021-10-29T16:32:18Z",
+ "spdx": "MIT",
+ "branch": "TMC2208-Drivers",
+ "desc": "A stepper motor driven, 3D printed and Arduino controlled pan/tilt mount.",
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2020 isaac879 (Isaac Chasteau)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portio",
+ "truncated": false,
+ "ext": {
+  ".stp": 28,
+  ".pdf": 2,
+  ".png": 2,
+  ".stl": 2,
+  ".cpp": 2,
+  ".jpg": 1,
+  ".zip": 1,
+  "": 1,
+  ".md": 1,
+  ".h": 1,
+  ".ino": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1082
+  ],
+  [
+   "README.md",
+   2786
+  ]
+ ]
+}

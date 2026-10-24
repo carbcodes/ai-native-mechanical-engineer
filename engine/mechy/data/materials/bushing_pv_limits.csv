@@ -1,0 +1,29 @@
+id,material,product_example,lubrication,max_pressure_static_MPa,max_pressure_dynamic_MPa,max_velocity_m_s,max_PV_MPa_m_s,mu_typical,min_temp_C,max_temp_C,recommended_shaft,notes,source_url,value_type
+sintered_bronze_841,Oil impregnated sintered bronze SAE 841,Oilite,oil impregnated,55,14,6.1,1.75,0.08,-10,104,Steel >=HRC 25; Ra 0.2-0.4 um,PV 50000 psi-fpm; reduce P at high V; re-oil for long life,https://en.wikipedia.org/wiki/Oilite,handbook_typical
+sintered_iron,Oil impregnated sintered iron,generic iron-copper,oil impregnated,70,25,2.0,1.2,0.10,-10,104,Hardened steel,Higher load lower speed than bronze,https://en.wikipedia.org/wiki/Oilite,estimate
+bronze_660,Cast bearing bronze C93200 (SAE 660),bar stock bushings,grease/oil,60,28,3.8,2.6,0.07,-40,200,Steel >=HRC 35,Requires regular lubrication; ~75000 psi-fpm,https://en.wikipedia.org/wiki/Bronze,estimate
+bronze_graphite_plug,Bronze with graphite plugs (oilless),Oiles 500 type,solid lubricant,100,35,0.5,1.6,0.12,-40,300,Steel,High load oscillating,https://en.wikipedia.org/wiki/Plain_bearing,estimate
+al_bronze_954,Aluminium bronze C95400,heavy duty bushings,grease,100,40,1.5,3.0,0.08,-40,250,Hardened steel >=HRC 45,,https://en.wikipedia.org/wiki/Aluminium_bronze,estimate
+du_ptfe_steel,PTFE/bronze lined steel-backed,GGB DU / PAP P10 type,dry,250,140,2.5,1.8,0.10,-200,280,Steel or hard chrome Ra 0.1-0.4 um,Short term PV up to 3.6; wrapped bushing; very thin wall,https://www.ggbearings.com/,estimate
+dx_pom_steel,POM lined steel-backed (prelubricated),GGB DX type,initial grease,140,70,2.5,2.8,0.05,-40,130,Steel,Needs initial grease,https://www.ggbearings.com/,estimate
+iglide_g300,igus iglidur G300,iglidur G,dry,80,80,1.0,0.42,0.12,-40,130,Steel Ra 0.2-0.8 um,General purpose; long term max 130C,https://www.igus.com/,estimate
+iglide_j,igus iglidur J,iglidur J,dry,35,35,1.5,0.34,0.10,-50,90,Steel or aluminium (hard anodized),Low friction; low speed-high speed,https://www.igus.com/,estimate
+iglide_x,igus iglidur X,iglidur X,dry,150,150,1.5,1.32,0.15,-100,250,Hardened steel,High temp and chemical,https://www.igus.com/,estimate
+iglide_w300,igus iglidur W300,iglidur W300,dry,60,60,1.0,0.35,0.15,-40,90,Steel,Very wear resistant,https://www.igus.com/,estimate
+pa6_unfilled,Nylon PA6/PA66 unfilled,machined bushing,dry,14,7,3.0,0.10,0.30,-40,90,Steel Ra 0.2-0.4 um,Allow running clearance for moisture swell and CTE,https://en.wikipedia.org/wiki/Nylon_6,estimate
+pa6_lub,Nylon PA6 oil filled / MoS2,Nylatron type,solid/oil filled,14,10,3.0,0.18,0.18,-40,100,Steel,,https://en.wikipedia.org/wiki/Nylon_6,estimate
+pom_unfilled,POM acetal unfilled,machined bushing,dry,14,7,1.0,0.10,0.25,-40,90,Steel or hardened steel,Do not mate with POM,https://en.wikipedia.org/wiki/Polyoxymethylene,estimate
+pom_ptfe,POM + PTFE,Delrin AF type,dry,14,7,1.5,0.35,0.12,-40,90,Steel,,https://en.wikipedia.org/wiki/Polyoxymethylene,estimate
+uhmw,UHMW-PE,machined bushing/slides,dry,7,3.5,2.0,0.07,0.15,-200,80,Steel or aluminium,Creeps under load; large CTE,https://en.wikipedia.org/wiki/Ultra-high-molecular-weight_polyethylene,estimate
+ptfe_virgin,PTFE virgin,machined bushing,dry,3.4,1.0,0.25,0.035,0.06,-200,260,Hardened steel,Cold flow; mostly use filled grades,https://en.wikipedia.org/wiki/Polytetrafluoroethylene,estimate
+ptfe_glass25,PTFE 25% glass,machined bushing,dry,7,4,1.0,0.35,0.12,-200,260,Hardened steel >=HRC 50,Glass abrades soft shafts,https://en.wikipedia.org/wiki/Polytetrafluoroethylene,estimate
+ptfe_bronze,PTFE 40-60% bronze,machined bushing,dry,10,5,1.0,0.5,0.15,-200,260,Hardened steel,,https://en.wikipedia.org/wiki/Polytetrafluoroethylene,estimate
+peek_bearing,PEEK bearing grade (CF/PTFE/graphite),Victrex 450FC30 type,dry,70,35,2.0,1.2,0.18,-60,250,Hardened steel,,https://en.wikipedia.org/wiki/Polyether_ether_ketone,estimate
+vespel_sp21,Polyimide + 15% graphite,Vespel SP-21 type,dry,35,20,7.6,3.5,0.25,-200,288,Hardened steel,Very high PV for a polymer,https://en.wikipedia.org/wiki/Polyimide,estimate
+torlon_4301,PAI bearing grade,Torlon 4301 type,dry,70,35,4.0,1.75,0.20,-60,250,Hardened steel,,https://en.wikipedia.org/wiki/Polyamide-imide,estimate
+phenolic_cotton,Cotton phenolic laminate,CE grade,water/oil,40,20,6.0,0.5,0.15,-40,120,Steel,Marine/water lubricated,https://en.wikipedia.org/wiki/Garolite,estimate
+carbon_graphite,Carbon-graphite,pump/seal bushings,dry or fluid,30,4,6.0,0.5,0.15,-200,350,Hardened steel or ceramic,Brittle; press-fit with care,https://en.wikipedia.org/wiki/Graphite,estimate
+babbitt_tin,Tin-based babbitt (hydrodynamic),ASTM B23 Grade 2,oil hydrodynamic,20,10,50,,0.003,-20,130,Steel journal,PV not limiting in full film; design with Sommerfeld number; limit by film thickness and temperature,https://en.wikipedia.org/wiki/Babbitt_(alloy),estimate
+wood_oil_maple,Oil impregnated hard maple,wood bushing,oil impregnated,14,7,2.0,0.5,0.15,-20,70,Steel,Traditional low-speed agricultural bushing,https://en.wikipedia.org/wiki/Plain_bearing,estimate
+printed_pla_petg,FDM printed PLA/PETG,printed bushing,dry,5,2,0.3,0.02,0.30,-20,50,Steel,Prototype only; wears and melts quickly; ream bore,https://en.wikipedia.org/wiki/Polylactic_acid,estimate
+printed_iglide_i180,igus iglidur i180 tribofilament,printed bushing,dry,20,10,0.5,0.1,0.20,-40,90,Steel,Printed tribo-filament,https://www.igus.com/,estimate

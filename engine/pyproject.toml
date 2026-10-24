@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mechy"
+version = "0.1.0"
+description = "Mechy engine: project files, agents, CAD, simulation and MCP tools"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "build123d>=0.9",
+  "mujoco>=3.1",
+  "pyyaml>=6",
+  "numpy>=1.26",
+  "matplotlib>=3.8",
+  "mcp>=1.2,<2",          # FastMCP API (renamed MCPServer in 2.x)
+  "typst>=0.13",          # bundles the Typst compiler (wheels for macOS/Linux/Windows): docs PDFs
+  "pillow>=10",           # PNG writing for the document renders (already a matplotlib dependency)
+  "pypdf>=4",             # PDF inspiration intake (mechy intake)
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+# inspiration intake (mechy intake): video links and better page text; ffmpeg must be on PATH.
+# faster-whisper is optional and only used when a video has no captions.
+intake = ["yt-dlp>=2024.12", "trafilatura>=1.12", "pillow>=10"]
+
+[project.scripts]
+mechy = "mechy.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mechy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,25 @@
+{
+ "repo": "Matt-Ceck63/StrainWaveDrive",
+ "stars": 6,
+ "forks": 0,
+ "pushed": "2020-06-01T19:43:42Z",
+ "spdx": null,
+ "branch": "master",
+ "desc": "AKA Harmonic Drive",
+ "truncated": false,
+ "ext": {
+  ".jpg": 12,
+  ".stl": 11,
+  ".stp": 1,
+  ".f3d": 1,
+  ".step": 1,
+  ".zip": 1,
+  ".md": 1
+ },
+ "key_files": [
+  [
+   "readme.md",
+   468
+  ]
+ ]
+}

@@ -1,0 +1,7 @@
+model,manufacturer,type,supply_V,current_A,coil_resistance_ohm,stroke_mm,force_at_stroke_start_N,force_at_closed_N,duty_cycle_pct,mass_kg,notes,source_url,value_type,verification
+Adafruit 1512 lock-style solenoid,Adafruit,lock/latch,12,0.65,18.5,10,,,25,0.150,needs flyback diode; values recalled,https://www.adafruit.com/product/1512,datasheet,recalled
+Adafruit 2776 small push-pull,Adafruit,push-pull,5,1.1,4.5,4.5,,,25,0.020,very weak at full stroke (<1 N); values recalled,https://www.adafruit.com/product/2776,estimate,recalled
+JF-0530B 6V,generic,push-pull,6,1.1,5.5,10,1.0,5,25,0.045,force falls ~1/gap^2; values typical of marketplace part,https://www.aliexpress.com,estimate,recalled
+JF-0530B 12V,generic,push-pull,12,0.6,20,10,1.0,5,25,0.045,force falls ~1/gap^2,https://www.aliexpress.com,estimate,recalled
+JF-0826B 12V,generic,push-pull,12,1.0,12,10,3,25,25,0.110,larger frame,https://www.aliexpress.com,estimate,recalled
+Rule: solenoid sizing,n/a,guideline,,,,,,,,,force ~ (N*I)^2*mu0*A/(2*g^2); continuous duty only at derated voltage; use PWM hold (~30-50 %) after pull-in,https://en.wikipedia.org/wiki/Solenoid,handbook_typical,recalled

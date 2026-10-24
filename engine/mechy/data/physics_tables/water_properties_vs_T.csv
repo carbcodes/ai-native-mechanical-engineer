@@ -1,0 +1,12 @@
+temperature_C,density_kg_m3,dynamic_viscosity_Pa_s,kinematic_viscosity_m2_s,thermal_conductivity_W_mK,specific_heat_cp_J_kgK,prandtl,surface_tension_N_m,vapor_pressure_Pa,source_url,value_type
+0,999.84,1.7920e-03,1.7923e-06,0.561,4217.0,13.470,0.0756,611.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+10,999.7,1.3060e-03,1.3064e-06,0.58,4192.0,9.439,0.0742,1228.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+20,998.21,1.0020e-03,1.0038e-06,0.598,4182.0,7.007,0.0727,2339.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+30,995.65,7.9700e-04,8.0048e-07,0.615,4178.0,5.414,0.0712,4247.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+40,992.22,6.5300e-04,6.5812e-07,0.631,4179.0,4.325,0.0696,7384.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+50,988.03,5.4700e-04,5.5363e-07,0.644,4181.0,3.551,0.0679,12350.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+60,983.2,4.6700e-04,4.7498e-07,0.654,4185.0,2.988,0.06620000000000001,19950.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+70,977.76,4.0400e-04,4.1319e-07,0.663,4190.0,2.553,0.0644,31200.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+80,971.79,3.5500e-04,3.6531e-07,0.67,4197.0,2.224,0.0626,47410.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+90,965.31,3.1500e-04,3.2632e-07,0.675,4205.0,1.962,0.0608,70180.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical
+100,958.35,2.8200e-04,2.9426e-07,0.679,4216.0,1.751,0.0589,101420.0,https://webbook.nist.gov/chemistry/fluid/,handbook_typical

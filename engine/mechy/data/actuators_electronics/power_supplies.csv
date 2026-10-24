@@ -1,0 +1,14 @@
+model,manufacturer,type,input,output_V,output_A,output_W,efficiency_pct,length_mm,width_mm,height_mm,mass_kg,notes,source_url,value_type,verification
+LRS-50-24,Mean Well,enclosed AC-DC,85-264 VAC,24,2.2,52.8,89,99,82,30,0.18,fanless,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+LRS-100-24,Mean Well,enclosed AC-DC,85-264 VAC,24,4.5,108,90,129,97,30,0.30,fanless,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+LRS-150-24,Mean Well,enclosed AC-DC,85-264 VAC (switch),24,6.5,156,89,159,97,30,0.43,fanless,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+LRS-200-24,Mean Well,enclosed AC-DC,85-264 VAC (switch),24,8.8,211,90,215,115,30,0.66,fanless,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+LRS-350-24,Mean Well,enclosed AC-DC,90-264 VAC (switch),24,14.6,350,90,215,115,30,0.76,fan; common 3D printer/CNC PSU,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+LRS-350-12,Mean Well,enclosed AC-DC,90-264 VAC (switch),12,29,348,88,215,115,30,0.76,fan,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+LRS-150-12,Mean Well,enclosed AC-DC,85-264 VAC (switch),12,12.5,150,88,159,97,30,0.43,fanless,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+RSP-500-24,Mean Well,enclosed AC-DC with PFC,85-264 VAC,24,21,504,90,170,120,50,0.90,PFC; remote sense,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+UHP-500-48,Mean Well,slim AC-DC with PFC,90-264 VAC,48,10.5,504,94,218,63.5,35.5,0.68,good match for ODrive/moteus 48 V systems; regen needs brake resistor,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+HDR-60-24,Mean Well,DIN rail AC-DC,85-264 VAC,24,2.5,60,90,52.5,90,54.5,0.19,DIN rail,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+GST60A12,Mean Well,desktop adapter,90-264 VAC,12,5,60,88,125,50,31.5,0.32,5.5x2.1 barrel,https://www.meanwell.com/productSeries.aspx,datasheet,recalled
+USB-PD SPR source,USB-IF spec,USB Power Delivery,USB-C,20,5,100,,,,,,fixed 5/9/15/20 V; 3 A max unless e-marked 5 A cable; PPS 3.3-21 V,https://www.usb.org/usb-charger-pd,standard,recalled
+USB-PD EPR source,USB-IF spec,USB Power Delivery 3.1 EPR,USB-C,48,5,240,,,,,,fixed 28/36/48 V; requires EPR e-marked cable,https://www.usb.org/usb-charger-pd,standard,recalled

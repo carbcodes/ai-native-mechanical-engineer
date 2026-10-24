@@ -1,0 +1,313 @@
+{
+ "repo": "huggingface/lerobot",
+ "stars": 28438,
+ "forks": 5939,
+ "pushed": "2026-10-23T19:41:33Z",
+ "spdx": "Apache-2.0",
+ "branch": "main",
+ "desc": "\ud83e\udd17 LeRobot: Making AI for Robotics more accessible with end-to-end learning",
+ "license_path": "LICENSE",
+ "license_head": "Copyright 2024 The Hugging Face team. All rights reserved.\n\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Ent",
+ "truncated": false,
+ "ext": {
+  ".py": 1009,
+  ".mdx": 103,
+  ".md": 67,
+  ".safetensors": 40,
+  ".yml": 18,
+  ".txt": 12,
+  ".yaml": 7,
+  "": 5,
+  ".png": 5,
+  ".mp4": 5,
+  ".json5": 3,
+  ".json": 2,
+  ".webp": 2,
+  ".in": 1,
+  ".libero": 1,
+  ".libero_plus": 1,
+  ".metaworld": 1,
+  ".robocasa": 1,
+  ".robocerebra": 1,
+  ".robomme": 1,
+  ".robotwin": 1,
+  ".vlabench": 1,
+  ".internal": 1,
+  ".jetson": 1,
+  ".rocm": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   29977
+  ],
+  [
+   "README.md",
+   14389
+  ],
+  [
+   "docker/Dockerfile.benchmark.robomme",
+   2752
+  ],
+  [
+   "docker/README.md",
+   4264
+  ],
+  [
+   "docs/README.md",
+   5521
+  ],
+  [
+   "docs/source/policy_act_README.md",
+   319
+  ],
+  [
+   "docs/source/policy_diffusion_README.md",
+   1163
+  ],
+  [
+   "docs/source/policy_dm05_README.md",
+   3042
+  ],
+  [
+   "docs/source/policy_evo1_README.md",
+   488
+  ],
+  [
+   "docs/source/policy_fastwam_README.md",
+   5373
+  ],
+  [
+   "docs/source/policy_fineart_vla_README.md",
+   1089
+  ],
+  [
+   "docs/source/policy_groot_README.md",
+   7247
+  ],
+  [
+   "docs/source/policy_lawam_README.md",
+   1555
+  ],
+  [
+   "docs/source/policy_lingbot_vla_v2_README.md",
+   1626
+  ],
+  [
+   "docs/source/policy_molmoact2_README.md",
+   1894
+  ],
+  [
+   "docs/source/policy_multi_task_dit_README.md",
+   1642
+  ],
+  [
+   "docs/source/policy_pi05_README.md",
+   5402
+  ],
+  [
+   "docs/source/policy_pi0_README.md",
+   4788
+  ],
+  [
+   "docs/source/policy_rtc_README.md",
+   1208
+  ],
+  [
+   "docs/source/policy_sarm_README.md",
+   349
+  ],
+  [
+   "docs/source/policy_smolvla_README.md",
+   536
+  ],
+  [
+   "docs/source/policy_tdmpc_README.md",
+   265
+  ],
+  [
+   "docs/source/policy_vla_jepa_README.md",
+   2683
+  ],
+  [
+   "docs/source/policy_vqbet_README.md",
+   333
+  ],
+  [
+   "docs/source/policy_walloss_README.md",
+   1651
+  ],
+  [
+   "docs/source/robometer.mdx",
+   8074
+  ],
+  [
+   "docs/source/robomme.mdx",
+   6578
+  ],
+  [
+   "examples/flux3/README.md",
+   1810
+  ],
+  [
+   "examples/isaac_teleop_to_so101/README.md",
+   5968
+  ],
+  [
+   "examples/omx/README.md",
+   5213
+  ],
+  [
+   "media/readme/VLA_architecture.jpg",
+   792640
+  ],
+  [
+   "media/readme/lerobot-logo-thumbnail.png",
+   164066
+  ],
+  [
+   "media/readme/robots_control_video.webp",
+   2425850
+  ],
+  [
+   "media/readme/so100_video.webp",
+   492230
+  ],
+  [
+   "src/lerobot/envs/robomme.py",
+   10272
+  ],
+  [
+   "src/lerobot/policies/act/README.md",
+   44
+  ],
+  [
+   "src/lerobot/policies/diffusion/README.md",
+   50
+  ],
+  [
+   "src/lerobot/policies/dm05/README.md",
+   45
+  ],
+  [
+   "src/lerobot/policies/eo1/README.md",
+   31
+  ],
+  [
+   "src/lerobot/policies/evo1/README.md",
+   45
+  ],
+  [
+   "src/lerobot/policies/fastwam/README.md",
+   48
+  ],
+  [
+   "src/lerobot/policies/fastwam/wan/README.md",
+   1541
+  ],
+  [
+   "src/lerobot/policies/fineart_vla/README.md",
+   52
+  ],
+  [
+   "src/lerobot/policies/flux3/README.md",
+   624
+  ],
+  [
+   "src/lerobot/policies/groot/README.md",
+   46
+  ],
+  [
+   "src/lerobot/policies/lawam/README.md",
+   46
+  ],
+  [
+   "src/lerobot/policies/lingbot_va/README.md",
+   38
+  ],
+  [
+   "src/lerobot/policies/lingbot_vla_v2/README.md",
+   55
+  ],
+  [
+   "src/lerobot/policies/molmoact2/README.md",
+   37
+  ],
+  [
+   "src/lerobot/policies/multi_task_dit/README.md",
+   55
+  ],
+  [
+   "src/lerobot/policies/pi0/README.md",
+   44
+  ],
+  [
+   "src/lerobot/policies/pi05/README.md",
+   45
+  ],
+  [
+   "src/lerobot/policies/rtc/README.md",
+   44
+  ],
+  [
+   "src/lerobot/policies/smolvla/README.md",
+   48
+  ],
+  [
+   "src/lerobot/policies/tdmpc/README.md",
+   46
+  ],
+  [
+   "src/lerobot/policies/vla_jepa/README.md",
+   49
+  ],
+  [
+   "src/lerobot/policies/vqbet/README.md",
+   46
+  ],
+  [
+   "src/lerobot/policies/wall_oss_05/README.md",
+   39
+  ],
+  [
+   "src/lerobot/policies/wall_x/README.md",
+   48
+  ],
+  [
+   "src/lerobot/remote_inference/README.md",
+   56985
+  ],
+  [
+   "src/lerobot/rewards/robometer/__init__.py",
+   879
+  ],
+  [
+   "src/lerobot/rewards/robometer/compute_rabc_weights.py",
+   12637
+  ],
+  [
+   "src/lerobot/rewards/robometer/configuration_robometer.py",
+   7109
+  ],
+  [
+   "src/lerobot/rewards/robometer/modeling_robometer.py",
+   20716
+  ],
+  [
+   "src/lerobot/rewards/robometer/processor_robometer.py",
+   13739
+  ],
+  [
+   "tests/rewards/test_modeling_robometer.py",
+   14172
+  ],
+  [
+   "tests/rewards/test_robometer_processor.py",
+   12860
+  ],
+  [
+   "tests/test_robomme_env.py",
+   10912
+  ]
+ ]
+}

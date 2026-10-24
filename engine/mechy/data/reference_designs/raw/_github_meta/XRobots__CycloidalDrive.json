@@ -1,0 +1,27 @@
+{
+ "repo": "XRobots/CycloidalDrive",
+ "stars": 226,
+ "forks": 56,
+ "pushed": "2024-02-04T14:30:38Z",
+ "spdx": "MIT",
+ "branch": "main",
+ "desc": null,
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2021 James Bruton\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Sof",
+ "truncated": false,
+ "ext": {
+  ".stp": 5,
+  "": 1,
+  ".md": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1069
+  ],
+  [
+   "README.md",
+   16
+  ]
+ ]
+}

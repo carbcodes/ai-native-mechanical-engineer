@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "description": "Area/second-moment section properties. Expressions are Python syntax; SI (m, m^2, m^4). I is about the centroidal axis for bending in the h direction unless noted.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_second_moments_of_area",
+    "value_type": "handbook_typical"
+  },
+  "formulas": [
+    {"id": "rectangle", "name": "Solid rectangle b (width) x h (depth in bending direction)", "variables": {"b": {"unit": "m", "desc": "width"}, "h": {"unit": "m", "desc": "depth"}},
+     "outputs": {"A": {"expr": "b*h", "unit": "m^2"}, "I": {"expr": "b*h**3/12", "unit": "m^4"}, "c": {"expr": "h/2", "unit": "m"}, "S": {"expr": "b*h**2/6", "unit": "m^3"}, "r_gyr": {"expr": "h/sqrt(12)", "unit": "m"}}},
+    {"id": "hollow_rectangle", "name": "Rectangular tube, outer B x H, inner b x h (symmetric)", "variables": {"B": {"unit": "m", "desc": "outer width"}, "H": {"unit": "m", "desc": "outer depth"}, "b": {"unit": "m", "desc": "inner width"}, "h": {"unit": "m", "desc": "inner depth"}},
+     "outputs": {"A": {"expr": "B*H - b*h", "unit": "m^2"}, "I": {"expr": "(B*H**3 - b*h**3)/12", "unit": "m^4"}, "c": {"expr": "H/2", "unit": "m"}, "S": {"expr": "(B*H**3 - b*h**3)/(6*H)", "unit": "m^3"}}},
+    {"id": "circle", "name": "Solid round of diameter d", "variables": {"d": {"unit": "m", "desc": "diameter"}},
+     "outputs": {"A": {"expr": "pi*d**2/4", "unit": "m^2"}, "I": {"expr": "pi*d**4/64", "unit": "m^4"}, "J": {"expr": "pi*d**4/32", "unit": "m^4"}, "c": {"expr": "d/2", "unit": "m"}, "S": {"expr": "pi*d**3/32", "unit": "m^3"}, "r_gyr": {"expr": "d/4", "unit": "m"}}},
+    {"id": "tube", "name": "Round tube, outer D, inner d", "variables": {"D": {"unit": "m", "desc": "outer diameter"}, "d": {"unit": "m", "desc": "inner diameter"}},
+     "outputs": {"A": {"expr": "pi*(D**2 - d**2)/4", "unit": "m^2"}, "I": {"expr": "pi*(D**4 - d**4)/64", "unit": "m^4"}, "J": {"expr": "pi*(D**4 - d**4)/32", "unit": "m^4"}, "c": {"expr": "D/2", "unit": "m"}, "S": {"expr": "pi*(D**4 - d**4)/(32*D)", "unit": "m^3"}}},
+    {"id": "thin_tube", "name": "Thin-walled round tube, mean radius r, wall t (t << r)", "variables": {"r": {"unit": "m", "desc": "mean radius"}, "t": {"unit": "m", "desc": "wall thickness"}},
+     "outputs": {"A": {"expr": "2*pi*r*t", "unit": "m^2"}, "I": {"expr": "pi*r**3*t", "unit": "m^4"}, "J": {"expr": "2*pi*r**3*t", "unit": "m^4"}}},
+    {"id": "triangle", "name": "Triangle base b, height h, about centroidal axis parallel to base", "variables": {"b": {"unit": "m", "desc": "base"}, "h": {"unit": "m", "desc": "height"}},
+     "outputs": {"A": {"expr": "b*h/2", "unit": "m^2"}, "I": {"expr": "b*h**3/36", "unit": "m^4"}, "c": {"expr": "2*h/3", "unit": "m"}}},
+    {"id": "i_beam", "name": "Symmetric I-beam: flange width b, total depth h, flange thickness tf, web thickness tw (strong axis)", "variables": {"b": {"unit": "m", "desc": "flange width"}, "h": {"unit": "m", "desc": "overall depth"}, "tf": {"unit": "m", "desc": "flange thickness"}, "tw": {"unit": "m", "desc": "web thickness"}},
+     "outputs": {"A": {"expr": "2*b*tf + (h - 2*tf)*tw", "unit": "m^2"}, "I": {"expr": "(b*h**3 - (b - tw)*(h - 2*tf)**3)/12", "unit": "m^4"}, "c": {"expr": "h/2", "unit": "m"}}},
+    {"id": "rectangle_torsion", "name": "Torsion constant and max shear stress factor of solid rectangle a >= b (full side lengths; Roark approximation)", "variables": {"a": {"unit": "m", "desc": "long side"}, "b": {"unit": "m", "desc": "short side"}},
+     "outputs": {"K": {"expr": "a*b**3*(1/3 - 0.21*(b/a)*(1 - b**4/(12*a**4)))", "unit": "m^4"}},
+     "notes": "Twist theta = T*L/(G*K). Accurate to ~4% for any a/b (Roark Table 10.1 case 4).",
+     "source_url": "https://en.wikipedia.org/wiki/Torsion_constant"},
+    {"id": "parallel_axis_area", "name": "Parallel axis theorem for areas", "variables": {"I_c": {"unit": "m^4", "desc": "centroidal I"}, "A": {"unit": "m^2", "desc": "area"}, "d": {"unit": "m", "desc": "offset"}},
+     "outputs": {"I": {"expr": "I_c + A*d**2", "unit": "m^4"}}}
+  ]
+}

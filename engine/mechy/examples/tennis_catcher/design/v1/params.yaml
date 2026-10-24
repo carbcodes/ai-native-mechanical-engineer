@@ -1,0 +1,29 @@
+name: v1
+style: belt_arm      # belt_arm: printable belt-driven arm (motors low, GT2 belts, real bearings) | simple: primitive blocks
+joints:              # order matters: base yaw, shoulder pitch, elbow pitch, wrist pitch
+  - {name: base,     axis: z, limit_deg: [-150, 150], gear_ratio: 4.5, motor: nema17}   # GT2 20T -> 90T
+  - {name: shoulder, axis: y, limit_deg: [-10, 120],  gear_ratio: 7.0, motor: nema17}   # 20T -> 140T (5:1 failed the 50% torque budget)
+  - {name: elbow,    axis: y, limit_deg: [-135, 135], gear_ratio: 5.0, motor: nema17}   # 20T -> 100T, then 1:1 belt along the upper arm
+  - {name: wrist,    axis: y, limit_deg: [-90, 90],   gear_ratio: 2.0, motor: nema17}   # 20T -> 40T, then 1:1 belts along both links
+links:
+  base_height_m: 0.18     # shoulder axis above the table
+  upper_arm_m: 0.22       # 40T-40T on a stock 520 mm GT2 loop
+  forearm_m: 0.22         # 40T-40T on a stock 520 mm GT2 loop
+  hand_m: 0.08            # wrist axis to cup centre (cup bottom clears the wrist hub)
+  motors_at_base: true    # shoulder, elbow and wrist motors on the turntable, belt driven
+catcher:
+  type: cup
+  diameter_m: 0.11        # inside the liner
+  depth_m: 0.09           # deeper than the 67 mm ball
+  liner: net_pocket       # slack net pocket on the windowed shell; eva_foam (restitution ~0.40) bounced 2/3 of balls out
+  # restitution: 0.15     # default for net_pocket; an estimate - drop-test the real pocket
+  give_m: 0.0             # soft-catch give along the ball's path; 0.06 m (with a 0.03 m run-up) was tried and
+                          # raised impact skips 76% -> 91% (the elbow motor is near its speed cap at impact)
+  compliance: none        # none | spring: sprung cup slide (sim option; spring_k_n_per_m 200, spring_travel_m 0.05
+                          # cut impact skips to ~40-45% and made the liner restitution irrelevant, but needs
+                          # hand_m ~0.13 for the travel and is not drawn yet - an open decision)
+drive:
+  coupling: passthrough   # elbow/wrist belts pass through the shoulder/elbow axes: motors set absolute link pitch
+belt_arm:                 # optional; defaults in mechy/cad/belt_arm.py
+  material: PETG
+  infill: 0.25

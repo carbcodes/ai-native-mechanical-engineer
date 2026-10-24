@@ -1,0 +1,15 @@
+motors:
+  - id: nema17
+    model: NEMA 17 42x42x40 (17HS4401 class)   # ESTIMATE: typical datasheet, replace with your motor's
+    count: 4
+    rated_current_a: 1.5
+    holding_torque_nm: 0.40
+    rotor_inertia_kgm2: 5.4e-6
+    max_speed_rps: 10
+    step_angle_deg: 1.8
+    leads: 4
+    torque_curve:               # [rev/s, N*m] pull-out torque, approximate (scaled to 0.40 N*m holding)
+      - [0, 0.40]
+      - [2, 0.36]
+      - [5, 0.25]
+      - [10, 0.11]

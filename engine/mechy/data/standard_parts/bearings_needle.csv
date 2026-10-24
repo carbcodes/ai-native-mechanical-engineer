@@ -1,0 +1,19 @@
+designation,type,Fw_mm,d_mm,D_mm,B_mm,C_kN,C0_kN,notes,source_url,value_type
+HK0306,drawn_cup_HK,3,,6.5,6,0.9,0.7,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK0408,drawn_cup_HK,4,,8,8,1.75,1.5,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK0509,drawn_cup_HK,5,,9,9,2.2,2.0,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK0608,drawn_cup_HK,6,,10,8,2.75,2.6,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK0709,drawn_cup_HK,7,,11,9,3.3,3.4,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK0810,drawn_cup_HK,8,,12,10,4.3,4.9,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK1010,drawn_cup_HK,10,,14,10,5.0,6.3,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK1210,drawn_cup_HK,12,,18,10,5.9,6.4,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK1512,drawn_cup_HK,15,,21,12,7.6,9.5,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK2016,drawn_cup_HK,20,,26,16,13.0,20.5,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+HK2520,drawn_cup_HK,25,,32,20,18.9,33.5,"runs directly on hardened shaft (HRC58+, h6); housing bore N6/R6 press fit; ratings estimated",https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+NA4900,machined_with_inner_ring_NA49,14,10,22,13,8.6,9.2,dimensions per ISO 1206 series 49; ratings estimated,https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+NA4901,machined_with_inner_ring_NA49,16,12,24,13,9.5,10.8,dimensions per ISO 1206 series 49; ratings estimated,https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+NA4902,machined_with_inner_ring_NA49,20,15,28,13,10.5,12.8,dimensions per ISO 1206 series 49; ratings estimated,https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+NA4903,machined_with_inner_ring_NA49,22,17,30,13,11.0,14.0,dimensions per ISO 1206 series 49; ratings estimated,https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+NA4904,machined_with_inner_ring_NA49,25,20,37,17,21.0,25.0,dimensions per ISO 1206 series 49; ratings estimated,https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+NA4905,machined_with_inner_ring_NA49,30,25,42,17,23.8,30.5,dimensions per ISO 1206 series 49; ratings estimated,https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate
+NA4906,machined_with_inner_ring_NA49,35,30,47,17,25.0,34.0,dimensions per ISO 1206 series 49; ratings estimated,https://medias.schaeffler.com/ (INA drawn cup HK / NA49 catalogue),estimate

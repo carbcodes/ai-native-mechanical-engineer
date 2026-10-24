@@ -1,0 +1,47 @@
+{
+ "repo": "Toyota/yubi-hw",
+ "stars": 185,
+ "forks": 16,
+ "pushed": "2026-09-21T13:54:35Z",
+ "spdx": "CERN-OHL-W-2.0",
+ "branch": "main",
+ "desc": "YUBI - Yielding Universal Bidigital Interface - Open source hardware design for a finger-driven teleoperation glove and robot gripper, including CAD, BOM, and assembly instructions.",
+ "license_path": "LICENSE",
+ "license_head": "Copyright 2026 Toyota Motor Corporation\n\nCERN Open Hardware Licence Version 2 - Weakly Reciprocal\n\n\nPreamble\n\nCERN has developed this licence to promote collaboration among hardware\ndesigners and to provide a legal tool which supports the freedom to use,\nstudy, modify, share and distribute hardware designs and products based on\nthose designs. Version 2 of the CERN Open Hardware Licence comes in three\nvariants: CERN-OHL-P (permissive); and two reciprocal licences: this licence,\nCERN-OHL-W (weakly reciprocal) and CERN-OHL-S (strongly reciprocal).\n\nThe CERN-OHL-W is copyright CERN 2020. Anyone is",
+ "truncated": false,
+ "ext": {
+  ".step": 47,
+  ".stl": 45,
+  ".md": 7,
+  ".png": 5,
+  ".pdf": 4,
+  "": 1,
+  ".stp": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   14433
+  ],
+  [
+   "README.md",
+   5005
+  ],
+  [
+   "docs/BOM/Portable_data_collection_BOM.md",
+   2818
+  ],
+  [
+   "docs/BOM/Stationary_data_collection_BOM.md",
+   4163
+  ],
+  [
+   "docs/BOM/YUBI Glove Assy_BOM.md",
+   8853
+  ],
+  [
+   "docs/BOM/YUBI Gripper_DYNAMIXEL_BOM.md",
+   5214
+  ]
+ ]
+}

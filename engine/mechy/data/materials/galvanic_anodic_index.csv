@@ -1,0 +1,20 @@
+id,material_group,anodic_index_V,source_url,value_type
+gold,Gold solid and plated; gold-platinum alloys,0.00,https://en.wikipedia.org/wiki/Galvanic_series,standard
+rhodium,Rhodium plated on silver-plated copper,0.05,https://en.wikipedia.org/wiki/Galvanic_series,standard
+silver,Silver solid or plated; high silver alloys,0.15,https://en.wikipedia.org/wiki/Galvanic_series,standard
+nickel_titanium,Nickel solid or plated; Monel; titanium and alloys; high nickel-copper alloys,0.30,https://en.wikipedia.org/wiki/Galvanic_series,standard
+copper,Copper solid or plated; low brasses or bronzes; silver solder; German silver; high copper-nickel alloys; nickel-chromium alloys,0.35,https://en.wikipedia.org/wiki/Galvanic_series,standard
+brass_bronze,Brass and bronzes,0.40,https://en.wikipedia.org/wiki/Galvanic_series,standard
+high_brass,High brasses and bronzes,0.45,https://en.wikipedia.org/wiki/Galvanic_series,standard
+ss_18cr,18% chromium type corrosion-resistant steels (300 series passive),0.50,https://en.wikipedia.org/wiki/Galvanic_series,standard
+chrome_tin_12cr,Chromium plated; tin plated; 12% chromium type corrosion-resistant steels (400 series),0.60,https://en.wikipedia.org/wiki/Galvanic_series,standard
+tinplate_solder,Tin-plate; tin-lead solder,0.65,https://en.wikipedia.org/wiki/Galvanic_series,standard
+lead,Lead solid or plated; high lead alloys,0.70,https://en.wikipedia.org/wiki/Galvanic_series,standard
+al_2000,2000 series wrought aluminium,0.75,https://en.wikipedia.org/wiki/Galvanic_series,standard
+iron_steel,Iron wrought/gray/malleable; plain carbon and low alloy steels,0.85,https://en.wikipedia.org/wiki/Galvanic_series,standard
+al_wrought,Aluminium wrought alloys other than 2000 series; cast alloys of the silicon type,0.90,https://en.wikipedia.org/wiki/Galvanic_series,standard
+al_cast_cd,Aluminium cast alloys other than silicon type; cadmium plated and chromated,0.95,https://en.wikipedia.org/wiki/Galvanic_series,standard
+galvanized,Hot-dip zinc plate; galvanized steel,1.20,https://en.wikipedia.org/wiki/Galvanic_series,standard
+zinc,Zinc wrought; zinc-base die casting alloys; zinc plated,1.25,https://en.wikipedia.org/wiki/Galvanic_series,standard
+magnesium,Magnesium and magnesium-base alloys cast or wrought,1.75,https://en.wikipedia.org/wiki/Galvanic_series,standard
+beryllium,Beryllium,1.85,https://en.wikipedia.org/wiki/Galvanic_series,standard

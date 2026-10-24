@@ -1,0 +1,46 @@
+{
+ "repo": "VoronDesign/Voron-Trident",
+ "stars": 1125,
+ "forks": 242,
+ "pushed": "2026-10-22T01:38:53Z",
+ "spdx": null,
+ "branch": "main",
+ "desc": "Voron Trident CoreXY 3D Printer design",
+ "truncated": false,
+ "ext": {
+  ".stl": 145,
+  ".f3d": 20,
+  ".dxf": 18,
+  ".cfg": 7,
+  ".step": 6,
+  ".pdf": 4,
+  ".md": 4,
+  "": 2,
+  ".yml": 1,
+  ".zip": 1,
+  ".jpg": 1,
+  ".png": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   35149
+  ],
+  [
+   "README.md",
+   724
+  ],
+  [
+   "STLs/readme.md",
+   567
+  ],
+  [
+   "experimental/README.md",
+   97
+  ],
+  [
+   "experimental/horiz_chain_umb/README.md",
+   588
+  ]
+ ]
+}

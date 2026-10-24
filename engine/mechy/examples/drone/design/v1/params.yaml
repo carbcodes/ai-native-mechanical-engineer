@@ -1,0 +1,10 @@
+name: v1
+style: quad_frame       # printed X quadcopter frame; sim.catch / control.gen do not apply
+wheelbase_mm: 220        # motor to motor, diagonal
+arm: {width_mm: 14, thickness_mm: 6}
+plates: {bottom_mm: 3, top_mm: 2, standoff_mm: 25}
+stack_mm: 30.5           # FC/ESC hole pattern
+motor_mount_mm: 16       # M3 x4 on a 16 mm square, 5 mm shaft clearance
+prop_in: 5
+material: PETG
+infill: 0.4

@@ -1,0 +1,142 @@
+{
+ "repo": "enactic/openarm_description",
+ "stars": 44,
+ "forks": 93,
+ "pushed": "2026-10-23T02:00:19Z",
+ "spdx": "Apache-2.0",
+ "branch": "main",
+ "desc": "URDF/xacro description files for the OpenArm robot system",
+ "license_path": "LICENSE.txt",
+ "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n     ",
+ "truncated": false,
+ "ext": {
+  ".yaml": 51,
+  ".stl": 47,
+  ".xacro": 23,
+  ".dae": 22,
+  ".md": 9,
+  ".yml": 6,
+  ".py": 3,
+  ".txt": 2,
+  ".urdf": 2,
+  ".rviz": 2,
+  "": 1,
+  ".sh": 1,
+  ".xml": 1,
+  ".toml": 1
+ },
+ "key_files": [
+  [
+   "LICENSE.txt",
+   11357
+  ],
+  [
+   "README.md",
+   1420
+  ],
+  [
+   "assets/end_effector/parallel_link/urdf/parallel_link_standalone.urdf.xacro",
+   1844
+  ],
+  [
+   "assets/end_effector/pinch_gripper/urdf/pinch_gripper_standalone.urdf.xacro",
+   3814
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/arm/openarm_arm.xacro",
+   5579
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/arm/openarm_macro.xacro",
+   8322
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/body/openarm_body.xacro",
+   1697
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/body/openarm_body_macro.xacro",
+   3443
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/ee/ee_dispatcher.xacro",
+   1755
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/ee/openarm_ee_macro.xacro",
+   4612
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/ee/parallel_link/openarm_parallel_gripper.xacro",
+   5016
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/ee/pinch_gripper/openarm_v20_pinch_gripper.xacro",
+   4665
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/example/v1.urdf",
+   32063
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/openarm_v10.urdf.xacro",
+   4619
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/robot/openarm_robot.xacro",
+   7655
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/ros2_control/openarm.bimanual.ros2_control.xacro",
+   7777
+  ],
+  [
+   "assets/robot/openarm_v1.0/urdf/ros2_control/openarm.ros2_control.xacro",
+   4805
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/example/v2.urdf",
+   39191
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/openarm_v20.urdf.xacro",
+   2948
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/ros2_control/openarm.bimanual.ros2_control.xacro",
+   7945
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/ros2_control/openarm.ros2_control.xacro",
+   4723
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/utils/openarm_v20_arm.xacro",
+   6923
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/utils/openarm_v20_ee.xacro",
+   17256
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/utils/openarm_v20_robot.xacro",
+   40432
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/utils/openarm_v20_sensor.xacro",
+   1115
+  ],
+  [
+   "assets/robot/openarm_v2.0/urdf/utils/openarm_v20_utils.xacro",
+   13317
+  ],
+  [
+   "assets/sensor/zed/urdf_wrapper/openarm_zed_wrapper.xacro",
+   2255
+  ],
+  [
+   "dev/README.md",
+   180
+  ]
+ ]
+}

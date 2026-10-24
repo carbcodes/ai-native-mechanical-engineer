@@ -1,0 +1,13 @@
+model,manufacturer,chemistry,format,nominal_V,max_V,min_V,capacity_Ah,max_continuous_discharge_A,mass_kg,energy_Wh,specific_energy_Wh_per_kg,notes,source_url,value_type,verification
+Samsung INR18650-25R,Samsung SDI,Li-ion NCA/NMC,18650,3.6,4.2,2.5,2.5,20,0.0438,9.0,206,continuous rating per manufacturer; independent tests support ~20 A,https://www.batterybro.com/blogs/18650-wholesale-battery-reviews/18852515-mooch-s-18650-battery-ratings-list,datasheet,recalled
+Samsung INR18650-30Q,Samsung SDI,Li-ion,18650,3.6,4.2,2.5,3.0,15,0.045,10.8,240,,https://www.batterybro.com/blogs/18650-wholesale-battery-reviews/18852515-mooch-s-18650-battery-ratings-list,datasheet,recalled
+LG INR18650-HG2,LG Energy Solution,Li-ion,18650,3.6,4.2,2.0,3.0,20,0.047,10.8,230,,https://www.batterybro.com/blogs/18650-wholesale-battery-reviews/18852515-mooch-s-18650-battery-ratings-list,datasheet,recalled
+Sony/Murata US18650VTC6,Murata,Li-ion,18650,3.6,4.2,2.5,3.0,15,0.0466,10.8,232,,https://www.batterybro.com/blogs/18650-wholesale-battery-reviews/18852515-mooch-s-18650-battery-ratings-list,datasheet,recalled
+Molicel INR18650-P28A,Molicel,Li-ion,18650,3.6,4.2,2.5,2.8,35,0.046,10.1,219,,https://www.molicel.com,datasheet,recalled
+Molicel INR21700-P42A,Molicel,Li-ion,21700,3.6,4.2,2.5,4.2,45,0.070,15.1,216,popular high-drain cell for robots/e-bikes,https://www.molicel.com,datasheet,recalled
+Molicel INR21700-P45B,Molicel,Li-ion,21700,3.6,4.2,2.5,4.5,45,0.070,16.2,231,,https://www.molicel.com,datasheet,recalled
+Samsung INR21700-40T,Samsung SDI,Li-ion,21700,3.6,4.2,2.5,4.0,25,0.067,14.4,215,manufacturer claims 35 A; independent tests ~25 A,https://www.batterybro.com/blogs/18650-wholesale-battery-reviews/18852515-mooch-s-18650-battery-ratings-list,datasheet,recalled
+Samsung INR21700-50E,Samsung SDI,Li-ion,21700,3.6,4.2,2.5,5.0,9.8,0.069,18.0,261,energy cell; low drain,https://www.samsungsdi.com,datasheet,recalled
+A123 ANR26650M1-B,A123 Systems,LiFePO4,26650,3.3,3.6,2.0,2.5,50,0.076,8.25,109,very long cycle life; flat discharge curve,https://www.a123systems.com,datasheet,recalled
+Panasonic Eneloop BK-3MCC (AA),Panasonic,NiMH,AA,1.2,1.45,1.0,1.9,2,0.027,2.28,84,low self-discharge,https://www.panasonic.com,datasheet,recalled
+Generic LiPo pouch (per cell),generic,LiPo (Li-ion polymer),pouch,3.7,4.2,3.3,1.0,25,0.020,3.7,185,C-rating claims usually inflated 2x; storage 3.8 V/cell; HV LiPo max 4.35 V,https://en.wikipedia.org/wiki/Lithium_polymer_battery,handbook_typical,recalled

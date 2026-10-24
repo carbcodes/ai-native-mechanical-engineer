@@ -1,0 +1,10 @@
+model,manufacturer,kind,nema_frame,holding_torque_Nm,rated_current_A,supply_min_V,supply_max_V,encoder_counts_per_rev,interface,mass_kg,body_length_mm,notes,source_url,value_type,verification
+MKS SERVO42D,Makerbase,driver board for NEMA17,17,,3.0,12,24,16384,step/dir; UART; CAN (42D-CAN variant),0.030,,bolt-on FOC board; motor sold separately or bundled; values recalled,https://github.com/makerbase-motor/MKS-SERVO42D,datasheet,recalled
+MKS SERVO57D,Makerbase,driver board for NEMA23,23,,5.2,12,48,16384,step/dir; UART; CAN,0.060,,values recalled,https://github.com/makerbase-motor/MKS-SERVO57D,datasheet,recalled
+BIGTREETECH S42C,BIGTREETECH,driver board for NEMA17,17,,1.6,12,24,4096,step/dir,0.030,,legacy; values recalled,https://github.com/bigtreetech/BIGTREETECH-S42C-V1.0,estimate,recalled
+JMC IHSS42-24-05,JMC,integrated motor+driver,17,0.5,,20,30,1000 lines (4000 counts),step/dir,0.45,,naming = 24 V nominal / 0.5 N.m; values recalled,https://www.jmc-motion.com,estimate,recalled
+JMC IHSS57-36-20,JMC,integrated motor+driver,23,2.0,,24,48,1000 lines (4000 counts),step/dir,1.30,,naming = 36 V nominal / 2.0 N.m; values recalled,https://www.jmc-motion.com,estimate,recalled
+JMC IHSS86-80-45,JMC,integrated motor+driver,34,4.5,,60,90,1000 lines (4000 counts),step/dir,3.30,,naming = 80 V nominal / 4.5 N.m; values recalled,https://www.jmc-motion.com,estimate,recalled
+StepperOnline 17HS19-2004-ME1K + CL42T,StepperOnline,motor with encoder + external driver,17,0.59,2.0,24,48,1000 lines (4000 counts),step/dir,0.45,64,same motor as 17HS19-2004S1 plus 1000-line encoder; driver CL42T (24-48 V),https://www.omc-stepperonline.com/closed-loop-stepper-kits,estimate,recalled
+StepperOnline 23HS22-2804-ME1K + CL57T,StepperOnline,motor with encoder + external driver,23,1.26,2.8,24,48,1000 lines (4000 counts),step/dir,0.80,76,CL57T driver 24-48 VDC 0-8 A peak; values recalled,https://www.omc-stepperonline.com/closed-loop-stepper-kits,estimate,recalled
+Moons TSM17Q-3AG,Moons',integrated stepper servo,17,0.45,,12,48,20000 counts,step/dir; Modbus/RS-485 (Q: SCL/Q programs),0.40,,values recalled; confirm suffix,https://www.moonsindustries.com,estimate,recalled

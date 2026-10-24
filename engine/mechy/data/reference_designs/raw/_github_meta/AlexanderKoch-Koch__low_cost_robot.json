@@ -1,0 +1,43 @@
+{
+ "repo": "AlexanderKoch-Koch/low_cost_robot",
+ "stars": 3423,
+ "forks": 302,
+ "pushed": "2024-09-21T17:21:21Z",
+ "spdx": "MIT",
+ "branch": "main",
+ "desc": null,
+ "license_path": "LICENSE",
+ "license_head": "MIT License\n\nCopyright (c) 2024 Alexander Koch\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the S",
+ "truncated": false,
+ "ext": {
+  ".stl": 23,
+  ".step": 14,
+  ".py": 8,
+  "": 2,
+  ".f3z": 2,
+  ".png": 2,
+  ".xml": 2,
+  ".md": 1,
+  ".jpg": 1,
+  ".txt": 1,
+  ".urdf": 1
+ },
+ "key_files": [
+  [
+   "LICENSE",
+   1071
+  ],
+  [
+   "README.md",
+   6237
+  ],
+  [
+   "simulation/low_cost_robot/low-cost-arm.urdf",
+   10071
+  ],
+  [
+   "simulation/low_cost_robot/scene.xml",
+   1361
+  ]
+ ]
+}

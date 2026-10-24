@@ -1,0 +1,33 @@
+{
+ "repo": "Anthrobotics/wolf-actuator",
+ "stars": 77,
+ "forks": 7,
+ "pushed": "2024-10-04T04:30:28Z",
+ "spdx": "CC-BY-SA-4.0",
+ "branch": "master",
+ "desc": "A 3D-printable high-torque planetary actuator.",
+ "license_path": "LICENSE",
+ "license_head": "Attribution-ShareAlike 4.0 International\n\n=======================================================================\n\nCreative Commons Corporation (\"Creative Commons\") is not a law firm and\ndoes not provide legal services or legal advice. Distribution of\nCreative Commons public licenses does not create a lawyer-client or\nother relationship. Creative Commons makes its licenses and related\ninformation available on an \"as-is\" basis. Creative Commons gives no\nwarranties regarding its licenses, any material licensed under their\nterms and conditions, or any related information. Creative Commons\ndisclai",
+ "truncated": false,
+ "ext": {
+  ".stl": 14,
+  ".md": 2,
+  ".step": 1,
+  "": 1,
+  ".pdf": 1
+ },
+ "key_files": [
+  [
+   "CAD/README.md",
+   1
+  ],
+  [
+   "LICENSE",
+   20131
+  ],
+  [
+   "README.md",
+   6669
+  ]
+ ]
+}

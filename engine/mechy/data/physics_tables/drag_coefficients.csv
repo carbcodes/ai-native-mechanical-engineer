@@ -1,0 +1,25 @@
+shape,orientation,reference_area,Cd_min,Cd_typical,Cd_max,Re_range,notes,source_url,value_type
+sphere (smooth),any,frontal pi*d^2/4,0.39,0.47,0.50,1e3-2e5 (subcritical),Drops to ~0.1-0.2 above drag crisis Re~3e5,https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/shape-effects-on-drag/,handbook_typical
+sphere (smooth),any,frontal pi*d^2/4,0.07,0.15,0.20,4e5-1e6 (supercritical),After boundary-layer transition,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+sphere (Stokes regime),any,frontal pi*d^2/4,,24/Re,,Re<1,Cd = 24/Re; use formula not constant,https://en.wikipedia.org/wiki/Stokes%27_law,handbook_typical
+hemisphere,open (concave) side facing flow,frontal,1.33,1.42,1.42,1e4-1e6,Cup/parachute-like,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+hemisphere,convex side facing flow,frontal,0.38,0.42,0.42,1e4-1e6,,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+cube,face normal to flow,frontal side^2,1.05,1.05,1.10,1e4-1e6,,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+cube,edge/diagonal to flow (45 deg),frontal,0.80,0.80,0.80,1e4-1e6,,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+flat plate (square),normal to flow,plate area,1.10,1.17,1.28,>1e4,1.28 often quoted for general flat plate,https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/shape-effects-on-drag/,handbook_typical
+flat disk,normal to flow,disk area,1.10,1.17,1.20,>1e4,,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+flat plate (long strip),normal to flow,plate area,1.9,2.0,2.05,>1e4,Aspect ratio > 20,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+flat plate,parallel to flow (laminar skin friction),wetted area,0.001,0.005,0.01,1e4-5e5,Cf ~ 1.328/sqrt(Re_L) laminar,https://en.wikipedia.org/wiki/Skin_friction_drag,handbook_typical
+long cylinder,axis normal to flow,projected d*L,1.0,1.2,1.2,1e4-2e5,L/d -> infinity; ~0.3 supercritical,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+short cylinder (L/d~1),axis normal to flow,projected d*L,0.6,0.64,0.7,1e4-1e5,Finite length end effects,https://en.wikipedia.org/wiki/Drag_coefficient,estimate
+long cylinder,axis parallel to flow (L/d~4-8),frontal pi*d^2/4,0.82,0.85,0.9,1e4-1e6,,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+short cylinder (L/d~1),axis parallel to flow,frontal pi*d^2/4,0.9,1.15,1.15,1e4-1e6,,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+cone (60 deg),apex into flow,frontal,0.5,0.5,0.5,1e4-1e6,,https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/shape-effects-on-drag/,handbook_typical
+streamlined body (teardrop),nose into flow,frontal,0.04,0.04,0.05,>1e5,,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+streamlined half-body (on wall),nose into flow,frontal,0.09,0.09,0.09,>1e5,,https://en.wikipedia.org/wiki/Drag_coefficient,handbook_typical
+airfoil,low angle of attack,planform,0.006,0.01,0.05,>1e5,Profile drag only,https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/shape-effects-on-drag/,handbook_typical
+human (standing),facing flow,frontal (~0.5-0.7 m^2),1.0,1.2,1.3,>1e5,CdA ~ 0.5-0.9 m^2 upright,https://en.wikipedia.org/wiki/Drag_coefficient,estimate
+quadcopter/small drone body,horizontal flight,frontal,0.5,0.9,1.3,1e4-1e5,Highly design-dependent,https://en.wikipedia.org/wiki/Drag_coefficient,estimate
+golf ball (dimpled),any,frontal,0.21,0.25,0.30,4e4-2e5,Dimples trigger early drag crisis; spin adds lift,https://www.grc.nasa.gov/www/k-12/airplane/socdrag.html,handbook_typical
+tennis ball (felt),any,frontal,0.50,0.55,0.60,6e4-2e5,Felt keeps Cd high; ~0.6 new fuzzy ball,https://www.grc.nasa.gov/www/k-12/airplane/socdrag.html,handbook_typical
+baseball,any,frontal,0.30,0.35,0.50,1e5-2e5,Seam orientation matters,https://www.grc.nasa.gov/www/k-12/airplane/socdrag.html,handbook_typical

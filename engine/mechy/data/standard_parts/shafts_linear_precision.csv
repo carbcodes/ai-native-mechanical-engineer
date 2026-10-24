@@ -1,0 +1,17 @@
+designation,d_mm,mass_kg_per_m,g6_upper_um,g6_lower_um,h6_upper_um,h6_lower_um,material,E_GPa,source_url,value_type
+shaft-3,3,0.0555,-2,-8,0,-6,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-4,4,0.0986,-4,-12,0,-8,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-5,5,0.1541,-4,-12,0,-8,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-6,6,0.222,-4,-12,0,-8,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-8,8,0.3946,-5,-14,0,-9,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-10,10,0.6165,-5,-14,0,-9,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-12,12,0.8878,-6,-17,0,-11,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-13,13,1.0419,-6,-17,0,-11,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-15,15,1.3872,-6,-17,0,-11,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-16,16,1.5783,-6,-17,0,-11,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-20,20,2.4662,-7,-20,0,-13,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-25,25,3.8534,-7,-20,0,-13,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-30,30,5.5488,-7,-20,0,-13,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-35,35,7.5526,-9,-25,0,-16,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-40,40,9.8646,-9,-25,0,-16,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard
+shaft-50,50,15.4134,-9,-25,0,-16,"CF53/SUJ2 induction hardened HRC58-62, ground",200,https://us.misumi-ec.com/ (linear shafts SFJ); mass computed,standard

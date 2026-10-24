@@ -1,0 +1,17 @@
+shaft_dia_over_mm,shaft_dia_upto_mm,key_width_b_mm,key_height_h_mm,shaft_keyway_depth_t1_mm,hub_keyway_depth_t2_mm,length_min_mm,length_max_mm,notes,source_url,value_type
+6,8,2,2,1.2,1.0,6,20,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+8,10,3,3,1.8,1.4,6,36,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+10,12,4,4,2.5,1.8,8,45,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+12,17,5,5,3.0,2.3,10,56,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+17,22,6,6,3.5,2.8,14,70,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+22,30,8,7,4.0,3.3,18,90,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+30,38,10,8,5.0,3.3,22,110,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+38,44,12,8,5.0,3.3,28,140,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+44,50,14,9,5.5,3.8,36,160,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+50,58,16,10,6.0,4.3,45,180,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+58,65,18,11,7.0,4.4,50,200,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+65,75,20,12,7.5,4.9,56,220,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+75,85,22,14,9.0,5.4,63,250,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+85,95,25,14,9.0,5.4,70,280,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+95,110,28,16,10.0,6.4,80,320,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard
+110,130,32,18,11.0,7.4,90,360,"parallel key form A; width tol h9, shaft groove N9/P9, hub JS9/P9; key material C45 (Rm~600 MPa)",https://en.wikipedia.org/wiki/Key_(engineering) ; DIN 6885-1 / ISO 773 tables,standard

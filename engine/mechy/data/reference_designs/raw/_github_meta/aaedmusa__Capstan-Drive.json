@@ -1,0 +1,26 @@
+{
+ "repo": "aaedmusa/Capstan-Drive",
+ "stars": 654,
+ "forks": 80,
+ "pushed": "2024-06-14T21:23:14Z",
+ "spdx": null,
+ "branch": "main",
+ "desc": "Robotic actuator test stand utilizing a Capstan Drive reducer",
+ "truncated": false,
+ "ext": {
+  ".stp": 9,
+  ".xlsx": 1,
+  ".md": 1,
+  ".zip": 1
+ },
+ "key_files": [
+  [
+   "Capstan Drive Test Stand BOM.xlsx",
+   15851
+  ],
+  [
+   "README.md",
+   614
+  ]
+ ]
+}

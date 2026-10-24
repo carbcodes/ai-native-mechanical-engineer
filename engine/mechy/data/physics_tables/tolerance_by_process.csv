@@ -1,0 +1,25 @@
+process,typical_tolerance_mm,best_tolerance_mm,IT_grade_min,IT_grade_max,scales_with,notes,source_url,value_type
+CNC milling,0.1,0.01,7,11,feature size,Protolabs/Xometry default +/-0.13 mm (0.005 in),https://www.protolabs.com/services/cnc-machining/,datasheet
+CNC turning,0.05,0.005,6,10,feature size,,https://www.protolabs.com/services/cnc-machining/,datasheet
+drilling,0.1,0.05,10,13,diameter,Ream for fits,https://en.wikipedia.org/wiki/International_Tolerance_grade,handbook_typical
+reaming,0.02,0.005,6,9,diameter,,https://en.wikipedia.org/wiki/International_Tolerance_grade,handbook_typical
+boring,0.02,0.005,6,9,diameter,,https://en.wikipedia.org/wiki/International_Tolerance_grade,handbook_typical
+grinding,0.01,0.002,5,7,feature size,,https://en.wikipedia.org/wiki/International_Tolerance_grade,handbook_typical
+honing,0.005,0.001,4,6,diameter,,https://en.wikipedia.org/wiki/International_Tolerance_grade,handbook_typical
+lapping,0.002,0.0005,3,5,feature size,,https://en.wikipedia.org/wiki/International_Tolerance_grade,handbook_typical
+wire EDM,0.01,0.002,6,8,feature size,,https://en.wikipedia.org/wiki/Electrical_discharge_machining,handbook_typical
+laser cutting (sheet metal),0.1,0.05,11,13,thickness,Kerf ~0.1-0.3 mm,https://www.sendcutsend.com/guidelines/,datasheet
+laser cutting (acrylic/wood),0.15,0.05,12,14,thickness,Kerf ~0.1-0.25 mm; compensate,https://www.ponoko.com/,datasheet
+abrasive waterjet,0.15,0.08,12,14,thickness,Taper on thick stock,https://en.wikipedia.org/wiki/Water_jet_cutter,estimate
+sheet metal bending,0.5,0.25,13,16,number of bends,Angle +/-1 deg typical; tolerances stack per bend,https://www.protolabs.com/services/sheet-metal-fabrication/,datasheet
+stamping/punching,0.1,0.025,10,13,feature size,,https://en.wikipedia.org/wiki/International_Tolerance_grade,handbook_typical
+sand casting,1.5,0.8,14,16,part size,Plus draft and machining allowance,https://en.wikipedia.org/wiki/Sand_casting,handbook_typical
+investment casting,0.25,0.1,11,14,part size,~+/-0.005 in/in,https://en.wikipedia.org/wiki/Investment_casting,handbook_typical
+die casting,0.1,0.05,11,14,part size,,https://en.wikipedia.org/wiki/Die_casting,handbook_typical
+injection molding,0.1,0.025,11,14,part size,Protolabs +/-0.003 in plus resin shrink tolerance,https://www.protolabs.com/services/injection-molding/,datasheet
+FDM 3D printing,0.3,0.1,13,15,part size,Xometry/Hubs: +/-0.5% (lower limit +/-0.5 mm); holes print undersize ~0.1-0.3 mm,https://www.hubs.com/knowledge-base/,datasheet
+SLA 3D printing,0.15,0.05,11,13,part size,+/-0.2% (lower limit ~+/-0.1 mm),https://formlabs.com/,datasheet
+SLS 3D printing,0.3,0.15,12,14,part size,+/-0.3% (lower limit +/-0.3 mm),https://www.hubs.com/knowledge-base/,datasheet
+MJF 3D printing,0.3,0.2,12,14,part size,,https://www.hp.com/us-en/printers/3d-printers.html,datasheet
+DMLS/SLM metal printing,0.1,0.05,11,13,part size,Machine critical features,https://www.hubs.com/knowledge-base/,datasheet
+extrusion (aluminium profile),0.2,0.1,12,14,cross-section size,EN 755-9 tolerances; straightness separate,https://en.wikipedia.org/wiki/Extrusion,handbook_typical

@@ -1,0 +1,16 @@
+{
+  "description": "Max allowable anodic index difference (V) between two contacting metals, per MIL-STD-889 style design guidance. Use galvanic_anodic_index.csv. The more active (higher index) metal corrodes.",
+  "max_anodic_index_difference_V": {
+    "harsh_marine_outdoor_high_humidity": 0.15,
+    "normal_indoor_uncontrolled": 0.25,
+    "controlled_dry_indoor": 0.50
+  },
+  "mitigations": [
+    "Keep anode (active metal) area large relative to cathode area",
+    "Isolate with non-conductive washers/sleeves or sealant",
+    "Plate the cathode toward the anode (e.g. zinc or tin plating) or coat both",
+    "Avoid carbon fibre (CFRP) in direct contact with aluminium; use glass ply or isolator"
+  ],
+  "source_url": "https://en.wikipedia.org/wiki/Galvanic_series",
+  "value_type": "standard"
+}

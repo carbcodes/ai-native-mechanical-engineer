@@ -1,0 +1,14 @@
+thread,pitch_mm,width_across_flats_s_mm,width_across_corners_e_min_mm,height_iso4032_mm,height_nyloc_iso7040_mm,height_thin_iso4035_mm,source_url,value_type
+M2,0.4,4,4.32,1.6,,1.2,https://www.iso.org/standard/45689.html,standard
+M2.5,0.45,5,5.45,2.0,,1.6,https://www.iso.org/standard/45689.html,standard
+M3,0.5,5.5,6.01,2.4,4.0,1.8,https://www.iso.org/standard/45689.html,standard
+M4,0.7,7,7.66,3.2,5.0,2.2,https://www.iso.org/standard/45689.html,standard
+M5,0.8,8,8.79,4.7,5.0,2.7,https://www.iso.org/standard/45689.html,standard
+M6,1.0,10,11.05,5.2,6.0,3.2,https://www.iso.org/standard/45689.html,standard
+M8,1.25,13,14.38,6.8,8.0,4.0,https://www.iso.org/standard/45689.html,standard
+M10,1.5,16,17.77,8.4,10.0,5.0,https://www.iso.org/standard/45689.html,standard
+M12,1.75,18,20.03,10.8,12.0,6.0,https://www.iso.org/standard/45689.html,standard
+M14,2.0,21,23.36,12.8,14.0,7.0,https://www.iso.org/standard/45689.html,standard
+M16,2.0,24,26.75,14.8,16.0,8.0,https://www.iso.org/standard/45689.html,standard
+M20,2.5,30,32.95,18.0,20.0,10.0,https://www.iso.org/standard/45689.html,standard
+M24,3.0,36,39.55,21.5,24.0,12.0,https://www.iso.org/standard/45689.html,standard
