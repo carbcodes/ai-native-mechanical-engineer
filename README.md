@@ -61,3 +61,7 @@ node scripts/capture-posters.mjs
 ```
 
 The production output is a static `dist/` directory. No hosting deployment is configured yet. Set the final public site URL and absolute social-preview URL when connecting a domain.
+
+## License
+
+Source-available, view only. All rights reserved: no copying, modifying, or recreating Mechy without written permission. See [LICENSE](LICENSE). Third-party files keep their own licenses.

@@ -1,0 +1,41 @@
+Mechy Source-Available License (View Only)
+
+Copyright (c) 2026 The Mechy Authors. All rights reserved.
+
+This repository is published so people can read it. It is not open source.
+
+1. Permitted use. You may view and read the source code, documentation, and
+   other materials in this repository ("the Software") on GitHub or in a
+   personal local copy made only to read it.
+
+2. Restrictions. Without prior written permission from the copyright holders,
+   you may not, in whole or in part:
+   a. copy, reproduce, or redistribute the Software;
+   b. modify the Software, translate it, or create derivative works from it;
+   c. recreate, reimplement, clone, or imitate the Software, its architecture,
+      or its distinctive features, whether by copying code or by using the
+      Software as a reference or specification;
+   d. use the Software, or any product built from or modeled on it, for any
+      commercial or competing purpose;
+   e. sublicense, sell, rent, lease, or host the Software as a service;
+   f. use the Software, or any part of it, to train or fine-tune machine
+      learning models, or as an input for generating a similar product.
+
+3. Third-party materials. Files under third-party directories (for example
+   engine/mechy/data/reference_designs/ and vendored libraries such as
+   app/Sources/Mechy/Resources/viewer/vendor/) are owned by their respective
+   authors and remain under their own licenses, which are included alongside
+   them. This license does not restrict rights those licenses grant.
+
+4. Contributions. Forks created through GitHub's interface exist only as
+   GitHub's Terms of Service require and grant no further rights. Pull requests
+   or other contributions may be accepted at the copyright holders' discretion.
+
+5. Termination. Any breach of these terms automatically ends your permission
+   to view or use the Software.
+
+6. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+   CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+For permission requests, open an issue in this repository.
